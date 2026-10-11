@@ -1,0 +1,157 @@
+{
+  "id": "E-0023",
+  "title": "第一版只保留完成核心任务所必需的内容",
+  "volume": 5,
+  "chapter": 1,
+  "type": "框架",
+  "tags": [
+    "产品范围",
+    "需求优先级",
+    "第一版"
+  ],
+  "summary": "适合需求多于交付能力的团队；把候选项与用户任务、价值、成本和依赖对应，明确第一版保留与暂缓的理由。",
+  "claims": [
+    {
+      "id": "E-0023-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "GOV.UK优先级指南把must、should、could和will not作为建立共识的一种方法，并强调优先级应基于研究、表现和团队输入。",
+      "referenceIds": [
+        "R-GOV-PRIORITIES"
+      ]
+    },
+    {
+      "id": "E-0023-C2",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "Karlsson与Ryan提出按相对价值和实现成本比较需求，并在两个商业电信软件项目中应用该方法。",
+      "referenceIds": [
+        "R-KARLSSON-RYAN"
+      ]
+    },
+    {
+      "id": "E-0023-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "第一版只保留完成核心任务、满足安全合规和产生学习所必需的内容，其余写明暂缓条件，是本文建议。",
+      "referenceIds": [
+        "R-GOV-PRIORITIES",
+        "R-KARLSSON-RYAN"
+      ]
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：一份政府方法指南和一篇在两个商业软件项目中应用的方法论文支持结构化优先级讨论，但样本有限，且本文简化流程未被单独验证。",
+  "references": [
+    {
+      "id": "R-GOV-PRIORITIES",
+      "title": "Deciding on priorities",
+      "authors": [
+        "GOV.UK Product and service community"
+      ],
+      "publisher": "GOV.UK Service Manual",
+      "url": "https://www.gov.uk/service-manual/agile-delivery/deciding-on-priorities",
+      "doi": null,
+      "publishedAt": "2017-11-16",
+      "materialType": "政府敏捷交付指南",
+      "accessScope": "full",
+      "locator": "Prioritisation methods，网页第72–98行",
+      "limitations": [
+        "政府数字服务方法，不是创业产品结果试验。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0023-C1",
+        "E-0023-C3"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南说明优先级应基于研究与团队输入，并用must、should、could和will not建立共识。"
+      },
+      "assessment": "支持透明分类与阶段性调整；不证明某种方法总是最佳。"
+    },
+    {
+      "id": "R-KARLSSON-RYAN",
+      "title": "A Cost–Value Approach for Prioritizing Requirements",
+      "authors": [
+        "Joachim Karlsson",
+        "Kevin Ryan"
+      ],
+      "publisher": "IEEE Software",
+      "url": "https://www.researchgate.net/publication/243680523_Prioritizing_Requirements_Using_a_Cost-Value_Approach",
+      "doi": null,
+      "publishedAt": "1997-09-01",
+      "materialType": "需求工程方法论文",
+      "accessScope": "full",
+      "locator": "论文第67页起；网页文本第168–216、334–379行",
+      "limitations": [
+        "只报告两个商业电信软件项目，不能直接外推所有创业产品。",
+        "本文没有复现完整AHP计算。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0023-C2",
+        "E-0023-C3"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "论文按候选需求的相对价值与实现成本进行比较，并将方法用于两个商业项目。"
+      },
+      "assessment": "支持价值—成本二维讨论；不支持本文简化清单的普遍效果。"
+    }
+  ],
+  "limitations": [
+    "需求价值和成本判断仍可能受权力、信息不足与估算偏差影响。",
+    "安全、合规、可靠性和无障碍不能仅因短期价值评分较低而删除。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.0",
+  "author": "主智能体（作者自查）",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "产品负责人",
+      "早期团队"
+    ],
+    "stage": [
+      "原型期",
+      "最小交付"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "low",
+      "note": "方法可用普通文档执行，实际开发成本由候选需求决定。"
+    },
+    "riskCategories": [
+      "范围膨胀",
+      "质量风险",
+      "估算偏差"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.0",
+      "note": "作者自查：范围取舍包含必要质量与主要任务；成本价值方法来自特定项目，不能普遍保证排序正确。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0023。不是独立或专业审核。",
+      "fingerprint": "sha256:4cc89adf4e4478997a5932cb93ca01f7395bb4f3527e8dfd80fa1ce3cb17e68e"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0023-C1",
+    "E-0023-C2",
+    "E-0023-C3"
+  ]
+}

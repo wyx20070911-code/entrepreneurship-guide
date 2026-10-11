@@ -1,0 +1,126 @@
+{
+  "id": "E-0018",
+  "title": "先算清一单贡献多少，再谈卖多少单不亏",
+  "volume": 7,
+  "chapter": 2,
+  "type": "工具",
+  "tags": [
+    "盈亏平衡",
+    "单位经济",
+    "成本"
+  ],
+  "summary": "单一产品可用单位贡献估算盈亏平衡量，但所有输入必须采用一致期间和口径；贡献不为正时该公式不能给出正常销量结论。",
+  "claims": [
+    {
+      "id": "E-0018-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "SBA 指南提供固定成本除以单位售价减单位可变成本的简单盈亏平衡量公式，并称结果为估计。",
+      "referenceIds": [
+        "R-SBA-BREAKEVEN"
+      ]
+    },
+    {
+      "id": "E-0018-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "确保售价、单位可变成本和固定成本采用一致产品、数量单位与期间，并在单位贡献不为正时停止套用正常公式，是编辑建议。",
+      "referenceIds": [
+        "R-SBA-BREAKEVEN"
+      ]
+    },
+    {
+      "id": "E-0018-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中生活例子是显著标记的假设，用于解释操作方法，不是客户案例或市场统计。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：SBA官方指南直接支持单一产品的盈亏平衡估算公式及其估计性质，但没有验证创业效果；多产品、口径不一致、产能约束和非正单位贡献会限制应用。",
+  "references": [
+    {
+      "id": "R-SBA-BREAKEVEN",
+      "title": "Break-even point",
+      "authors": [
+        "U.S. Small Business Administration"
+      ],
+      "publisher": "U.S. Small Business Administration",
+      "url": "https://legacy.sba.gov/business-guide/plan-your-business/calculate-your-startup-costs/break-even-point",
+      "doi": null,
+      "publishedAt": "2024-10-03",
+      "materialType": "政府计算指南",
+      "accessScope": "full",
+      "locator": "公式、输入、多产品提示与估计边界，网页第 70–105 行",
+      "limitations": [
+        "多产品、半可变成本、产能约束和售价不高于单位可变成本时，简单公式需要调整。",
+        "不是会计、融资或利润保证；任何缓冲比例都必须显式标成假设。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0018-C1",
+        "E-0018-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南以固定成本除以单位售价减单位可变成本计算单一产品盈亏平衡量，并强调结果是估计。"
+      },
+      "assessment": "该材料直接支持 E-0018-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    }
+  ],
+  "limitations": [
+    "多产品、半可变成本、产能约束和售价不高于单位可变成本时，简单公式需要调整。",
+    "不是会计、融资或利润保证；任何缓冲比例都必须显式标成假设。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "小微经营者"
+    ],
+    "stage": [
+      "经营期"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "取决于行业、地区和验证方式，现有资料不足以给出统一金额。"
+    },
+    "riskCategories": [
+      "盈利风险"
+    ]
+  },
+  "numericClaims": [
+    {
+      "text": "假设售价二十元、单位可变成本十二元、单笔贡献八元、固定成本八千元，简单演算得到一千份。",
+      "kind": "hypothetical",
+      "referenceIds": []
+    }
+  ],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.0",
+      "note": "作者自查：单产品正贡献公式保持一致期间与口径；零或负贡献不能套正常盈亏平衡量。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0018。不是独立或专业审核。",
+      "fingerprint": "sha256:2552383d2d855302621e8190ef70a28d2432bccd512aacd4c7c777f65b9d3f12"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0018-C1",
+    "E-0018-C2",
+    "E-0018-C3"
+  ]
+}

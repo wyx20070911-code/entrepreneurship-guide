@@ -1,0 +1,214 @@
+{
+  "id": "E-0021",
+  "title": "先说清谁在什么场景卡住，再写你的承诺",
+  "volume": 3,
+  "chapter": 1,
+  "type": "框架",
+  "tags": [
+    "价值主张",
+    "任务场景",
+    "用户结果",
+    "文化与商业伦理"
+  ],
+  "summary": "适合还说不清目标顾客和交付结果的早期团队；先描述具体情境、现有做法和可观察结果，再决定方案怎么表达。",
+  "claims": [
+    {
+      "id": "E-0021-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "GOV.UK指南要求从实际用户研究出发，了解谁在什么情境下要完成什么，并让需求聚焦问题而不是预设方案。",
+      "referenceIds": [
+        "R-GOV-USER-NEEDS"
+      ]
+    },
+    {
+      "id": "E-0021-C2",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "Christensen Institute把待完成任务定义为人在特定情境中希望取得的进展，并提醒功能、社会和情绪因素都可能影响选择。",
+      "referenceIds": [
+        "R-CI-JTBD"
+      ]
+    },
+    {
+      "id": "E-0021-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "用“谁、何时、现在如何处理、要得到什么结果”写一页价值主张，并用真实访谈继续修正，是本文的操作建议。",
+      "referenceIds": [
+        "R-GOV-USER-NEEDS",
+        "R-CI-JTBD"
+      ]
+    },
+    {
+      "id": "E-0021-C4",
+      "text": "UNESCO文化多样性宣言Articles 4–5将文化选择与尊严、人权相联，不允许借文化差异侵犯人权；不是通用食品或合同法。",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "referenceIds": [
+        "R-UNESCO-CULTURE-2001"
+      ]
+    },
+    {
+      "id": "E-0021-C5",
+      "text": "将文化需要转为必要任务条件，尊重拒绝与差异，不推断信仰或作未核实认证，是编辑伦理建议，未证明经营效果。",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "referenceIds": [
+        "R-UNESCO-CULTURE-2001"
+      ]
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：两份公开方法材料直接支持理解用户情境和待完成任务，但没有对照研究检验本文的一页价值主张写法能否提高购买或留存。 文化段来自宣言原则，仅支持伦理边界，不验证销售效果。",
+  "references": [
+    {
+      "id": "R-GOV-USER-NEEDS",
+      "title": "Learning about users and their needs",
+      "authors": [
+        "GOV.UK User research community"
+      ],
+      "publisher": "GOV.UK Service Manual",
+      "url": "https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs",
+      "doi": null,
+      "publishedAt": "2016-04-04",
+      "materialType": "政府服务设计方法指南",
+      "accessScope": "full",
+      "locator": "Researching users and their needs及Writing user needs，网页第87–145行",
+      "limitations": [
+        "面向英国政府服务设计，不是创业销售效果研究。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0021-C1",
+        "E-0021-C3"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南要求了解用户是谁、正在做什么、目前如何完成，以及需求应基于研究并聚焦问题而非方案。"
+      },
+      "assessment": "直接支持用户、情境、现有做法和问题表述；不支持商业效果。"
+    },
+    {
+      "id": "R-CI-JTBD",
+      "title": "Jobs to Be Done Theory",
+      "authors": [
+        "Christensen Institute"
+      ],
+      "publisher": "Christensen Institute",
+      "url": "https://www.christenseninstitute.org/theory/jobs-to-be-done/",
+      "doi": null,
+      "publishedAt": null,
+      "materialType": "理论作者机构方法说明",
+      "accessScope": "full",
+      "locator": "Definition，网页第128–141行",
+      "limitations": [
+        "理论与案例说明不能单独证明本文操作步骤的普遍效果。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0021-C2",
+        "E-0021-C3"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "材料把job描述为人在特定情境中希望取得的进展，并强调功能、社会和情绪因素。"
+      },
+      "assessment": "支持以情境和期望进展组织问题；不证明某种文案一定有效。"
+    },
+    {
+      "id": "R-UNESCO-CULTURE-2001",
+      "title": "UNESCO Universal Declaration on Cultural Diversity",
+      "publisher": "UNESCO",
+      "authors": [
+        "UNESCO"
+      ],
+      "url": "https://www.unesco.org/en/legal-affairs/unesco-universal-declaration-cultural-diversity",
+      "locator": "Article 4 Human rights as guarantees of cultural diversity；Article 5 Cultural rights as an enabling environment for cultural diversity。",
+      "assessment": "宣言支持文化选择及尊严，并明确不得借文化多样性侵犯人权。本文将其用于伦理边界，不视为全球经营者直接法定义务。",
+      "limitations": [
+        "2001-11-02为通过日期；网页首发/修订日期未知，宣言不是本文交易适用法律。",
+        "未检验按文化偏好调整服务的效果，不推断个人宗教身份或认证资格。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "publishedAt": null,
+      "materialType": "官方指引",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "宣言支持文化选择及尊严，并明确不得借文化多样性侵犯人权。本文将其用于伦理边界，不视为全球经营者直接法定义务。"
+      },
+      "supports": [
+        "E-0021-C4",
+        "E-0021-C5"
+      ]
+    }
+  ],
+  "limitations": [
+    "方法材料来自政府服务与创新理论语境，不能直接外推为商业转化效果。",
+    "价值主张仍须用目标顾客的真实行为和反馈继续验证。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "1.0.0",
+  "author": "主智能体（作者自查）",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "产品负责人"
+    ],
+    "stage": [
+      "想法期",
+      "需求验证"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "low",
+      "note": "可先使用访谈笔记和普通文档，实际成本取决于招募方式。"
+    },
+    "riskCategories": [
+      "需求误判",
+      "表达偏差"
+    ]
+  },
+  "numericClaims": [
+    {
+      "text": "UNESCO宣言第4和5条仅为来源条款定位，不是样本、概率或效果数字。",
+      "kind": "sourced",
+      "referenceIds": [
+        "R-UNESCO-CULTURE-2001"
+      ]
+    }
+  ],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "1.0.0",
+      "note": "作者自查：价值承诺联系用户场景，不按文化身份推定购买行为；只清理不自然标点。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0021。不是独立或专业审核。",
+      "fingerprint": "sha256:09d3461e9bb1aeda34047069498f8dfde0550e7c70dfb1be2b20bc9070ff416b"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0021-C1",
+    "E-0021-C2",
+    "E-0021-C3",
+    "E-0021-C4",
+    "E-0021-C5"
+  ]
+}

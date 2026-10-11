@@ -1,0 +1,7 @@
+---
+import Article from '../../components/Article.astro';
+import { publishedRecords } from '../../lib/site';
+export function getStaticPaths() { return publishedRecords.map(record => ({ params: { id: record.id }, props: { record } })); }
+const { record } = Astro.props;
+---
+<Article record={record} siblings={publishedRecords} />

@@ -1,0 +1,168 @@
+{
+  "id": "E-0003",
+  "title": "先人工接一单，再决定要不要做自动化工具",
+  "volume": 5,
+  "chapter": 3,
+  "type": "工具",
+  "tags": [
+    "AI创业",
+    "人工交付",
+    "MVP",
+    "服务验证"
+  ],
+  "summary": "自动化前的一次受限人工交付可以暴露流程、判断点和返工，但不能证明需求、盈利或可扩展性。",
+  "claims": [
+    {
+      "id": "E-0003-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "Paul Graham 的经验文章明确描述早期用人工完成计划以后自动化的流程；效应逻辑论文提供从现有手段出发的理论背景。",
+      "referenceIds": [
+        "R-GRAHAM-2013",
+        "R-SARASVATHY-2001"
+      ]
+    },
+    {
+      "id": "E-0003-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "先做一次受限人工交付、记录流程再决定是否自动化，是编辑建议；它不能证明需求、盈利或可扩展性。",
+      "referenceIds": [
+        "R-GRAHAM-2013",
+        "R-SARASVATHY-2001"
+      ]
+    },
+    {
+      "id": "E-0003-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中金额、周期或人物均标记为假设，仅用于说明方法。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：Paul Graham的创业经验文章与Sarasvathy的效应逻辑提供方法背景，但没有对照研究证明一次人工交付能验证需求、盈利或规模化。",
+  "references": [
+    {
+      "id": "R-GRAHAM-2013",
+      "title": "Do Things that Don't Scale",
+      "authors": [
+        "Paul Graham"
+      ],
+      "publisher": "Paul Graham",
+      "url": "https://paulgraham.com/ds.html",
+      "doi": null,
+      "publishedAt": "2013-07",
+      "materialType": "创业者方法文章",
+      "accessScope": "full",
+      "locator": "Recruit、Delight、Consult、Manual、Big 与 Vector 小节",
+      "limitations": [
+        "经验性文章，存在选择与幸存者偏差。",
+        "没有随机对照，不能证明方法普遍提高成功率或利润。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0003-C1",
+        "E-0003-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "文章以作者和 YC 经历主张早期主动招募、超常服务及人工完成部分流程，同时也指出咨询式服务和不可扩展投入的风险。"
+      },
+      "assessment": "该材料直接支持 E-0003-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    },
+    {
+      "id": "R-SARASVATHY-2001",
+      "title": "Causation and Effectuation: Toward a Theoretical Shift from Economic Inevitability to Entrepreneurial Contingency",
+      "authors": [
+        "Saras D. Sarasvathy"
+      ],
+      "publisher": "Academy of Management Review",
+      "url": "https://cdn.mises.org/sarasvathy_2001_causation_and_effectuation.pdf",
+      "doi": "10.5465/amr.2001.4378020",
+      "publishedAt": "2001-04-01",
+      "materialType": "理论论文",
+      "accessScope": "full",
+      "locator": "第 243–263 页，效应逻辑、给定手段和可承受损失命题",
+      "limitations": [
+        "理论论文及思想实验不是方法有效性的随机试验。",
+        "早期经验材料集中于特定创业者与美国情境。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0003-C1",
+        "E-0003-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "论文提出从当前手段和可控制事项出发的效应逻辑，并明确主要内容包含理论、案例和待检验命题。"
+      },
+      "assessment": "该材料直接支持 E-0003-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    }
+  ],
+  "limitations": [
+    "经验性文章，存在选择与幸存者偏差。",
+    "没有随机对照，不能证明方法普遍提高成功率或利润。",
+    "理论论文及思想实验不是方法有效性的随机试验。",
+    "早期经验材料集中于特定创业者与美国情境。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "软件开发者",
+      "AI服务创业者",
+      "自由职业者"
+    ],
+    "stage": [
+      "需求验证",
+      "最小交付"
+    ],
+    "industry": [
+      "软件服务",
+      "AI自动化",
+      "企业服务"
+    ],
+    "startupCapital": {
+      "band": "low",
+      "note": "可先使用现有工具和人工操作；实际费用取决于模型调用、软件订阅和交付时间。"
+    },
+    "riskCategories": [
+      "需求误判",
+      "数据与隐私",
+      "交付不可扩展"
+    ]
+  },
+  "numericClaims": [
+    {
+      "text": "假设收取八百元并为一家网店人工整理一周客服消息。",
+      "kind": "hypothetical",
+      "referenceIds": []
+    }
+  ],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.0",
+      "note": "作者自查：受限人工交付只探索流程、工作量及判断环节，不能据一次交付断言需求或盈利。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0003。不是独立或专业审核。",
+      "fingerprint": "sha256:3d670017409bb3594b369b2bf7976d45a4de35cfa33a6269b805c3cbc7e0a4c0"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0003-C1",
+    "E-0003-C2",
+    "E-0003-C3"
+  ]
+}

@@ -1,0 +1,15 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { chapters, volumes } from '../data/content';
+import { draftEnabled, publishedRecords, draftRecords, articleHref } from '../lib/site';
+---
+<BaseLayout title="图书目录" active="catalog" sidebar>
+  <header class="page-heading"><p class="eyebrow">THE BOOK / 12 × 4</p><h1>图书目录</h1><p class="lead">12 个主题，48 个章节。从当前面临的问题进入，逐步理解创业决策的全貌。</p></header>
+  <div class="notice"><strong>内容进度</strong><p>目录已建立。已发布文章直接显示；其他研究条目只在本地草稿模式中出现。</p></div>
+  <nav class="volume-jumps" aria-label="快速选择卷">{volumes.map((name, index) => <a href={`#volume-${index + 1}`}>{String(index + 1).padStart(2,'0')} {name}</a>)}</nav>
+  {volumes.map((name,index) => { const volumePublished = publishedRecords.filter(record => record.volume === index + 1); return <section class="catalog-volume" id={`volume-${index + 1}`}><div class="section-heading"><h2><span class="mono">{String(index + 1).padStart(2,'0')}</span> {name}</h2><span class="volume-progress">4 个规划章节 · {volumePublished.length ? `${volumePublished.length} 篇可读文章` : '暂无已发布文章'}</span></div><div class="chapter-list">{chapters.filter(chapter => chapter.volume === index + 1).map(chapter => {
+    const articles = publishedRecords.filter(record => record.volume === chapter.volume && record.chapter === chapter.chapter);
+    const drafts = draftRecords.filter(record => record.volume === chapter.volume && record.chapter === chapter.chapter);
+    return <section class="chapter-row" id={chapter.id}><span class="mono">{chapter.id}</span><div><h3><a href={`#${chapter.id}`}>{chapter.title}</a></h3><p>{chapter.description}</p>{articles.map(record => <a class="chapter-article" href={articleHref(record.id)}>{record.title}</a>)}{!articles.length && !(draftEnabled && drafts.length) && <span class="empty-chapter">待编写</span>}{draftEnabled && drafts.map(record => <a class="chapter-article draft-link" href={articleHref(record.id,true)}>{record.title} <span class="badge draft-badge">草稿</span></a>)}</div><span class="chapter-state">{articles.length ? `${articles.length} 篇可读` : drafts.length && draftEnabled ? `暂无可读 · ${drafts.length} 篇草稿` : '暂无可读'}</span></section>;
+  })}</div></section>})}
+</BaseLayout>

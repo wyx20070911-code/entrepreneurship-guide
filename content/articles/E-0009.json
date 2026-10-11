@@ -1,0 +1,120 @@
+{
+  "id": "E-0009",
+  "title": "别只找方便的人访谈，要找真正会用的人",
+  "volume": 2,
+  "chapter": 1,
+  "type": "工具",
+  "tags": [
+    "招募",
+    "用户研究",
+    "样本偏差"
+  ],
+  "summary": "招募方便找到的人容易偏离真实用户；应按近期任务场景选人，并记录未覆盖的人群。",
+  "claims": [
+    {
+      "id": "E-0009-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "GDS 规划指南要求围绕研究问题识别用户群并设计招募方式，同时关注包容性。",
+      "referenceIds": [
+        "R-GDS-PLAN"
+      ]
+    },
+    {
+      "id": "E-0009-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "把近期真实经历作为主要筛选条件，是面向创业验证的编辑建议。",
+      "referenceIds": [
+        "R-GDS-PLAN"
+      ]
+    },
+    {
+      "id": "E-0009-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中生活例子是显著标记的假设，用于解释操作方法，不是客户案例或市场统计。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：GOV.UK指南直接支持按服务相关人群和实际研究需求招募，但政府服务指南不能证明本文招募法会提高商业研究的准确率。",
+  "references": [
+    {
+      "id": "R-GDS-PLAN",
+      "title": "Plan user research for your service",
+      "authors": [
+        "User research community"
+      ],
+      "publisher": "UK Government Digital Service",
+      "url": "https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service",
+      "doi": null,
+      "publishedAt": "2016-03-14",
+      "materialType": "政府方法指南",
+      "accessScope": "selected_sections",
+      "locator": "Decide your objectives and approach：Agree research questions、Identify user groups、Decide your recruitment approach；Be inclusive。未采用固定轮次或样本数。",
+      "limitations": [
+        "适用于政府数字服务；其中参与人数是方法指南，不是商业市场估计。",
+        "页面在2026-10-06仍有更新，首次发布日期不代表内容未变化。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "accessResult": "success",
+      "supports": [
+        "E-0009-C1",
+        "E-0009-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南要求把无根据的假设转为研究问题，为每轮研究指定问题与用户群体，并覆盖目标群体的差异。"
+      },
+      "assessment": "该材料直接支持 E-0009-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    }
+  ],
+  "limitations": [
+    "适用于政府数字服务；其中参与人数是方法指南，不是商业市场估计。",
+    "页面在2026-10-06仍有更新，首次发布日期不代表内容未变化。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "1.0.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者"
+    ],
+    "stage": [
+      "需求验证"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "取决于行业、地区和验证方式，现有资料不足以给出统一金额。"
+    },
+    "riskCategories": [
+      "需求误判"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "1.0.0",
+      "note": "作者自查：招募与任务相关而非方便获得的人，说明缺失样本及照护者角色的假设判断。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0009。不是独立或专业审核。",
+      "fingerprint": "sha256:c82cc86ea9dde7edfde8008ba1b1913534c305774979a6513d07a00142e92a91"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0009-C1",
+    "E-0009-C2",
+    "E-0009-C3"
+  ]
+}

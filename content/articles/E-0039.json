@@ -1,0 +1,124 @@
+{
+  "id": "E-0039",
+  "title": "合伙之前，先写清谁负责、谁决定、分歧怎么处理",
+  "volume": 10,
+  "chapter": 1,
+  "type": "框架",
+  "tags": [
+    "创始团队",
+    "职责分工",
+    "决策权限"
+  ],
+  "summary": "把任务负责人、可决定的范围与必须共同确认的事项拆开，用实际交接检查分工是否可执行。",
+  "claims": [
+    {
+      "id": "E-0039-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "英国服务团队指南分别描述产品、服务负责人和交付角色，并将决策权限放在服务负责人职责中。",
+      "referenceIds": [
+        "R-GDS-TEAM-ROLES"
+      ]
+    },
+    {
+      "id": "E-0039-C2",
+      "type": "editorial_inference",
+      "importance": "core",
+      "evidenceRelation": "inference_from",
+      "text": "有执行责任却没有决定权限，可能使交接停在口头协商；这是结合指南形成的编辑推断，不是创业团队效果研究。",
+      "referenceIds": [
+        "R-GDS-TEAM-ROLES"
+      ]
+    },
+    {
+      "id": "E-0039-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "按任务列明权限、依赖和分歧处理方式，变化后重新确认；这是可尝试的操作建议。",
+      "referenceIds": [
+        "R-GDS-TEAM-ROLES"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.4",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "职责与权限区分有英国原始方法指南；创业合伙清单为编辑延伸，未研究冲突减少或盈利效果，维持C级。",
+  "references": [
+    {
+      "id": "R-GDS-TEAM-ROLES",
+      "title": "What each role does in a service team",
+      "publisher": "GOV.UK",
+      "authors": [
+        "Agile delivery community"
+      ],
+      "url": "https://www.gov.uk/service-manual/the-team/what-each-role-does-in-service-team",
+      "publishedAt": "2016-03-03",
+      "locator": "Roles your team must have；Product manager；Service owner；Delivery manager（原文第68–115行，最后更新2023-11-06）",
+      "assessment": "角色说明分别列出产品取舍、服务决策权限与交付阻碍；支持职责区分，不验证合伙收益。",
+      "limitations": [
+        "英国公共数字服务方法；不是股权、退出或中国法律依据。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构方法说明",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "角色说明分别列出产品取舍、服务决策权限与交付阻碍；支持职责区分，不验证合伙收益。"
+      },
+      "supports": [
+        "E-0039-C1",
+        "E-0039-C2",
+        "E-0039-C3"
+      ]
+    }
+  ],
+  "limitations": [
+    "英国公共服务指南不是创业合伙研究，没有证明本文安排提高收益或防止所有冲突。",
+    "无法约定重大决策、互信不足或存在权益争议时，先暂停相应承诺；普通清单不解决法律权利与责任。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小团队负责人"
+    ],
+    "stage": [
+      "合作前"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "梳理任务、权限和已有客户承诺所需时间。"
+    },
+    "riskCategories": [
+      "权限冲突与权益边界"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.4",
+      "note": "作者自查：执行、决策、同步与冲突处理明确，不给通用股权比例或伪法律协议。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0039。不是独立或专业审核。",
+      "fingerprint": "sha256:068fb893952015b041bbf105cd302c6805e1de946b80815f59f6c22184d7f457"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "一般组织方法；英国、美国或以色列资料不作为中国股权、劳动或其他法律依据",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0039-C1",
+    "E-0039-C2",
+    "E-0039-C3"
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "id": "E-0002",
+  "title": "访谈别问“你会买吗”，要问最近一次怎么做",
+  "volume": 2,
+  "chapter": 2,
+  "type": "访谈",
+  "tags": [
+    "用户访谈",
+    "需求验证",
+    "中立提问"
+  ],
+  "summary": "用于探索真实问题的访谈方法：回到最近发生的行为和当时条件，不把礼貌性的购买意愿当成订单。",
+  "claims": [
+    {
+      "id": "E-0002-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "GDS 指南要求开放、中立提问，并强调具体故事和真实例子。",
+      "referenceIds": [
+        "R-GDS-INTERVIEW",
+        "R-GDS-PLAN"
+      ]
+    },
+    {
+      "id": "E-0002-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "把口头未来意愿降为线索、把近期行为作为下一步验证依据，是编辑建议。",
+      "referenceIds": [
+        "R-GDS-INTERVIEW",
+        "R-GDS-PLAN"
+      ]
+    },
+    {
+      "id": "E-0002-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中生活例子是显著标记的假设，用于解释操作方法，不是客户案例或市场统计。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：两份英国政府研究指南直接支持围绕近期经历、使用中立问题和记录情境，但它们不是商业需求或成交效果的对照研究。",
+  "references": [
+    {
+      "id": "R-GDS-INTERVIEW",
+      "title": "Using in-depth interviews",
+      "authors": [
+        "User research community"
+      ],
+      "publisher": "UK Government Digital Service",
+      "url": "https://www.gov.uk/service-manual/user-research/using-in-depth-interviews",
+      "doi": null,
+      "publishedAt": "2017-02-21",
+      "materialType": "政府方法指南",
+      "accessScope": "full",
+      "locator": "“Design the interview”“Do the interview”，第 94–132 行：提纲、开放中立问题与记录",
+      "limitations": [
+        "面向英国政府服务研究，不是商业需求有效性的对照试验。",
+        "方法指南不能给出市场规模或付费意愿。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0002-C1",
+        "E-0002-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南要求使用开放、中立问题，关注具体故事与真实例子，并取得同意、妥善处理记录。"
+      },
+      "assessment": "该材料直接支持 E-0002-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    },
+    {
+      "id": "R-GDS-PLAN",
+      "title": "Plan user research for your service",
+      "authors": [
+        "User research community"
+      ],
+      "publisher": "UK Government Digital Service",
+      "url": "https://www.gov.uk/service-manual/user-research/plan-user-research-for-your-service",
+      "doi": null,
+      "publishedAt": "2016-03-14",
+      "materialType": "政府方法指南",
+      "accessScope": "full",
+      "locator": "第 76–104 行：研究问题、用户群、方法与每轮特定问题；页面中的频率/人数不外推为创业统一标准",
+      "limitations": [
+        "适用于政府数字服务；其中参与人数是方法指南，不是商业市场估计。",
+        "页面在2026-10-06仍有更新，首次发布日期不代表内容未变化。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0002-C1",
+        "E-0002-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南要求把无根据的假设转为研究问题，为每轮研究指定问题与用户群体，并覆盖目标群体的差异。"
+      },
+      "assessment": "该材料直接支持 E-0002-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    }
+  ],
+  "limitations": [
+    "面向英国政府服务研究，不是商业需求有效性的对照试验。",
+    "方法指南不能给出市场规模或付费意愿。",
+    "适用于政府数字服务；其中参与人数是方法指南，不是商业市场估计。",
+    "页面在2026-10-06仍有更新，首次发布日期不代表内容未变化。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者"
+    ],
+    "stage": [
+      "需求验证"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "取决于行业、地区和验证方式，现有资料不足以给出统一金额。"
+    },
+    "riskCategories": [
+      "需求误判"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.0",
+      "note": "作者自查：问题访谈问实际经历，区分引导、原话与研究者解释，不把口头兴趣当成交。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0002。不是独立或专业审核。",
+      "fingerprint": "sha256:db00cf3177206c4bebdc89c294fae9e15432bf7d201e75f43ed5a3a13d332d73"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0002-C1",
+    "E-0002-C2",
+    "E-0002-C3"
+  ]
+}

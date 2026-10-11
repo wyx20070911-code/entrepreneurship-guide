@@ -1,0 +1,126 @@
+{
+  "id": "E-0043",
+  "title": "先写清什么可能出问题、会影响谁，再决定如何应对",
+  "volume": 11,
+  "chapter": 1,
+  "type": "框架",
+  "tags": [
+    "经营风险",
+    "风险识别",
+    "责任人"
+  ],
+  "summary": "把笼统担心拆成原因、事件和影响，分别标记已发生、可预见与未知，再指定负责人和触发信号。",
+  "claims": [
+    {
+      "id": "E-0043-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "英国《Orange Book》以原因、潜在事件和后果描述风险，要求说明应对责任、资源及控制信号，并关注信息限制。",
+      "referenceIds": [
+        "R-HMT-ORANGE-2026"
+      ]
+    },
+    {
+      "id": "E-0043-C2",
+      "type": "editorial_inference",
+      "importance": "core",
+      "evidenceRelation": "inference_from",
+      "text": "同一后果可能来自不同原因，已发生问题与未来风险需要不同处理；这是对经营记录的编辑分析，不是概率模型。",
+      "referenceIds": [
+        "R-HMT-ORANGE-2026"
+      ]
+    },
+    {
+      "id": "E-0043-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "从任务链列风险，写可观察信号、负责人和应对选择，复查控制是否实际执行；这是编辑建议，不承诺消除风险。",
+      "referenceIds": [
+        "R-HMT-ORANGE-2026"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.5",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "原因、事件、应对责任与信号有英国官方管理指引；小型服务记录为编辑改编，未测得发生概率或控制效果，维持C级，不把评分或清单当客观风险模型。",
+  "references": [
+    {
+      "id": "R-HMT-ORANGE-2026",
+      "title": "The Orange Book Management of Risk – Principles and Concepts",
+      "publisher": "GOV.UK",
+      "authors": [
+        "HM Treasury",
+        "Government Finance Function"
+      ],
+      "url": "https://www.gov.uk/government/publications/orange-book/the-orange-book-management-of-risk-principles-and-concepts",
+      "publishedAt": null,
+      "locator": "Scope/Purpose；Section D的D2–D9；Annex 5原因、事件及后果（第101–118、293–327、791–816行）；页面更新2026-07-29",
+      "assessment": "官方管理指引以原因/事件/后果描述风险并要求应对责任和信号；不是小企业法律规范，未验证本文清单效果。",
+      "limitations": [
+        "原始发布日期未知；实际阅读2026-07-29更新的HTML上述段落，不声称读全书。",
+        "对象为英国政府部门与相关公共机构；未将其强制性措辞移植到一般创业者。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "官方管理指引（非通用法律清单）",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "官方管理指引以原因/事件/后果描述风险并要求应对责任和信号；不是小企业法律规范，未验证本文清单效果。"
+      },
+      "supports": [
+        "E-0043-C1",
+        "E-0043-C2",
+        "E-0043-C3"
+      ]
+    }
+  ],
+  "limitations": [
+    "英国公共部门指引提供管理方法，不能当作其他地区合规要求或创业效果研究。",
+    "清单并不覆盖所有风险；人身安全、专业资质、特殊行业或重大责任须向适当专业人员核查，风险评分不能替代判断。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小型服务负责人"
+    ],
+    "stage": [
+      "经营风险复查"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "梳理任务、异常材料与控制证据的时间。"
+    },
+    "riskCategories": [
+      "控制失效与未知风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.5",
+      "note": "作者自查：风险按原因、事件、后果及负责人记录；无数据不编造概率，英国方法不是合规保证。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0043。不是独立或专业审核。",
+      "fingerprint": "sha256:dae9d433c2a91ea9a4170b7eaa2e0d645a90bb828f40d40ca2e34efaa582c0fb"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "通用经营风险整理；英国公共部门方法仅供参考，不提供任何地区法定义务。",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0043-C1",
+    "E-0043-C2",
+    "E-0043-C3"
+  ]
+}

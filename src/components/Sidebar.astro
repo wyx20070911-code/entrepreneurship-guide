@@ -1,0 +1,24 @@
+---
+import { volumes, chapters } from '../data/content';
+import { siteUrl } from '../lib/urls';
+interface Props { currentChapter?: string; }
+const { currentChapter } = Astro.props;
+---
+<aside class="book-sidebar">
+  <details class="mobile-book" open>
+    <summary>图书目录 <span>12 卷 / 48 章</span></summary>
+    <div class="book-nav"><p class="sidebar-label">创业百科全书</p>
+      {volumes.map((volume, index) => <details class="volume-nav" open={currentChapter?.startsWith(`V${String(index + 1).padStart(2, '0')}`)}>
+        <summary><span class="mono">{String(index + 1).padStart(2, '0')}</span>{volume}</summary>
+        <nav aria-label={`${volume}章节`}>{chapters.filter(chapter => chapter.volume === index + 1).map(chapter => <a href={siteUrl(`/catalog/#${chapter.id}`)} aria-current={currentChapter === chapter.id ? 'page' : undefined}>{chapter.chapter}. {chapter.title}</a>)}</nav>
+      </details>)}
+      {currentChapter && <p class="reading-location">当前阅读位置：{currentChapter}</p>}
+    </div>
+  </details>
+</aside>
+<script>
+  const container = document.querySelector<HTMLDetailsElement>('.mobile-book');
+  const media = matchMedia('(max-width: 1023px)');
+  const apply = () => { if (container) container.open = !media.matches; };
+  apply(); media.addEventListener('change', apply);
+</script>

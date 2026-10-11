@@ -1,0 +1,166 @@
+{
+  "id": "E-0010",
+  "title": "别先问“喜不喜欢”，先看顾客现在怎么解决",
+  "volume": 2,
+  "chapter": 3,
+  "type": "框架",
+  "tags": [
+    "市场需求",
+    "第一单",
+    "用户访谈",
+    "替代方案"
+  ],
+  "summary": "现有解决行为比口头喜好更接近真实约束，但一次行为观察仍不能证明顾客会购买新方案。",
+  "claims": [
+    {
+      "id": "E-0010-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "SBA 指南要求研究顾客、价格和间接竞争者；GDS 指南要求开放、中立提问并关注具体经历。",
+      "referenceIds": [
+        "R-SBA-MARKET",
+        "R-GDS-INTERVIEW"
+      ]
+    },
+    {
+      "id": "E-0010-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "把现有行为和一次小额承诺作为下一步验证线索，是编辑建议；一次访谈、既有消费或首单都不能证明新产品必然被购买。",
+      "referenceIds": [
+        "R-SBA-MARKET",
+        "R-GDS-INTERVIEW"
+      ]
+    },
+    {
+      "id": "E-0010-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中金额、周期或人物均标记为假设，仅用于说明方法。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：SBA与GOV.UK方法指南支持调查现有替代行为和具体经历，但没有效果研究证明一次访谈或小测试能够预测新产品购买。",
+  "references": [
+    {
+      "id": "R-SBA-MARKET",
+      "title": "Market research and competitive analysis",
+      "authors": [
+        "U.S. Small Business Administration"
+      ],
+      "publisher": "U.S. Small Business Administration",
+      "url": "https://www.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis",
+      "doi": null,
+      "publishedAt": null,
+      "materialType": "政府商业指南",
+      "accessScope": "full",
+      "locator": "重定向后的 Plan your business 页面，第 122–163 行：需求、替代价格、直接研究与间接竞争者",
+      "limitations": [
+        "美国小企业通用指南，不是需求存在或利润的实证证明。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "redirect",
+      "supports": [
+        "E-0010-C1",
+        "E-0010-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南区分现有资料和直接研究，并要求观察竞争者、市场区隔及间接替代选择。"
+      },
+      "assessment": "页面支持研究顾客现有选择和间接竞争者；不证明一次访谈或既有消费会转化为新产品购买。"
+    },
+    {
+      "id": "R-GDS-INTERVIEW",
+      "title": "Using in-depth interviews",
+      "authors": [
+        "User research community"
+      ],
+      "publisher": "UK Government Digital Service",
+      "url": "https://www.gov.uk/service-manual/user-research/using-in-depth-interviews",
+      "doi": null,
+      "publishedAt": "2017-02-21",
+      "materialType": "政府方法指南",
+      "accessScope": "full",
+      "locator": "“Design the interview”“Do the interview”，第 94–144 行：开放中立问题、具体故事与真实例子",
+      "limitations": [
+        "面向英国政府服务研究，不是商业需求有效性的对照试验。",
+        "方法指南不能给出市场规模或付费意愿。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0010-C1",
+        "E-0010-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南要求使用开放、中立问题，关注具体故事与真实例子，并取得同意、妥善处理记录。"
+      },
+      "assessment": "指南支持开放、中立提问并关注具体经历；不能估计商业需求规模或购买概率。"
+    }
+  ],
+  "limitations": [
+    "美国小企业通用指南，不是需求存在或利润的实证证明。",
+    "面向英国政府服务研究，不是商业需求有效性的对照试验。",
+    "方法指南不能给出市场规模或付费意愿。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "大学生创业者",
+      "服务型个体户",
+      "网店经营者"
+    ],
+    "stage": [
+      "需求验证",
+      "首单测试"
+    ],
+    "industry": [
+      "本地服务",
+      "电商",
+      "内容服务"
+    ],
+    "startupCapital": {
+      "band": "low",
+      "note": "优先使用访谈和小范围试卖，投入取决于样品、交通和履约成本。"
+    },
+    "riskCategories": [
+      "伪需求",
+      "熟人偏差",
+      "低价承诺"
+    ]
+  },
+  "numericClaims": [
+    {
+      "text": "假设用三百元做一周试做并交付三条视频。",
+      "kind": "hypothetical",
+      "referenceIds": []
+    }
+  ],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.0",
+      "note": "作者自查：观察现有解决方式及其限制，不把既有购买直接推断为新产品购买。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0010。不是独立或专业审核。",
+      "fingerprint": "sha256:4ddcc41071e43cb5059b0f6c185e639736b8f969469be897d0e12183ad9e263d"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0010-C1",
+    "E-0010-C2",
+    "E-0010-C3"
+  ]
+}

@@ -1,0 +1,156 @@
+{
+  "id": "E-0019",
+  "title": "看续约时，别把还没到期的客户也算进去",
+  "volume": 8,
+  "chapter": 4,
+  "type": "工具",
+  "tags": [
+    "续约",
+    "复购",
+    "观察窗口"
+  ],
+  "summary": "续约率只应使用已经到期并获得续约机会的客户作分母，同时说明观察窗口和排除项。",
+  "claims": [
+    {
+      "id": "E-0019-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "GA4 队列文档要求定义纳入与返回条件，长期实验研究列出幸存者和时间趋势偏差。",
+      "referenceIds": [
+        "R-GA4-COHORT",
+        "R-MS-LONG-2016"
+      ]
+    },
+    {
+      "id": "E-0019-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "只把已获得续约机会的合格客户纳入分母，是编辑建议。",
+      "referenceIds": [
+        "R-GA4-COHORT",
+        "R-MS-LONG-2016"
+      ]
+    },
+    {
+      "id": "E-0019-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中生活例子是显著标记的假设，用于解释操作方法，不是客户案例或市场统计。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：GA4文档支持按群组和窗口观察行为，长期实验论文摘要提示时间变化；这些材料不直接验证本文续约分母规则或续约因果。",
+  "references": [
+    {
+      "id": "R-GA4-COHORT",
+      "title": "GA4 Cohort exploration",
+      "authors": [
+        "Google Analytics Help"
+      ],
+      "publisher": "Google",
+      "url": "https://support.google.com/analytics/answer/9670133?hl=en",
+      "doi": null,
+      "publishedAt": null,
+      "materialType": "产品官方说明",
+      "accessScope": "selected_sections",
+      "locator": "How cohort exploration works；Cohort inclusion；Return criteria；Cohort granularity；Cohort calculation（41–95行）；工具定义不等于续约或经营效果研究。",
+      "limitations": [
+        "产品说明定义指标，不证明留存变化的因果原因。",
+        "设备数据、阈值和产品配置会影响结果。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "accessResult": "success",
+      "supports": [
+        "E-0019-C1",
+        "E-0019-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "文档要求分别定义队列纳入与返回条件，并说明日、周、月粒度及标准、滚动、累计算法不同。"
+      },
+      "assessment": "该材料直接支持 E-0019-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    },
+    {
+      "id": "R-MS-LONG-2016",
+      "title": "Pitfalls of Long-Term Online Controlled Experiments",
+      "authors": [
+        "Pavel Dmitriev",
+        "Brian Frasca",
+        "Somit Gupta",
+        "Ron Kohavi",
+        "Garnet Vaz"
+      ],
+      "publisher": "Microsoft Research / IEEE Big Data",
+      "url": "https://www.microsoft.com/en-us/research/publication/pitfalls-of-long-term-online-controlled-experiments/",
+      "doi": null,
+      "publishedAt": "2016-12",
+      "materialType": "研究论文出版页",
+      "accessScope": "abstract",
+      "locator": "作者机构出版页摘要11–15行：cookie稳定性、幸存者、选择偏差与趋势误读；没有阅读全文。",
+      "limitations": [
+        "只读取出版页摘要；案例来自大型在线产品。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "accessResult": "success",
+      "supports": [
+        "E-0019-C1",
+        "E-0019-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "作者列出长期在线实验的测量和选择偏差，并提醒观察趋势可能不是处理的真实影响。"
+      },
+      "assessment": "该材料直接支持 E-0019-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    }
+  ],
+  "limitations": [
+    "产品说明定义指标，不证明留存变化的因果原因。",
+    "设备数据、阈值和产品配置会影响结果。",
+    "只读取出版页摘要；案例来自大型在线产品。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "1.0.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "服务型创业者"
+    ],
+    "stage": [
+      "成交与交付"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "取决于行业、地区和验证方式，现有资料不足以给出统一金额。"
+    },
+    "riskCategories": [
+      "销售与交付"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "1.0.0",
+      "note": "作者自查：续约只看已到期且有续约机会对象，尚未到期和考虑中不直接当流失。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0019。不是独立或专业审核。",
+      "fingerprint": "sha256:0d246c155321ce51a4c947a57f16ebd931179d1c46fe5b8025dac8d2ef203813"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0019-C1",
+    "E-0019-C2",
+    "E-0019-C3"
+  ]
+}

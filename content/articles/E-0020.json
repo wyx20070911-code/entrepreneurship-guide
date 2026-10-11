@@ -1,0 +1,118 @@
+{
+  "id": "E-0020",
+  "title": "每次试验都留一页记录，失败也别删",
+  "volume": 12,
+  "chapter": 1,
+  "type": "工具",
+  "tags": [
+    "实验日志",
+    "复盘",
+    "学习"
+  ],
+  "summary": "决策日志把原始观察、解释和下一步分开，便于追溯，但记录流程本身不保证决策正确。",
+  "claims": [
+    {
+      "id": "E-0020-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "GDS 指南区分原始记录、观察、主题、发现与行动，并建议团队共同分析。",
+      "referenceIds": [
+        "R-GDS-ANALYSIS"
+      ]
+    },
+    {
+      "id": "E-0020-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "在必要、脱敏且权限明确的范围保留失败依据、旧决定和修改理由，是编辑建议，不要求无限保留个人资料。",
+      "referenceIds": [
+        "R-GDS-ANALYSIS"
+      ]
+    },
+    {
+      "id": "E-0020-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中生活例子是显著标记的假设，用于解释操作方法，不是客户案例或市场统计。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：GOV.UK分析指南直接支持区分原始记录、观察、发现与行动，但没有研究证明创业决策日志会提高成功率或消除事后偏差。",
+  "references": [
+    {
+      "id": "R-GDS-ANALYSIS",
+      "title": "Analyse a research session",
+      "authors": [
+        "User research community"
+      ],
+      "publisher": "UK Government Digital Service",
+      "url": "https://www.gov.uk/service-manual/user-research/analyse-a-research-session",
+      "doi": null,
+      "publishedAt": "2016-05-24",
+      "materialType": "政府方法指南",
+      "accessScope": "full",
+      "locator": "Taking notes；Sort your observations；Write findings；Decide on actions（正文72–144行）",
+      "limitations": [
+        "方法指南没有证明记录流程会提高创业成功率。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "accessResult": "success",
+      "supports": [
+        "E-0020-C1",
+        "E-0020-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南把原始记录、观察、主题、发现和后续行动分开，并建议团队共同分析以限制个人偏差。"
+      },
+      "assessment": "该材料直接支持 E-0020-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。 本次重新选读这些章节；不解释为必须永久保留全部原始记录。"
+    }
+  ],
+  "limitations": [
+    "方法指南没有证明记录流程会提高创业成功率。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "0.5.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "创业团队"
+    ],
+    "stage": [
+      "复盘期"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "取决于行业、地区和验证方式，现有资料不足以给出统一金额。"
+    },
+    "riskCategories": [
+      "学习偏差"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.5.0",
+      "note": "作者自查：单次实验结果和决策理由可追溯，失败或不合预期材料不删除；不是跨周期经营管理。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0020。不是独立或专业审核。",
+      "fingerprint": "sha256:e6f4bb9c4eec75c0506baffda5da984947ed35cac3ca42320afb14e28bd16caa"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0020-C1",
+    "E-0020-C2",
+    "E-0020-C3"
+  ]
+}

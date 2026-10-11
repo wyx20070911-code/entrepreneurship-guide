@@ -1,0 +1,153 @@
+{
+  "id": "E-0046",
+  "title": "出问题时先控制影响、保留必要事实，再找对专业人员",
+  "volume": 11,
+  "chapter": 4,
+  "type": "框架",
+  "tags": [
+    "危机预案",
+    "经营事件",
+    "专业求助",
+    "危机公关"
+  ],
+  "summary": "根据事件性质分流安全、恢复、争议和数据处置，记录已知与未知、负责人和采取的措施，不承诺未核实的结果。",
+  "claims": [
+    {
+      "id": "E-0046-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "NIST事件响应建议将事件管理、调查记录及完整性、协调沟通和限制扩散分开，并按风险和影响选择应对。",
+      "referenceIds": [
+        "R-NIST-INCIDENT-R3"
+      ]
+    },
+    {
+      "id": "E-0046-C2",
+      "type": "editorial_inference",
+      "importance": "core",
+      "evidenceRelation": "inference_from",
+      "text": "网络安全建议不能直接当作所有人身、资金或合同事件的统一流程；不同事件要有不同优先事项，这是编辑边界。",
+      "referenceIds": [
+        "R-NIST-INCIDENT-R3"
+      ]
+    },
+    {
+      "id": "E-0046-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "先区分已知与未知、协调适当专业人员并记录处置，恢复后复查原因；不隐瞒、销毁或伪改记录，不保证处置结果。",
+      "referenceIds": [
+        "R-NIST-INCIDENT-R3"
+      ]
+    },
+    {
+      "id": "E-0046-C4",
+      "text": "NIST RS.CO区分响应协调、事件通知、公众沟通及信息分享，并建议事先明确程序；不是通用通报法律。",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "referenceIds": [
+        "R-NIST-INCIDENT-R3"
+      ]
+    },
+    {
+      "id": "E-0046-C5",
+      "text": "指定负责人，分开事实、控制措施与未知范围，不作虚假保证，是编辑危机沟通建议。",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "referenceIds": [
+        "R-NIST-INCIDENT-R3"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "0.5.0",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "NIST现行技术建议支持网络事件管理与必要记录；其他危机分流及本篇例子为编辑扩展，没有处置效果研究，定C级，不保证恢复、免责或通报合规。",
+  "references": [
+    {
+      "id": "R-NIST-INCIDENT-R3",
+      "title": "Incident Response Recommendations and Considerations for Cybersecurity Risk Management: A CSF 2.0 Community Profile",
+      "publisher": "National Institute of Standards and Technology",
+      "authors": [
+        "Alexander Nelson",
+        "Sanjay Rekhi",
+        "Murugiah Souppaya",
+        "Karen Scarfone"
+      ],
+      "url": "https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-61r3.pdf",
+      "publishedAt": "2025-04-03",
+      "locator": "SP800-61r3 Table3：RS.MA，RS.AN-06/07，RS.CO，RS.MI，RC.RP（印刷第26–34页/PDF第34–42页）；CSRC确认Final；印刷页30–32：RS.CO、RS.CO-02、RS.CO-03（PDF第38–40页）",
+      "assessment": "官方网络安全建议支持负责人、分流、记录完整性、协调和控制扩散；不是法规，不保证事件恢复效果。 本次重新选读沟通分类与记录保护，不采用统一法定期限。",
+      "limitations": [
+        "2025-04-03 Final，替代2012年Rev2；生效日期不适用于建议文件。",
+        "实际选读登记条目及CSRC发布信息，未读全48页；不把所有经营危机当网络安全事件，不提供通报期限。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "官方技术建议（Final，非通用法律要求）",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "官方网络安全建议支持负责人、分流、记录完整性、协调和控制扩散；不是法规，不保证事件恢复效果。"
+      },
+      "supports": [
+        "E-0046-C1",
+        "E-0046-C2",
+        "E-0046-C3",
+        "E-0046-C4",
+        "E-0046-C5"
+      ]
+    }
+  ],
+  "limitations": [
+    "NIST材料只提供网络安全事件建议；人身、资金、合同、行业或监管事件的具体程序需相关专业与机构确认。",
+    "本文不提供法定通报期限、紧急号码或技术取证操作；处置可能同时影响安全、隐私与证据完整性，超出能力立即求助。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小型服务负责人"
+    ],
+    "stage": [
+      "经营事件处置"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "准备联系人、权限、事件分流与关键记录的时间。"
+    },
+    "riskCategories": [
+      "事件扩散与事实完整性"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.5.0",
+      "note": "作者自查：事件类型决定优先事项；保留事实完整性、限制影响并找合适专业人员，不给未核实通报时限。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0046。不是独立或专业审核。",
+      "fingerprint": "sha256:6ca445cd4888da2d19b1680f7eca20de031741dd8ef446a9583c52507c40de9d"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "通用经营事件分流；假设案例限无伤害资料错发。NIST是网络安全建议，不代替当地安全/监管/司法要求。",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0046-C1",
+    "E-0046-C2",
+    "E-0046-C3",
+    "E-0046-C4",
+    "E-0046-C5"
+  ]
+}

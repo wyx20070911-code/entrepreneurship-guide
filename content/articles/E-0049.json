@@ -1,0 +1,136 @@
+{
+  "id": "E-0049",
+  "title": "把经营复盘变成持续修正决定的习惯",
+  "volume": 12,
+  "chapter": 4,
+  "type": "框架",
+  "tags": [
+    "长期复盘",
+    "经营周期",
+    "决策更新"
+  ],
+  "summary": "用跨周期的同口径记录识别变化，解释为何维持或修改决定；短期波动和资料缺失不自动触发转向。",
+  "claims": [
+    {
+      "id": "E-0049-C1",
+      "type": "source_fact",
+      "evidenceRelation": "direct",
+      "text": "澳大利亚business.gov.au商业计划指南建议随经营变化复查和更新计划，并保留旧版本；这是官方方法建议，不是复盘改善利润的效果研究。",
+      "importance": "core",
+      "referenceIds": [
+        "R-AU-PLAN-REVIEW-2026"
+      ]
+    },
+    {
+      "id": "E-0049-C2",
+      "type": "editorial_inference",
+      "evidenceRelation": "inference_from",
+      "text": "跨周期记录的口径或客户结构改变时，表面趋势可能不表示持续变化；这是编辑分析，不提供统计检验结论。",
+      "importance": "core",
+      "referenceIds": [
+        "R-AU-PLAN-REVIEW-2026"
+      ]
+    },
+    {
+      "id": "E-0049-C3",
+      "type": "recommendation",
+      "evidenceRelation": "informed_by",
+      "text": "围绕购买、交付与回款周期复查关键决定，保留依据和旧理由，对未知先研究、对风险先处置；不设置所有业务相同的复盘频率。",
+      "importance": "core",
+      "referenceIds": [
+        "R-AU-PLAN-REVIEW-2026"
+      ]
+    },
+    {
+      "id": "E-0049-C4",
+      "type": "hypothetical_calculation",
+      "evidenceRelation": "none",
+      "text": "例子为明确标记的教学假设，不是客户、经营数据或普遍扩张门槛。",
+      "importance": "supporting",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评C：Develop your business plan提供官方方法而非经营效果研究。直接支持随经营变化复查、更新和保留旧计划；跨周期分类和继续/调整规则是本文编辑建议，不证明复盘效果。 跨周期解释须排查季节与口径变化，不能把前后改变当因果结果。 尚无独立复核。",
+  "references": [
+    {
+      "id": "R-AU-PLAN-REVIEW-2026",
+      "title": "Develop your business plan",
+      "publisher": "business.gov.au",
+      "authors": [
+        "Australian Government / business.gov.au"
+      ],
+      "url": "https://business.gov.au/planning/business-plans/develop-your-business-plan",
+      "publishedAt": null,
+      "locator": "Why you need a business plan（第172–189行）；Tips 4 Take your time and get help、5 Review your plan regularly（236–246行）",
+      "assessment": "直接支持随经营变化复查、更新和保留旧计划；跨周期分类和继续/调整规则是本文编辑建议，不证明复盘效果。",
+      "limitations": [
+        "正文未显示首发或修订日期，记未知；实际选读登记章节。",
+        "官方经营指南不是随机试验；未采用融资保证、保密条款效力或澳大利亚扶助资格，不将方法当法律。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "官方经营指南",
+      "supports": [
+        "E-0049-C1",
+        "E-0049-C2",
+        "E-0049-C3"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "澳大利亚business.gov.au商业计划指南建议随经营变化复查和更新计划，并保留旧版本；这是官方方法建议，不是复盘改善利润的效果研究。"
+      }
+    }
+  ],
+  "limitations": [
+    "未验证记录或复盘能改善利润、成功率；表面前后变化不能单独证明某个决定造成效果。",
+    "季节性、长期付款或低频交易须保留完整期间和未结状态；紧急事件及具体专业义务不等例行复盘。",
+    "正文未显示首发或修订日期，记未知；实际选读登记章节。",
+    "官方经营指南不是随机试验；未采用融资保证、保密条款效力或澳大利亚扶助资格，不将方法当法律。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "0.5.0",
+  "author": "主智能体（作者自查）",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "小型业务经营者"
+    ],
+    "stage": [
+      "经营期"
+    ],
+    "industry": [
+      "通用",
+      "服务业"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "按现有承诺与实际可承受投入判断，不设置统一金额。"
+    },
+    "riskCategories": [
+      "追逐短期波动、事后改写理由、忽略持续改变或重复收集敏感资料。"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.5.0",
+      "note": "作者自查：按业务周期复查变化、假设和决定，不固定所有企业周/月频率；时间管理不替代资源现实。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0049。不是独立或专业审核。",
+      "fingerprint": "sha256:9bf2eeb183182584a3f0a0b62c59335e2b496e64255720bf61b049d388f28112"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "通用经营方法；来源为澳大利亚官方经营指引，未采用其法律、税务或政策资格规则。",
+  "validAsOf": "2026-10-11",
+  "guideClaimIds": [
+    "E-0049-C1",
+    "E-0049-C2",
+    "E-0049-C3",
+    "E-0049-C4"
+  ]
+}

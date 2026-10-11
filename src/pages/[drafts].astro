@@ -1,0 +1,6 @@
+---
+import SearchPage from '../components/SearchPage.astro';
+import { draftEnabled } from '../lib/site';
+export function getStaticPaths() { return draftEnabled ? [{ params: { drafts: 'drafts' } }] : []; }
+---
+<SearchPage drafts />

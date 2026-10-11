@@ -1,0 +1,134 @@
+{
+  "id": "E-0007",
+  "title": "先盘点手里已经有的，再决定要借什么",
+  "volume": 1,
+  "chapter": 2,
+  "type": "框架",
+  "tags": [
+    "资源盘点",
+    "可承受损失",
+    "轻资产",
+    "人脉资源",
+    "现实约束"
+  ],
+  "summary": "适合资源有限的起步阶段；先确认已经控制的技能、关系、设备和时间，再决定承担什么损失。",
+  "claims": [
+    {
+      "id": "E-0007-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "Sarasvathy 的理论论文描述从既有手段出发并以可承受损失选择行动。",
+      "referenceIds": [
+        "R-SARASVATHY-2001"
+      ]
+    },
+    {
+      "id": "E-0007-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "把资源分为已控制、可借用和未承诺，是便于执行的编辑方法。",
+      "referenceIds": [
+        "R-SARASVATHY-2001"
+      ]
+    },
+    {
+      "id": "E-0007-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中生活例子是显著标记的假设，用于解释操作方法，不是客户案例或市场统计。",
+      "referenceIds": []
+    },
+    {
+      "id": "E-0007-C4",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "关系资源需确认具体承诺、许可与互惠负担，未承诺人手不算产能；这是基于现有手段理论的编辑建议。",
+      "referenceIds": [
+        "R-SARASVATHY-2001"
+      ]
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：Sarasvathy论文支持从现有手段和可承受损失出发的效应逻辑，但主要是理论建构与专家创业者材料，不是本文资源盘点步骤的效果试验。",
+  "references": [
+    {
+      "id": "R-SARASVATHY-2001",
+      "title": "Causation and Effectuation: Toward a Theoretical Shift from Economic Inevitability to Entrepreneurial Contingency",
+      "authors": [
+        "Saras D. Sarasvathy"
+      ],
+      "publisher": "Academy of Management Review",
+      "url": "https://cdn.mises.org/sarasvathy_2001_causation_and_effectuation.pdf",
+      "doi": "10.5465/amr.2001.4378020",
+      "publishedAt": "2001-04-01",
+      "materialType": "理论论文",
+      "accessScope": "selected_sections",
+      "locator": "原论文PDF第8–10页：现有手段、可承受损失与Table 1；理论框架，不宣称行动效果获验证。",
+      "limitations": [
+        "理论论文及思想实验不是方法有效性的随机试验。",
+        "早期经验材料集中于特定创业者与美国情境。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "accessResult": "success",
+      "supports": [
+        "E-0007-C1",
+        "E-0007-C2",
+        "E-0007-C4"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "论文提出从当前手段和可控制事项出发的效应逻辑，并明确主要内容包含理论、案例和待检验命题。"
+      },
+      "assessment": "理论论文支持从现有手段与可承受损失出发的概念背景，不是人工交付有效性的对照研究。 本次选读为理论与原始案例讨论，不提供本文许可/互惠清单的效果研究。"
+    }
+  ],
+  "limitations": [
+    "理论论文及思想实验不是方法有效性的随机试验。",
+    "早期经验材料集中于特定创业者与美国情境。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "1.0.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "准备创业者"
+    ],
+    "stage": [
+      "想法期"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "取决于行业、地区和验证方式，现有资料不足以给出统一金额。"
+    },
+    "riskCategories": [
+      "决策风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "1.0.0",
+      "note": "作者自查：资源按可用权限和兑现条件盘点，缺少授权或协作者承诺时缩小试验。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0007。不是独立或专业审核。",
+      "fingerprint": "sha256:b871bbf5cd679be042cfa5791468614e06f11f0fbefee0dcb31087c86389d11d"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0007-C1",
+    "E-0007-C2",
+    "E-0007-C3",
+    "E-0007-C4"
+  ]
+}

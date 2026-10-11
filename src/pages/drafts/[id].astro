@@ -1,0 +1,7 @@
+---
+import Article from '../../components/Article.astro';
+import { draftEnabled, draftRecords } from '../../lib/site';
+export function getStaticPaths() { return draftEnabled ? draftRecords.map(record => ({ params: { id: record.id }, props: { record } })) : []; }
+const { record } = Astro.props;
+---
+<Article record={record} draft siblings={draftRecords} />

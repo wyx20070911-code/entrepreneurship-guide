@@ -1,0 +1,152 @@
+{
+  "id": "E-0040",
+  "title": "先定义要完成的工作，再决定招什么人",
+  "volume": 10,
+  "chapter": 2,
+  "type": "框架",
+  "tags": [
+    "招聘标准",
+    "工作样本",
+    "用人判断"
+  ],
+  "summary": "用任务相关的能力和一致的观察标准比较候选人，保留不足与未知，不凭聊天感觉判断未来绩效。",
+  "claims": [
+    {
+      "id": "E-0040-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "OPM结构化面试说明要求候选人回答同样的预定问题，并以相同尺度和可接受答案标准评价。",
+      "referenceIds": [
+        "R-OPM-STRUCTURED"
+      ]
+    },
+    {
+      "id": "E-0040-C2",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "OPM工作样本说明强调模拟岗位任务；若所测能力准备入职后培训，工作样本方法可能不合适。",
+      "referenceIds": [
+        "R-OPM-WORK-SAMPLES"
+      ]
+    },
+    {
+      "id": "E-0040-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "用有限模拟材料观察任务能力、记录未知并统一评价；不索取实际客户免费交付，是本文的操作边界。",
+      "referenceIds": [
+        "R-OPM-STRUCTURED",
+        "R-OPM-WORK-SAMPLES"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.4",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "统一评价与工作样本有OPM原始方法说明；未独立核验其全部实证研究，本文样本未验证预测效度，定C级而非保证招聘质量。",
+  "references": [
+    {
+      "id": "R-OPM-STRUCTURED",
+      "title": "Structured Interviews",
+      "publisher": "OPM",
+      "authors": [
+        "U.S. Office of Personnel Management"
+      ],
+      "url": "https://www.opm.gov/policy-data-oversight/assessment-and-selection/structured-interviews/",
+      "publishedAt": null,
+      "locator": "Structured Interviews定义与统一问题、尺度说明（第449–458行）",
+      "assessment": "支持统一问题与评价标准的设计；本文不引用其效果保证。",
+      "limitations": [
+        "美国机构方法介绍；未独立阅读页面引用的全部研究。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构方法说明",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "支持统一问题与评价标准的设计；本文不引用其效果保证。"
+      },
+      "supports": [
+        "E-0040-C1",
+        "E-0040-C3"
+      ]
+    },
+    {
+      "id": "R-OPM-WORK-SAMPLES",
+      "title": "Work Samples and Simulations",
+      "publisher": "OPM",
+      "authors": [
+        "U.S. Office of Personnel Management"
+      ],
+      "url": "https://www.opm.gov/policy-data-oversight/assessment-and-selection/other-assessment-methods/work-samples-and-simulations/",
+      "publishedAt": null,
+      "locator": "正文定义、入职能力与培训限制、评价及成本（第478–490行）",
+      "assessment": "支持岗位任务样本及培训型能力的限制；不证明本篇模拟题有效。",
+      "limitations": [
+        "机构方法与研究综述说明，不把权威性视为本篇工具效果验证。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构方法说明",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "支持岗位任务样本及培训型能力的限制；不证明本篇模拟题有效。"
+      },
+      "supports": [
+        "E-0040-C2",
+        "E-0040-C3"
+      ]
+    }
+  ],
+  "limitations": [
+    "OPM资料面向美国人事评价，不作为中国劳动关系、试用期或招聘合法性的证明。",
+    "未复读指南列出的全部实证研究，不引用招聘命中率；有限样本不能预测所有工作情境与长期协作。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小团队负责人"
+    ],
+    "stage": [
+      "招聘前"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "定义任务、制作非真实客户模拟材料与评价标准。"
+    },
+    "riskCategories": [
+      "评价偏差与候选人负担"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.4",
+      "note": "作者自查：招聘围绕任务与统一评价，合理模拟而不是客户免费交付，不预测人格或未来绩效。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0040。不是独立或专业审核。",
+      "fingerprint": "sha256:aa324a58f9350d5c15cb434049b7876d9154fa60bf867b04f3b7bc1cfbc44089"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "一般组织方法；英国、美国或以色列资料不作为中国股权、劳动或其他法律依据",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0040-C1",
+    "E-0040-C2",
+    "E-0040-C3"
+  ]
+}

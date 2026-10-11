@@ -1,0 +1,156 @@
+{
+  "id": "E-0022",
+  "title": "别只列竞品功能，要比较顾客现在怎么凑合",
+  "volume": 3,
+  "chapter": 2,
+  "type": "框架",
+  "tags": [
+    "竞争比较",
+    "替代方案",
+    "顾客行为"
+  ],
+  "summary": "适合准备定位或销售说明的团队；比较顾客为同一任务实际采用的产品、人工办法和“不处理”，而不是只做同行功能表。",
+  "claims": [
+    {
+      "id": "E-0022-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "SBA竞争分析指南要求关注顾客为替代方案支付什么、可能转向哪里，以及间接或次要竞争者。",
+      "referenceIds": [
+        "R-SBA-COMPETITION"
+      ]
+    },
+    {
+      "id": "E-0022-C2",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "GOV.UK用户研究指南要求了解用户当前如何完成任务、使用哪些服务或渠道及遇到什么困难。",
+      "referenceIds": [
+        "R-GOV-USER-NEEDS-ALT"
+      ]
+    },
+    {
+      "id": "E-0022-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "按同一任务比较现有流程、切换成本、失败风险和可观察差异，是本文的操作建议。",
+      "referenceIds": [
+        "R-SBA-COMPETITION",
+        "R-GOV-USER-NEEDS-ALT"
+      ]
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：两份官方方法指南直接支持调查现有渠道、替代价格和间接竞争，但没有研究证明本文比较法必然形成可持续差异或增加订单。",
+  "references": [
+    {
+      "id": "R-SBA-COMPETITION",
+      "title": "Market research and competitive analysis",
+      "authors": [
+        "U.S. Small Business Administration"
+      ],
+      "publisher": "U.S. Small Business Administration",
+      "url": "https://legacy.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis",
+      "doi": null,
+      "publishedAt": "2026-03-24",
+      "materialType": "政府小企业指南",
+      "accessScope": "full",
+      "locator": "Market research及competitive analysis，网页第52–83行；更新日期第130行",
+      "limitations": [
+        "美国小企业通用指南，不是竞争策略效果研究。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0022-C1",
+        "E-0022-C3"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南建议调查替代方案价格、顾客可能转向哪里，并考虑间接或次要竞争者。"
+      },
+      "assessment": "支持扩大替代方案范围；不证明某种差异化一定有效。"
+    },
+    {
+      "id": "R-GOV-USER-NEEDS-ALT",
+      "title": "Learning about users and their needs",
+      "authors": [
+        "GOV.UK User research community"
+      ],
+      "publisher": "GOV.UK Service Manual",
+      "url": "https://www.gov.uk/service-manual/user-research/start-by-learning-user-needs",
+      "doi": null,
+      "publishedAt": "2016-04-04",
+      "materialType": "政府服务设计方法指南",
+      "accessScope": "full",
+      "locator": "Discovery research，网页第87–105行",
+      "limitations": [
+        "政府服务研究语境，不能直接给出商业竞争结论。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0022-C2",
+        "E-0022-C3"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南要求了解用户当前如何完成任务、使用哪些服务或渠道以及遇到的问题。"
+      },
+      "assessment": "支持从真实现有行为识别替代；不支持市场份额估计。"
+    }
+  ],
+  "limitations": [
+    "公开竞品资料不能替代目标顾客的真实选择记录。",
+    "替代方案、价格和切换障碍会随地区、行业和时间变化。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.0",
+  "author": "主智能体（作者自查）",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "产品负责人",
+      "销售人员"
+    ],
+    "stage": [
+      "想法期",
+      "需求验证",
+      "获客期"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "low",
+      "note": "可用访谈和普通文档完成，成本取决于样本招募。"
+    },
+    "riskCategories": [
+      "竞争误判",
+      "定位偏差"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.0",
+      "note": "作者自查：竞争比较以顾客替代方案和转换负担为中心，不将功能最多视为必胜。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0022。不是独立或专业审核。",
+      "fingerprint": "sha256:f5da3acb5359b5bb4ecc4cd5fa445f37ff942f990e802148f62fead85e5dea8d"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0022-C1",
+    "E-0022-C2",
+    "E-0022-C3"
+  ]
+}

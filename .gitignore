@@ -1,0 +1,13 @@
+node_modules/
+.local/
+outputs/
+deliveries/
+*.zip
+*.bak
+dist/
+.astro/
+work/
+outputs/review/
+.env
+.env.*
+!.env.example

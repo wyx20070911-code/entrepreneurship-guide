@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { volumes, grades } from '../data/content';
+import { draftEnabled, draftRecords, publishedRecords, articleHref } from '../lib/site';
+import { siteUrl } from '../lib/urls';
+interface Props { drafts?: boolean; }
+const { drafts = false } = Astro.props;
+const initial = drafts ? [...publishedRecords, ...draftRecords] : publishedRecords;
+---
+<BaseLayout title={drafts ? '草稿区' : '证据库'} active="library" draft={drafts}>
+  <header class="page-heading"><p class="eyebrow">EVIDENCE LIBRARY</p><h1>{drafts ? '草稿区' : '证据库'}</h1><p class="lead">{drafts ? '这里保留尚未完成新版结构或基础检查的内容。' : '查找已经通过基础真实性检查并自动发布的实用创业建议。'}</p></header>
+  {drafts && <div class="notice warning"><strong>草稿不会进入公开内容区</strong><p>这些条目仍可保留研究材料继续修改。<a href={siteUrl('/library/')}>返回正式证据库</a></p></div>}
+  <div id="library" data-draft-enabled={String(draftEnabled)} data-draft-page={String(drafts)} data-search-index-url={siteUrl('/search-index.json')} data-draft-index-url={draftEnabled ? siteUrl('/draft-index.json') : undefined}>
+    <form class="search-panel" id="filters" role="search">
+      <label class="search-field" for="search">全文搜索<input id="search" type="search" name="q" placeholder="标题、摘要、正文与标签…" autocomplete="off" /></label>
+      <div class="filter-grid">
+        <label for="volume-filter">卷别<select id="volume-filter" name="volume"><option value="all">全部卷</option>{volumes.map((volume,index) => <option value={index + 1}>{index + 1}. {volume}</option>)}</select></label>
+        <label for="grade-filter">证据等级<select id="grade-filter" name="grade"><option value="all">全部等级</option>{Object.entries(grades).map(([key,value]) => <option value={key}>{value.label}</option>)}</select></label>
+        <label for="type-filter">内容类型<select id="type-filter" name="type"><option value="all">全部类型</option>{['框架','工具','案例','访谈'].map(type => <option>{type}</option>)}</select></label>
+        <label for="state-filter">发布状态<select id="state-filter" name="state"><option value="all">全部可见状态</option><option value="published">已发布</option>{draftEnabled && <option value="draft">草稿</option>}</select></label>
+      </div>
+      <div class="filter-actions">{draftEnabled ? <label class="checkbox-label"><input id="show-drafts" type="checkbox" checked={drafts} />主动显示草稿</label> : <p class="muted">正式站仅展示已自动发布的内容。</p>}<button type="button" id="clear-filters" class="button secondary">清除筛选</button></div>
+    </form>
+    <div class="results-heading"><p id="result-count" role="status" aria-live="polite">{initial.length} 篇结果{drafts ? ' · 含草稿' : ''}</p><span class="muted">全文检索 · 组合筛选</span></div>
+    <p id="search-error" role="alert" class="notice warning" hidden></p>
+    <div id="results" class="result-list">{initial.map(record => <a class="result-card" href={articleHref(record.id,record.state === 'draft')}><div class="result-meta"><span class="mono">{record.id}</span><span class:list={['badge',record.state === 'draft' && 'draft-badge']}>{record.state === 'published' ? '已自动发布' : '草稿'}</span><span>{grades[record.grade].label} · AI 自动初评</span></div><h2>{record.title}</h2><p>{record.summary}</p><div class="result-footer"><span>第 {record.volume} 卷 · 第 {record.chapter} 章 · {record.type}</span><span>{record.tags.join(' / ')}</span></div></a>)}</div>
+    <div class="empty-state" id="empty-results" hidden={initial.length > 0}><h2>暂时没有匹配的内容</h2><p>可以缩短关键词、扩大卷别范围或清除筛选。本地开发模式可主动显示草稿。</p></div>
+    <noscript><p class="notice">交互检索需要启用 JavaScript。你仍可通过图书目录浏览可用文章。</p></noscript>
+  </div>
+  <script src="../scripts/library.ts"></script>
+</BaseLayout>

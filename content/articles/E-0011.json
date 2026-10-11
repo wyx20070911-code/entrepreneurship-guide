@@ -1,0 +1,121 @@
+{
+  "id": "E-0011",
+  "title": "说“愿意买”不等于真的会付钱",
+  "volume": 3,
+  "chapter": 4,
+  "type": "框架",
+  "tags": [
+    "付费意愿",
+    "价格测试",
+    "真实承诺"
+  ],
+  "summary": "口头付费意愿常与真实支付有偏差；在风险可控时观察可撤回承诺，并保留未付款结果。",
+  "claims": [
+    {
+      "id": "E-0011-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "付费意愿元分析发现假设性与真实测量之间存在情境相关偏差。",
+      "referenceIds": [
+        "R-SCHMIDT-WTP-2020"
+      ]
+    },
+    {
+      "id": "E-0011-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "将口头回答与真实承诺分层记录，是基于该证据的编辑建议。",
+      "referenceIds": [
+        "R-SCHMIDT-WTP-2020"
+      ]
+    },
+    {
+      "id": "E-0011-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中生活例子是显著标记的假设，用于解释操作方法，不是客户案例或市场统计。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "B",
+  "gradeRationale": "AI初评为B：消费品付费意愿元分析直接显示假设性回答与真实支付存在系统偏差，但研究异质且不直接覆盖B2B、订阅或所有新产品。",
+  "references": [
+    {
+      "id": "R-SCHMIDT-WTP-2020",
+      "title": "Accurately measuring willingness to pay for consumer goods: a meta-analysis of the hypothetical bias",
+      "authors": [
+        "Jonas Schmidt",
+        "Tammo H. A. Bijmolt"
+      ],
+      "publisher": "Journal of the Academy of Marketing Science",
+      "url": "https://d-nb.info/1197597174/34",
+      "doi": "10.1007/s11747-019-00666-6",
+      "publishedAt": "2019-06-07",
+      "materialType": "开放获取元分析",
+      "accessScope": "full",
+      "locator": "全文第 1–2 页及方法/讨论：比较假设与真实付费意愿，报告异质性；不使用统一修正比例",
+      "limitations": [
+        "研究集中于消费品付费意愿，不能直接推断 B2B、订阅或新创产品。",
+        "总体结果异质，不能用单一修正比例替代实测。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0011-C1",
+        "E-0011-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "元分析比较假设性与真实付费意愿测量，发现偏差随方法与产品情境而异。"
+      },
+      "assessment": "该材料直接支持 E-0011-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    }
+  ],
+  "limitations": [
+    "研究集中于消费品付费意愿，不能直接推断 B2B、订阅或新创产品。",
+    "总体结果异质，不能用单一修正比例替代实测。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "个体创业者"
+    ],
+    "stage": [
+      "需求验证"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "取决于行业、地区和验证方式，现有资料不足以给出统一金额。"
+    },
+    "riskCategories": [
+      "价值与定价"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.0",
+      "note": "作者自查：口头报价是探索性材料，不能代替同条件下真实付款；不采用固定意愿修正率。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0011。不是独立或专业审核。",
+      "fingerprint": "sha256:dfb3bc536e2023f654cd77e6554ae08fa99e18b5dc0b9c72dfebede523295912"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0011-C1",
+    "E-0011-C2",
+    "E-0011-C3"
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "id": "E-0001",
+  "title": "先找出最可能让生意失败的那个假设",
+  "volume": 1,
+  "chapter": 3,
+  "type": "框架",
+  "tags": [
+    "关键假设",
+    "决策",
+    "验证"
+  ],
+  "summary": "适合仍能低成本调整方向的早期项目；目标是找出会推翻当前计划的关键未知，而不是用一次小实验证明项目成功。",
+  "claims": [
+    {
+      "id": "E-0001-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "随机试验及后续复制研究评估了科学决策培训对早期创业决策的影响，但干预包含多项培训与辅导。",
+      "referenceIds": [
+        "R-CAMUFFO-2020",
+        "R-CAMUFFO-2024"
+      ]
+    },
+    {
+      "id": "E-0001-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "把影响大且证据弱的假设放到验证队列前面，是基于研究的编辑建议，不是来源规定的固定模板。",
+      "referenceIds": [
+        "R-CAMUFFO-2020",
+        "R-CAMUFFO-2024"
+      ]
+    },
+    {
+      "id": "E-0001-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中生活例子是显著标记的假设，用于解释操作方法，不是客户案例或市场统计。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：两项随机试验支持整套科学决策培训可能改变部分创业行为，但没有单独检验按影响与不确定性排序关键假设的步骤，且原试验部分结果未在后续试验复现。",
+  "references": [
+    {
+      "id": "R-CAMUFFO-2020",
+      "title": "A Scientific Approach to Entrepreneurial Decision Making: Evidence from a Randomized Control Trial",
+      "authors": [
+        "Arnaldo Camuffo",
+        "Alessandro Cordova",
+        "Alfonso Gambardella",
+        "Chiara Spina"
+      ],
+      "publisher": "Management Science / INFORMS",
+      "url": "https://gwern.net/doc/economics/2019-camuffo.pdf",
+      "doi": "10.1287/mnsc.2018.3249",
+      "publishedAt": "2020",
+      "materialType": "随机对照试验论文",
+      "accessScope": "full",
+      "locator": "全文第 1–4 页：样本、培训构成、假设与访谈/实验示例；摘要第 19–34 行",
+      "limitations": [
+        "单一国家培训情境，样本以早期数字及传统行业团队为主。",
+        "干预包含培训与辅导，不能把结果归因于某一张模板。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0001-C1",
+        "E-0001-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "研究在意大利早期创业项目中比较了两种培训方式，并跟踪退出、转向及经营信号。"
+      },
+      "assessment": "该材料直接支持 E-0001-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    },
+    {
+      "id": "R-CAMUFFO-2024",
+      "title": "A scientific approach to entrepreneurial decision-making: Large-scale replication and extension",
+      "authors": [
+        "Arnaldo Camuffo et al."
+      ],
+      "publisher": "Strategic Management Journal",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/smj.3580",
+      "doi": "10.1002/smj.3580",
+      "publishedAt": "2024-03-25",
+      "materialType": "多项随机试验复现论文",
+      "accessResult": "success",
+      "accessScope": "abstract",
+      "locator": "出版页 Research Summary 摘要，第 191–193 行；本轮未把网页可见范围写成已阅读全文",
+      "limitations": [
+        "四项试验包含原始 RCT1，作者团队重叠，不能当作完全独立证据。",
+        "样本覆盖意大利与英国培训项目；原试验的转向次数线性结果未在后续试验复现。",
+        "自动访问不稳定；当前链接检查结果不能代替保存的语义复核记录。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "supports": [
+        "E-0001-C1",
+        "E-0001-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "四项随机试验共涉及 759 家企业；合并结果显示更高的项目终止概率，并呈现少量、较聚焦而非普遍更多的转向。"
+      },
+      "assessment": "摘要支持大规模复现包含 759 家企业和四项随机试验，并报告终止与转向结果；不能支持某张排序表的独立效果。"
+    }
+  ],
+  "limitations": [
+    "单一国家培训情境，样本以早期数字及传统行业团队为主。",
+    "干预包含培训与辅导，不能把结果归因于某一张模板。",
+    "四项试验包含原始 RCT1，作者团队重叠，不能当作完全独立证据。",
+    "样本覆盖意大利与英国培训项目；原试验的转向次数线性结果未在后续试验复现。",
+    "自动访问不稳定；当前链接检查结果不能代替保存的语义复核记录。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "准备创业者"
+    ],
+    "stage": [
+      "想法期"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "取决于行业、地区和验证方式，现有资料不足以给出统一金额。"
+    },
+    "riskCategories": [
+      "决策风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.0",
+      "note": "作者自查：关键假设与结果相连，但实验培训不能保证个体成功；保留反驳与未知。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0001。不是独立或专业审核。",
+      "fingerprint": "sha256:c931abd1b83984374749d924ff09f95f7d759bf58ffd4e51c4f01bf2e5e8ebb0"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0001-C1",
+    "E-0001-C2",
+    "E-0001-C3"
+  ]
+}

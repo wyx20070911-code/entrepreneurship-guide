@@ -1,0 +1,158 @@
+{
+  "id": "E-0032",
+  "title": "预算不只是列支出，还要把付款和回款时间排在一起",
+  "volume": 9,
+  "chapter": 2,
+  "type": "框架",
+  "tags": [
+    "预算",
+    "回款",
+    "现金安排"
+  ],
+  "summary": "保留原预算，区分未承诺计划、已承诺支出与实际收付，用最新信息解释资金缺口。",
+  "claims": [
+    {
+      "id": "E-0032-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "澳大利亚预算指南区分计划与根据当前数据形成的预测，并要求比较实际结果与预算。",
+      "referenceIds": [
+        "R-AUS-BUDGET-PLAN"
+      ]
+    },
+    {
+      "id": "E-0032-C2",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "澳大利亚现金流指南用流入流出和支付到期日说明资金安排；金额之外还要看时间。",
+      "referenceIds": [
+        "R-AUS-CASHFLOW-GUIDE"
+      ]
+    },
+    {
+      "id": "E-0032-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "用计划、承诺、发生、收付的分栏记录解释偏差，保留旧预算并滚动更新收付预测；分栏方式与触发复盘时点属于编辑建议。",
+      "referenceIds": [
+        "R-AUS-BUDGET-PLAN",
+        "R-AUS-CASHFLOW-GUIDE"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.2",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "官方指南直接支持预算、预测和实际比较，但分栏与偏差处置是编辑操作建议，没有降低现金风险的量化效果研究，维持C级。",
+  "references": [
+    {
+      "id": "R-AUS-BUDGET-PLAN",
+      "title": "Create a budget",
+      "authors": [
+        "Australian Government, business.gov.au"
+      ],
+      "publisher": "Australian Government",
+      "url": "https://business.gov.au/finance/financial-tools-and-templates/create-a-budget",
+      "publishedAt": null,
+      "locator": "Know the difference between a budget and a forecast；Before you start；Compare your actual results to your budget",
+      "assessment": "区分预算计划和根据当前数据作出的预测，要求比较实际与预算并列出成本和收入输入。",
+      "limitations": [
+        "澳大利亚经营指南；本文不照搬年度、月度或季度频率，不承诺预算提高利润。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构经营指南或标准概述",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "区分预算计划和根据当前数据作出的预测，要求比较实际与预算并列出成本和收入输入。"
+      },
+      "supports": [
+        "E-0032-C1",
+        "E-0032-C3"
+      ]
+    },
+    {
+      "id": "R-AUS-CASHFLOW-GUIDE",
+      "title": "Guide to managing cash flow",
+      "authors": [
+        "Australian Government, business.gov.au"
+      ],
+      "publisher": "Australian Government",
+      "url": "https://business.gov.au/guide/guide-to-managing-cash-flow",
+      "publishedAt": null,
+      "locator": "Set up your finances：Keep good records、Set up a cash flow statement、Create your budget；Keep your cash flow healthy；Fund your business",
+      "assessment": "指南要求保留销售与成本凭据，排查流入流出和支付期限，并比较资金成本与风险；不提供本文方法的效果检验。",
+      "limitations": [
+        "澳大利亚小企业指南；税种、凭据保存年限等地区规则不纳入本文建议。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构经营指南或标准概述",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南要求保留销售与成本凭据，排查流入流出和支付期限，并比较资金成本与风险；不提供本文方法的效果检验。"
+      },
+      "supports": [
+        "E-0032-C2",
+        "E-0032-C3"
+      ]
+    }
+  ],
+  "limitations": [
+    "预算与预测不是会计或税务合规方案；合同付款责任不能由内部预测改写。",
+    "季节性、外币、受限制资金及偿债安排需要另行核对；无法确认的回款日期不能填概率。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小型业务经营者"
+    ],
+    "stage": [
+      "经营安排"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "收集付款条件、报价和预算输入的时间。"
+    },
+    "riskCategories": [
+      "经营与现金风险"
+    ]
+  },
+  "numericClaims": [
+    {
+      "text": "假设人民币本月八千元加六千元减九千元减两千元等于三千元；回款延期并漏列一千元后，八千元减九千元减两千元减一千元为负四千元；取消两千元推广仍为负两千元。",
+      "kind": "hypothetical",
+      "referenceIds": []
+    }
+  ],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.2",
+      "note": "作者自查：计划、承诺、发生与支付分别记录，回款延迟与支出提前要落在时间安排中。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0032。不是独立或专业审核。",
+      "fingerprint": "sha256:9b4563123f59322c7cc367fe8eb28704e9b0d91a4de671adbc2d4ccb4f40d6d5"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "一般经营决策建议；国外资料不作为中国会计、税务或法律规则",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0032-C1",
+    "E-0032-C2",
+    "E-0032-C3"
+  ]
+}

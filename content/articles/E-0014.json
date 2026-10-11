@@ -1,0 +1,118 @@
+{
+  "id": "E-0014",
+  "title": "别问原型好不好，让用户现场完成一个任务",
+  "volume": 5,
+  "chapter": 2,
+  "type": "工具",
+  "tags": [
+    "可用性测试",
+    "原型",
+    "任务观察"
+  ],
+  "summary": "可用性测试关注目标用户能否完成具体任务，不用少量会话估计所有用户的问题发生率。",
+  "claims": [
+    {
+      "id": "E-0014-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "GDS 指南把主持式可用性测试描述为观察参与者完成具体任务，并强调任务设计、记录和数据保护。",
+      "referenceIds": [
+        "R-GDS-USABILITY"
+      ]
+    },
+    {
+      "id": "E-0014-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "先观察再追问、修改后复测，是基于该指南的操作建议。",
+      "referenceIds": [
+        "R-GDS-USABILITY"
+      ]
+    },
+    {
+      "id": "E-0014-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中生活例子是显著标记的假设，用于解释操作方法，不是客户案例或市场统计。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：GOV.UK可用性测试指南直接支持给目标用户具体任务并观察完成过程；它是定性方法说明，不能从少量会话估计总体问题率。",
+  "references": [
+    {
+      "id": "R-GDS-USABILITY",
+      "title": "Using moderated usability testing",
+      "authors": [
+        "User research community"
+      ],
+      "publisher": "UK Government Digital Service",
+      "url": "https://www.gov.uk/service-manual/user-research/using-moderated-usability-testing",
+      "doi": null,
+      "publishedAt": "2017-02-21",
+      "materialType": "政府方法指南",
+      "accessScope": "selected_sections",
+      "locator": "Decide what you want to learn；Develop research tasks；Running sessions（中立任务、观察、帮助及安全示例资料）；不采用固定时长和样本数。",
+      "limitations": [
+        "定性方法用于发现问题，不能从少量会话估计总体发生率。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "accessResult": "success",
+      "supports": [
+        "E-0014-C1",
+        "E-0014-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南将主持式可用性测试定义为观察目标用户完成具体任务，并强调中立任务、记录和数据保护。"
+      },
+      "assessment": "该材料直接支持 E-0014-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    }
+  ],
+  "limitations": [
+    "定性方法用于发现问题，不能从少量会话估计总体发生率。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "1.0.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "产品与服务创业者"
+    ],
+    "stage": [
+      "交付验证"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "取决于行业、地区和验证方式，现有资料不足以给出统一金额。"
+    },
+    "riskCategories": [
+      "交付风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "1.0.0",
+      "note": "作者自查：中性任务记录独立操作、帮助和失败，不把主持人的补救算作可用性通过。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0014。不是独立或专业审核。",
+      "fingerprint": "sha256:ce14bec94e02e6f7e6a7bbe1fcb6ed4f3a4a4b941f60035f317578cd9edc82b4"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0014-C1",
+    "E-0014-C2",
+    "E-0014-C3"
+  ]
+}

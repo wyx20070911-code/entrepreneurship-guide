@@ -1,0 +1,30 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { grades } from '../data/content';
+import { publishedRecords, articleHref } from '../lib/site';
+import { SITE_VERSION } from '../lib/version';
+import { siteUrl } from '../lib/urls';
+
+const starts = [
+  { id: 'E-0010', label: '还没做产品', prompt: '先了解顾客现在怎么解决问题。' },
+  { id: 'E-0003', label: '想做自动化', prompt: '先完成一次受限的人工交付。' },
+  { id: 'E-0004', label: '已经开始经营', prompt: '先检查未来收支和现金缺口。' }
+].map(item => ({ ...item, record: publishedRecords.find(record => record.id === item.id) })).filter(item => item.record);
+const latest = publishedRecords.slice().sort((a,b) => b.updatedAt.localeCompare(a.updatedAt)).slice(0,6);
+const coveredChapters = new Set(publishedRecords.map(record => `${record.volume}-${record.chapter}`)).size;
+---
+<BaseLayout title="首页" active="home">
+  <section class="home-hero">
+    <div><p class="eyebrow">创业百科全书 / 循证方法</p><h1>遇到创业问题，先找依据，再做决定。</h1><p class="lead">把模糊想法变成可检查的行动，并明确证据没有证明什么。</p></div>
+    <p class="home-version"><span class="mono">V{SITE_VERSION}</span><br />{publishedRecords.length} 篇可读文章 · 覆盖 {coveredChapters}/48 章</p>
+  </section>
+  <form class="home-search compact-search" action={siteUrl('/library/')} role="search"><label for="home-q">你现在想解决什么？</label><div><input id="home-q" name="q" type="search" placeholder="搜索问题、正文或标签" /><button type="submit" class="button primary">查找依据</button></div></form>
+
+  <section class="home-start" aria-labelledby="start-title"><div class="section-heading"><div><p class="eyebrow">START HERE</p><h2 id="start-title">从你现在的问题开始</h2></div></div><div class="start-grid">{starts.map(item => <a class="start-card" href={articleHref(item.record!.id)}><span>{item.label}</span><strong>{item.prompt}</strong><small>阅读文章 →</small></a>)}</div></section>
+
+  <section class="page-section"><div class="section-heading"><div><p class="eyebrow">PUBLISHED CONTENT</p><h2>已发布文章</h2></div><a href={siteUrl('/library/')}>查看全部 {publishedRecords.length} 篇</a></div><div class="home-article-grid">{latest.map(record => <a class="result-card" href={articleHref(record.id)}><div class="result-meta"><span>{record.classification.stage.join(' / ')}</span><span class="badge">{grades[record.grade].label} · AI 初评</span></div><h3>{record.title}</h3><p><strong>解决的问题：</strong>{record.guide?.problem ?? record.summary}</p></a>)}</div></section>
+
+  <section class="directory-entry"><div><p class="eyebrow">THE COMPLETE BOOK</p><h2>12 卷、48 章完整目录</h2><p>全书首轮内容覆盖完成。每章已有阅读入口，不代表已充分展开或经过独立、专业验证。</p></div><a class="button secondary" href={siteUrl('/catalog/')}>查看目录与真实进度</a></section>
+
+  <section class="method-section"><p class="eyebrow">CONTENT METHOD</p><h2>如何使用这些内容</h2><div class="method-grid"><div><span class="mono">01 / 行动</span><h3>先找到下一步</h3><p>每篇从问题、建议和可检查步骤开始。</p></div><div><span class="mono">02 / 边界</span><h3>不把试验当证明</h3><p>失败信号、适用条件和未知项与建议同时显示。</p></div><div><span class="mono">03 / 证据</span><h3>AI 初评不是背书</h3><p>A/B/C/U 表示当前证据强度，不代表专家审核或成功保证。</p></div></div><p class="method-update">当前版本 V{SITE_VERSION}：{publishedRecords.length} 篇可读文章，已覆盖 {coveredChapters} 个规划章节；道、法、术、器作为选题视角，正文仍按决策和证据组织；新增内容只有作者自查，具体规则限于明示范围，不是全部验证完成。</p></section>
+</BaseLayout>

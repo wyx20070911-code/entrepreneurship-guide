@@ -1,0 +1,124 @@
+{
+  "id": "E-0036",
+  "title": "先把承诺变成可观察的结果，再判断顾客是否得到价值",
+  "volume": 3,
+  "chapter": 3,
+  "type": "框架",
+  "tags": [
+    "价值验证",
+    "实际使用",
+    "交付后观察"
+  ],
+  "summary": "把交付、验收、使用、获益和再购买分开核对，记录未达预期和其他解释。",
+  "claims": [
+    {
+      "id": "E-0036-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "服务收益指南要求检查预测假设，跟踪与最终获益相连的指标，并比较观察与预测。",
+      "referenceIds": [
+        "R-GDS-SERVICE-BENEFITS"
+      ]
+    },
+    {
+      "id": "E-0036-C2",
+      "type": "editorial_inference",
+      "importance": "core",
+      "evidenceRelation": "inference_from",
+      "text": "交付和验收证明约定输出的完成情况，不能独自解释使用、获益或因果关系；本文据评价框架区分这些环节。",
+      "referenceIds": [
+        "R-GDS-SERVICE-BENEFITS"
+      ]
+    },
+    {
+      "id": "E-0036-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "交付后分别记录使用、结果、未达预期及其他解释，再决定继续、调整或暂不判断；观察方式是编辑建议。",
+      "referenceIds": [
+        "R-GDS-SERVICE-BENEFITS"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.3",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "收益追踪与假设审视有官方方法说明；本篇环节拆分和跟进步骤是编辑推断，没有独立因果效果证据，维持C级。",
+  "references": [
+    {
+      "id": "R-GDS-SERVICE-BENEFITS",
+      "title": "Measuring the benefits of your service",
+      "publisher": "Product and service community, GOV.UK",
+      "authors": [
+        "Product and service community"
+      ],
+      "url": "https://www.gov.uk/service-manual/measuring-success/measuring-service-benefits",
+      "publishedAt": "2018-06-20",
+      "locator": "Scrutinise your assumptions；Beta and live: monitor and evaluate your project；Decide whether you should continue your project（第186–233行）",
+      "assessment": "指南要求检查收益预测假设，跟踪与最终获益相关的指标，并比较观察与预测决定调整。",
+      "limitations": [
+        "公共服务评价指南，不是对小型商业服务的因果效果证明；不照搬项目阶段或经济评价结论。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构方法说明",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南要求检查收益预测假设，跟踪与最终获益相关的指标，并比较观察与预测决定调整。"
+      },
+      "supports": [
+        "E-0036-C1",
+        "E-0036-C2",
+        "E-0036-C3"
+      ]
+    }
+  ],
+  "limitations": [
+    "公共服务评价框架不证明具体商业服务有效；少量前后观察不能独自建立因果关系。",
+    "结果无法观察、使用尚未发生或基线不可靠时暂不作效果判断，不补造改善率。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小型业务负责人"
+    ],
+    "stage": [
+      "交付后复查"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "协商可观察结果、整理服务前状态。"
+    },
+    "riskCategories": [
+      "效果外推与交付风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.3",
+      "note": "作者自查：交付完成、验收、使用、获益及再次购买分开，不能从客户认同推断因果改善。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0036。不是独立或专业审核。",
+      "fingerprint": "sha256:270cd25f18dcf9ea09081bddac6728cf2c1de83afb20cd4d64577f474b9b6810"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "一般研究与经营方法；英国及美国资料不作为中国法律或平台使用授权",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0036-C1",
+    "E-0036-C2",
+    "E-0036-C3"
+  ]
+}

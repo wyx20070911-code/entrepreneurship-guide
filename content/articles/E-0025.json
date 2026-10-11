@@ -1,0 +1,243 @@
+{
+  "id": "E-0025",
+  "title": "开工前写清交付、验收和变更怎么处理",
+  "volume": 8,
+  "chapter": 3,
+  "type": "框架",
+  "tags": [
+    "交付范围",
+    "验收标准",
+    "变更控制",
+    "物流管理"
+  ],
+  "summary": "适合定制服务和项目交付；在开工前共同确认结果、范围外事项、完成标准、双方责任与变更路径，减少事后各说各话。",
+  "claims": [
+    {
+      "id": "E-0025-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "英国政府敏捷合同指南要求明确结果、角色、Definition of Ready、Definition of Done、质量阈值和双方要求。",
+      "referenceIds": [
+        "R-GOV-AGILE-CONTRACT"
+      ]
+    },
+    {
+      "id": "E-0025-C2",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "英国政府合同管理原则要求职责清楚，并承认变化会发生，同时用强变更控制管理成本和战略意图。",
+      "referenceIds": [
+        "R-GOV-CONTRACT-PRINCIPLES"
+      ]
+    },
+    {
+      "id": "E-0025-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "小型交付也应写明范围内结果、验收方法、客户输入和新增要求处理方式，是本文编辑建议。",
+      "referenceIds": [
+        "R-GOV-AGILE-CONTRACT",
+        "R-GOV-CONTRACT-PRINCIPLES"
+      ]
+    },
+    {
+      "id": "E-0025-C4",
+      "text": "澳大利亚经营指南区分库存状态、记录数量位置及供应到货，供应者比较包括质量可靠性；不是本文运输义务的法律依据。",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "referenceIds": [
+        "R-AU-INVENTORY-2026",
+        "R-AU-SUPPLIERS-2026"
+      ]
+    },
+    {
+      "id": "E-0025-C5",
+      "text": "将采购、运输、收件与验收分开并按原标准处理异常，是编辑物流建议，不保证降低损耗。",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "referenceIds": [
+        "R-AU-INVENTORY-2026",
+        "R-AU-SUPPLIERS-2026"
+      ]
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：两份英国政府合同管理材料直接支持明确质量、职责和变更机制，但面向公共部门采购；本文的小型项目清单没有独立效果研究，也不能替代适用法律。 物流段来源为经营指南，支持记录维度，不证明降低损耗，等级不变。",
+  "references": [
+    {
+      "id": "R-GOV-AGILE-CONTRACT",
+      "title": "Contracting For Agile Guidance Note",
+      "authors": [
+        "Cabinet Office"
+      ],
+      "publisher": "GOV.UK",
+      "url": "https://www.gov.uk/government/publications/the-digital-data-and-technology-playbook/contracting-for-agile-guidance-note-html",
+      "doi": null,
+      "publishedAt": null,
+      "materialType": "政府采购与交付指南",
+      "accessScope": "full",
+      "locator": "第5.3–5.6节，网页第238–258行",
+      "limitations": [
+        "针对英国公共部门数字项目。",
+        "复杂合同原则不能直接当作小微服务合同条款。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0025-C1",
+        "E-0025-C3"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南要求明确质量阈值、完成定义、角色、要求、表现和价格。"
+      },
+      "assessment": "支持完成与验收要素；不构成法律模板或效果保证。"
+    },
+    {
+      "id": "R-GOV-CONTRACT-PRINCIPLES",
+      "title": "Contract management principles",
+      "authors": [
+        "Cabinet Office"
+      ],
+      "publisher": "GOV.UK",
+      "url": "https://www.gov.uk/government/publications/commercial-capability-contract-management-standards/contract-management-principles",
+      "doi": null,
+      "publishedAt": null,
+      "materialType": "政府合同管理原则",
+      "accessScope": "full",
+      "locator": "原则1.1–1.7，网页第77–104行",
+      "limitations": [
+        "针对英国政府合同管理，适用范围和责任高于一般小型项目。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0025-C2",
+        "E-0025-C3"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "原则要求职责清楚、结果导向，并承认变化会发生但应用变更控制管理成本。"
+      },
+      "assessment": "支持职责与变更机制；不能直接外推为其他法域合同要求。"
+    },
+    {
+      "id": "R-AU-INVENTORY-2026",
+      "title": "Manage your inventory",
+      "publisher": "business.gov.au",
+      "authors": [
+        "Australian Government / business.gov.au"
+      ],
+      "url": "https://business.gov.au/products-and-services/inventory-management/manage-your-inventory",
+      "locator": "What is inventory management；Types of inventory；Track your inventory；Replenish inventory（正文175–240行）。",
+      "assessment": "指南区分原料、在制和成品，提出记录数量、位置及结合销售与供应到货时间考虑补货。本文采用追踪方法，不采用税务要求、盘点频率或自动提高利润的措辞。",
+      "limitations": [
+        "澳大利亚经营指导；正文未显示发布日期，未知。",
+        "没有验证小型服务物流流程的成本收益，也未核验运输合同或跨境规则。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "publishedAt": null,
+      "materialType": "官方指引",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南区分原料、在制和成品，提出记录数量、位置及结合销售与供应到货时间考虑补货。本文采用追踪方法，不采用税务要求、盘点频率或自动提高利润的措辞。"
+      },
+      "supports": [
+        "E-0025-C4",
+        "E-0025-C5"
+      ]
+    },
+    {
+      "id": "R-AU-SUPPLIERS-2026",
+      "title": "Suppliers",
+      "publisher": "business.gov.au",
+      "authors": [
+        "Australian Government / business.gov.au"
+      ],
+      "url": "https://business.gov.au/people/suppliers",
+      "locator": "Find suppliers；Choose suppliers（正文187–230行）：price、quality、reliability、location。",
+      "assessment": "支持核对供应者、质量、可靠性与位置，本文将其用于交接和到货未知项；不采用注册、进口或海关法律内容。",
+      "limitations": [
+        "澳大利亚经营指南，不是交货保证或合同范本；首发/修订日期未显示。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "publishedAt": null,
+      "materialType": "官方指引",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "支持核对供应者、质量、可靠性与位置，本文将其用于交接和到货未知项；不采用注册、进口或海关法律内容。"
+      },
+      "supports": [
+        "E-0025-C4",
+        "E-0025-C5"
+      ]
+    }
+  ],
+  "limitations": [
+    "来源为英国公共部门指导，不是中国合同法或任何特定地区的法律意见。",
+    "明确范围不能消除需求变化、沟通误解或质量缺陷，只能让处理过程更可追踪。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "1.0.0",
+  "author": "主智能体（作者自查）",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "自由职业者",
+      "服务团队",
+      "项目负责人"
+    ],
+    "stage": [
+      "成交后",
+      "交付期"
+    ],
+    "industry": [
+      "定制服务",
+      "软件服务",
+      "内容服务"
+    ],
+    "startupCapital": {
+      "band": "low",
+      "note": "可用普通文档记录，专业合同审查费用因地区和风险而异。"
+    },
+    "riskCategories": [
+      "履约风险",
+      "范围争议",
+      "法律风险"
+    ]
+  },
+  "jurisdiction": "通用操作建议；合同法律问题以实际履约地和适用法为准",
+  "validAsOf": "2026-10-10",
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "1.0.0",
+      "note": "作者自查：交付、收件、验收和变更分开；补充批次物流异常、恢复、可承诺结果及未知责任。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0025。不是独立或专业审核。",
+      "fingerprint": "sha256:df3387d509b9adf8c250643b16fcd5ab9b2def3444c33c4333a0cc64e60caaae"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0025-C1",
+    "E-0025-C2",
+    "E-0025-C3",
+    "E-0025-C4",
+    "E-0025-C5"
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "E-0037",
+  "title": "先分清故障、必要修补和新需求，再安排下一次迭代",
+  "volume": 5,
+  "chapter": 4,
+  "type": "框架",
+  "tags": [
+    "质量",
+    "技术债",
+    "迭代取舍"
+  ],
+  "summary": "先处理正在伤害关键任务的问题，给临时修补留下后续条件，不把所有维护工作统称技术债。",
+  "claims": [
+    {
+      "id": "E-0037-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "Fowler用内部质量缺陷增加后续修改工作解释技术债，并指出估计成本不准确、隐喻可能误导。",
+      "referenceIds": [
+        "R-FOWLER-TECHNICAL-DEBT"
+      ]
+    },
+    {
+      "id": "E-0037-C2",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "质量指南要求检查正常与异常条件，以及功能、安全和修改后既有功能是否受影响。",
+      "referenceIds": [
+        "R-GDS-QUALITY-TESTING"
+      ]
+    },
+    {
+      "id": "E-0037-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "把故障、临时修补、长期结构改进和新需求分别登记，按影响及依赖决定顺序并验证恢复；这是编辑取舍框架。",
+      "referenceIds": [
+        "R-GDS-QUALITY-TESTING"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.4",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "技术债定义来自作者经验论述，测试分类来自官方方法；优先级清单是编辑建议，无通用质量阈值或效率效果证据，维持C级。",
+  "references": [
+    {
+      "id": "R-FOWLER-TECHNICAL-DEBT",
+      "title": "Technical Debt",
+      "publisher": "Martin Fowler",
+      "authors": [
+        "Martin Fowler"
+      ],
+      "url": "https://martinfowler.com/bliki/TechnicalDebt.html",
+      "publishedAt": "2019-05-21",
+      "locator": "主体第74–101行；Revisions说明最初2003-10-01发表，2019重写",
+      "assessment": "作者以内部结构使后续修改更费力解释技术债，也承认成本估计不准确及隐喻可能误导。",
+      "limitations": [
+        "作者原始经验性论述，不是普遍效果试验；不引入其周数、工期或统一偿债比例。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始作者经验论述",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "作者以内部结构使后续修改更费力解释技术债，也承认成本估计不准确及隐喻可能误导。"
+      },
+      "supports": [
+        "E-0037-C1"
+      ]
+    },
+    {
+      "id": "R-GDS-QUALITY-TESTING",
+      "title": "Quality assurance: testing your service regularly",
+      "publisher": "Standards and assurance community, GOV.UK",
+      "authors": [
+        "Standards and assurance community"
+      ],
+      "url": "https://www.gov.uk/service-manual/technology/quality-assurance-testing-your-service-regularly",
+      "publishedAt": "2016-05-23",
+      "locator": "Why test for quality；How to test；Types of testing（第85–117行）；更新2017-06-28",
+      "assessment": "指南分别列功能、可用性、安全及回归测试，并建议检查正常与异常条件。",
+      "limitations": [
+        "英国服务质量方法说明；通过有限测试不代表没有缺陷或满足所有安全要求。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构方法说明",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南分别列功能、可用性、安全及回归测试，并建议检查正常与异常条件。"
+      },
+      "supports": [
+        "E-0037-C2",
+        "E-0037-C3"
+      ]
+    }
+  ],
+  "limitations": [
+    "经验性技术债隐喻不能量化每个项目的改善收益；维护、升级和缺陷不必都属于技术债。",
+    "涉及关键数据、安全或受监管业务时需要专业技术核查，有限测试不替代完整安全评价。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小型业务负责人"
+    ],
+    "stage": [
+      "产品维护"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "复现、排查影响及准备隔离测试的时间。"
+    },
+    "riskCategories": [
+      "数据与质量风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.4",
+      "note": "作者自查：故障、必要修补和新需求分开；先处理安全与关键质量，不含开发指令。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0037。不是独立或专业审核。",
+      "fingerprint": "sha256:0eac217837cd2abe2b04676584a67777444bd677e78b325950940f839c00daba"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "一般研究与经营方法；英国及美国资料不作为中国法律或平台使用授权",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0037-C1",
+    "E-0037-C2",
+    "E-0037-C3"
+  ]
+}

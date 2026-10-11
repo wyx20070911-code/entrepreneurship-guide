@@ -1,0 +1,158 @@
+{
+  "id": "E-0031",
+  "title": "一单赚钱之后，还要看复购、交付能力和获客成本",
+  "volume": 7,
+  "chapter": 4,
+  "type": "框架",
+  "tags": [
+    "可持续性",
+    "产能",
+    "客户集中度"
+  ],
+  "summary": "检查订单能否重复交付、收回现金并覆盖取得客户的代价，而不是从单笔差额推断可以扩张。",
+  "claims": [
+    {
+      "id": "E-0031-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "SBA经营财务指南要求在指定期间比较收益与成本，并区分经常与非经常成本。",
+      "referenceIds": [
+        "R-SBA-FINANCE-LEGACY"
+      ]
+    },
+    {
+      "id": "E-0031-C2",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "SBA商业计划指南要求说明吸引和留住客户的方式，并列出关键资源、成本与收入渠道。",
+      "referenceIds": [
+        "R-SBA-PLAN-FINANCE"
+      ]
+    },
+    {
+      "id": "E-0031-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "把单笔贡献、真实复购、可用产能、客户集中和资金占用合在扩张复盘中；这份检查清单是编辑建议，不是成功预测。",
+      "referenceIds": [
+        "R-SBA-FINANCE-LEGACY",
+        "R-SBA-PLAN-FINANCE"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "0.5.0",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "机构资料支持期间成本比较与资源、获客规划，但不能证明本清单预测持续盈利；复购、产能、集中度需要本企业数据，维持C级探索性建议。",
+  "references": [
+    {
+      "id": "R-SBA-FINANCE-LEGACY",
+      "title": "Manage your finances",
+      "authors": [
+        "U.S. Small Business Administration"
+      ],
+      "publisher": "U.S. Small Business Administration",
+      "url": "https://legacy.sba.gov/business-guide/manage-your-business/manage-your-finances",
+      "publishedAt": "2025-03-07",
+      "locator": "Cost-benefit analysis；Pick a method of accounting；Get accounting help",
+      "assessment": "说明指定期间比较成本与收益、销售记录时点与收款时点的区别，以及应收应付、可用现金和银行对账。",
+      "limitations": [
+        "美国入门指南的简化说明；不引用其税务优点或GAAP适用说法；不能处理复杂收入确认。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构经营指南或标准概述",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "说明指定期间比较成本与收益、销售记录时点与收款时点的区别，以及应收应付、可用现金和银行对账。"
+      },
+      "supports": [
+        "E-0031-C1",
+        "E-0031-C3"
+      ]
+    },
+    {
+      "id": "R-SBA-PLAN-FINANCE",
+      "title": "Write your business plan",
+      "authors": [
+        "U.S. Small Business Administration"
+      ],
+      "publisher": "U.S. Small Business Administration",
+      "url": "https://legacy.sba.gov/business-guide/plan-your-business/write-your-business-plan",
+      "publishedAt": "2025-11-13",
+      "locator": "Lean startup：Customer segments、Cost structure、Revenue streams；Traditional：Funding request、Marketing and sales",
+      "assessment": "列明客户、主要成本与收入渠道，融资说明需交代用途、期限和形式；这是计划框架，不是获利效果研究。",
+      "limitations": [
+        "美国经营指南；不引用其法定组织形式、抵押或统一预测年限。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构经营指南或标准概述",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "列明客户、主要成本与收入渠道，融资说明需交代用途、期限和形式；这是计划框架，不是获利效果研究。"
+      },
+      "supports": [
+        "E-0031-C2",
+        "E-0031-C3"
+      ]
+    }
+  ],
+  "limitations": [
+    "此清单来自经营框架推断，不是经过验证的可持续性评分。",
+    "跨产品成本分摊不明、未计创始人劳动或季节性明显时，不能从短期批次外推全年经营。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小型业务经营者"
+    ],
+    "stage": [
+      "扩张前复盘"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "整理订单、获客和瓶颈工序记录。"
+    },
+    "riskCategories": [
+      "经营与现金风险"
+    ]
+  },
+  "numericClaims": [
+    {
+      "text": "假设人民币本月完成八单，一千元减六百元为四百元；八千元减四千八百元为三千二百元，再减三千元和两千元为负一千八百元；八单各四小时为三十二小时。两单咨询未接未交付；十单待承接需四十小时，超出三十二小时八小时；潜在四千元减三千元减两千元为负一千元。八千元约定次月回款、本月营业回款为零；本月四千八百元加三千元加两千元已付为现金净流出九千八百元，期初余额未知。",
+      "kind": "hypothetical",
+      "referenceIds": []
+    }
+  ],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.5.0",
+      "note": "作者自查：八单完成对应三十二工时，十单潜在订单对应四十小时；计划贡献、已发生结果、现金期间分开。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0031。不是独立或专业审核。",
+      "fingerprint": "sha256:c82a79fa8b7786c7c0e1b146b2940022d4bb21e780675971cdb38d0ed35aaf72"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "一般经营决策建议；国外资料不作为中国会计、税务或法律规则",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0031-C1",
+    "E-0031-C2",
+    "E-0031-C3"
+  ]
+}

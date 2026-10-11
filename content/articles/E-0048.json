@@ -1,0 +1,142 @@
+{
+  "id": "E-0048",
+  "title": "接更多订单之前，先确认哪些条件能够重复成立",
+  "volume": 12,
+  "chapter": 3,
+  "type": "框架",
+  "tags": [
+    "局部扩张",
+    "瓶颈产能",
+    "订单状态"
+  ],
+  "summary": "从现有业务中选择一项可控的扩大范围，用真实交付、回款与风险记录决定下一步，而不是把询问数量当收入。",
+  "claims": [
+    {
+      "id": "E-0048-C1",
+      "type": "source_fact",
+      "evidenceRelation": "direct",
+      "text": "澳大利亚business.gov.au增长指南先让经营者了解当前经营与财务，再考虑目标、人员资源、流程、供应商及增长风险；它是经营指引，不保证规模越大利润越高。",
+      "importance": "core",
+      "referenceIds": [
+        "R-AU-GROWING-2026"
+      ]
+    },
+    {
+      "id": "E-0048-C2",
+      "type": "editorial_inference",
+      "evidenceRelation": "inference_from",
+      "text": "已有规模的结果不能直接证明新增人员、订单或地区仍可按同样成本交付；这是编辑推断，新增条件需单独观察。",
+      "importance": "core",
+      "referenceIds": [
+        "R-AU-GROWING-2026"
+      ]
+    },
+    {
+      "id": "E-0048-C3",
+      "type": "recommendation",
+      "evidenceRelation": "informed_by",
+      "text": "选择一项局部扩张，保留常规业务的资源和升级路径，逐批核对实际工作量、质量、贡献及收付，再决定继续、暂停或回退；不是通用扩张门槛。",
+      "importance": "core",
+      "referenceIds": [
+        "R-AU-GROWING-2026"
+      ]
+    },
+    {
+      "id": "E-0048-C4",
+      "type": "hypothetical_calculation",
+      "evidenceRelation": "none",
+      "text": "例子为明确标记的教学假设，不是客户、经营数据或普遍扩张门槛。",
+      "importance": "supporting",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评C：Guide to growing your business提供官方方法而非经营效果研究。支持增长前检查当前经营、财务、目标资源及流程供应方风险；局部试扩张与回退规则属于本文编辑建议，未测定经营效果。 例子仅说明工时、订单状态和贡献口径，不证明全面扩张可行。 尚无独立复核。",
+  "references": [
+    {
+      "id": "R-AU-GROWING-2026",
+      "title": "Guide to growing your business",
+      "publisher": "business.gov.au",
+      "authors": [
+        "Australian Government / business.gov.au"
+      ],
+      "url": "https://business.gov.au/guide/growing",
+      "publishedAt": null,
+      "locator": "Research and plan（第298–373行）；Update your policies, procedures and processes及Review your suppliers（507–559行）；Manage growth及Protect your business（838–858、914–935行）",
+      "assessment": "支持增长前检查当前经营、财务、目标资源及流程供应方风险；局部试扩张与回退规则属于本文编辑建议，未测定经营效果。",
+      "limitations": [
+        "页面未显示首发和修订日期；只阅读登记管理章节，不以搜索日期充当发布时间。",
+        "原材料含澳大利亚法律/税务示例，本文未采用其门槛或规则；未读所有相链接页面，也未核实个案义务。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "官方经营指南",
+      "supports": [
+        "E-0048-C1",
+        "E-0048-C2",
+        "E-0048-C3"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "澳大利亚business.gov.au增长指南先让经营者了解当前经营与财务，再考虑目标、人员资源、流程、供应商及增长风险；它是经营指引，不保证规模越大利润越高。"
+      }
+    }
+  ],
+  "limitations": [
+    "只有局部交付观察不能证明长期获客、需求重复或全面规模化；不可观察的条件标未知。",
+    "涉及安全、数据、重大投资或履约责任的变化，先核查相应专业要求，不靠试扩张代替它们。",
+    "页面未显示首发和修订日期；只阅读登记管理章节，不以搜索日期充当发布时间。",
+    "原材料含澳大利亚法律/税务示例，本文未采用其门槛或规则；未读所有相链接页面，也未核实个案义务。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "0.5.0",
+  "author": "主智能体（作者自查）",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "小型业务经营者"
+    ],
+    "stage": [
+      "经营期"
+    ],
+    "industry": [
+      "通用",
+      "服务业"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "按现有承诺与实际可承受投入判断，不设置统一金额。"
+    },
+    "riskCategories": [
+      "挤占旧订单、质量下降、人员单点依赖及先支出后回款。"
+    ]
+  },
+  "numericClaims": [
+    {
+      "text": "假设菜单工作室上周期已完成四单，每单瓶颈校对三小时，共十二小时。当前周期可用十八小时，已有四单承诺按原条件预计占十二小时，剩六小时不是全部可销售时间：新增流程还要学习和处理异常。以上工时与数量均为教学假设。 同一假设只试让新成员准备一单资料，由原负责人校对；先安排这一单，不接受第二个新增承诺。预测瓶颈需要三小时，实际交付用了四小时且已处理范围内缺项，记录预测和实际分开。若本周期原四单后来也各用三小时并完成，则总占用十六小时，剩两小时，不能再按三小时承诺一单。 假设新单已验收，交易金额人民币一千元、可归属直接成本七百元，差额三百元尚未扣固定支出、获客、税费和未知替代人工成本，不是净利润；客户约定下周期付款，当前周期这单现金回款为零，未来是否到账尚未观察。原四单金额和现金资料没有给出，因此不计算全业务收入、利润或余额。 这个结果支持“新流程的校对负担高于原预测，需要调整资料准备”，不支持“新成员无能力”或“扩张无市场”。先暂停额外新增订单，核对缺项为何未提前发现；下一批仅在容量、交接和收款安排能解释后再决定，不假设加班或外包自动补足产能。",
+      "kind": "hypothetical",
+      "referenceIds": []
+    }
+  ],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.5.0",
+      "note": "作者自查：局部试扩大区分历史结果、待接订单、预测与现金，未知瓶颈先暂停扩大承诺。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0048。不是独立或专业审核。",
+      "fingerprint": "sha256:93e6c558ab631fb5a8fe2f9632698a6edffdafae5ea46a4df1b36220fcc0794f"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "通用经营方法；来源为澳大利亚官方经营指引，未采用其法律、税务或政策资格规则。",
+  "validAsOf": "2026-10-11",
+  "guideClaimIds": [
+    "E-0048-C1",
+    "E-0048-C2",
+    "E-0048-C3",
+    "E-0048-C4"
+  ]
+}

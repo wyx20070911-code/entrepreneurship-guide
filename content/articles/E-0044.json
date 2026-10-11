@@ -1,0 +1,125 @@
+{
+  "id": "E-0044",
+  "title": "签约前先核对主体、承诺、成果使用权和责任边界",
+  "volume": 11,
+  "chapter": 2,
+  "type": "框架",
+  "tags": [
+    "合同问题识别",
+    "知识产权",
+    "责任边界"
+  ],
+  "summary": "把交易主体、交付和付款记录与成果使用范围逐项对应，先列待确认问题，不把拿到文件理解为拿到全部权利。",
+  "claims": [
+    {
+      "id": "E-0044-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "WIPO版权问答区分权利人许可使用与权属问题，并提示具体规则存在国家差异、使用须查看许可条件及例外。",
+      "referenceIds": [
+        "R-WIPO-COPYRIGHT-FAQ"
+      ]
+    },
+    {
+      "id": "E-0044-C2",
+      "type": "editorial_inference",
+      "importance": "core",
+      "evidenceRelation": "inference_from",
+      "text": "付款、取得文件与拥有全部权利不能仅凭一个事实互相推定；这是据许可与权属区分提出的核查原则，不裁定具体交易权利。",
+      "referenceIds": [
+        "R-WIPO-COPYRIGHT-FAQ"
+      ]
+    },
+    {
+      "id": "E-0044-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "把主体、承诺、材料许可、使用范围及责任疑问形成事实包，再由适用法域专业人员核查关键条款；不是可签合同。",
+      "referenceIds": [
+        "R-WIPO-COPYRIGHT-FAQ"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.5",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "WIPO一般解释支持分清许可、权属与国家规则，未核查具体合同、委托或软件许可。本文仅帮助形成问题和事实包，未证明条款有效或纠纷结果，定C级而非法律批准。",
+  "references": [
+    {
+      "id": "R-WIPO-COPYRIGHT-FAQ",
+      "title": "Frequently Asked Questions: Copyright",
+      "publisher": "WIPO",
+      "authors": [
+        "World Intellectual Property Organization"
+      ],
+      "url": "https://www.wipo.int/en/web/copyright/faq-copyright",
+      "publishedAt": null,
+      "locator": "What does it mean to license；Who owns copyright；Do I need authorization；Can I freely use works published on the Internet（第63–64、224–232、251–254行）",
+      "assessment": "国际机构解释许可、权属国家差异与使用条件；不是具体法域法律文本，不能裁定付款或委托成果归属。",
+      "limitations": [
+        "页面发布日期及修订日未显示，生效日期不适用于此FAQ。",
+        "只阅读登记问答；雇佣、委托、合同效力、商标和具体软件许可未逐国核查。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "国际机构官方解释（非合同或法律意见）",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "国际机构解释许可、权属国家差异与使用条件；不是具体法域法律文本，不能裁定付款或委托成果归属。"
+      },
+      "supports": [
+        "E-0044-C1",
+        "E-0044-C2",
+        "E-0044-C3"
+      ]
+    }
+  ],
+  "limitations": [
+    "WIPO问答是一般解释，不能确定具体委托作品、软件、商标或合同条款在某地区的效力。",
+    "存在权属冲突、授权链不完整、跨地区使用或争议时需专业核查；本文不给可签合同、通用免责条款或诉讼结果预测。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小型服务负责人"
+    ],
+    "stage": [
+      "签约或扩大使用前"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "核对主体、历史承诺与材料许可的时间。"
+    },
+    "riskCategories": [
+      "权利与履约风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.5",
+      "note": "作者自查：签约主体、权利许可与付款区别核对；WIPO一般解释不裁定当地个案。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0044。不是独立或专业审核。",
+      "fingerprint": "sha256:dac681275e617f9640e783878a88b3221b06965739c1cd3a4891904d6926aa78"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "通用交易与权利问题识别；具体合同、知识产权及责任由交易法域和约定判断，本篇不作权利结论。",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0044-C1",
+    "E-0044-C2",
+    "E-0044-C3"
+  ]
+}

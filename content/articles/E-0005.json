@@ -1,0 +1,210 @@
+{
+  "id": "E-0005",
+  "title": "产品还没做完，也要先试一遍顾客怎么找到你",
+  "volume": 6,
+  "chapter": 4,
+  "type": "框架",
+  "tags": [
+    "渠道",
+    "分发",
+    "获客实验",
+    "推广模式",
+    "营销策略",
+    "真实信誉"
+  ],
+  "summary": "渠道是否可用不只看一次点击；要连同来源、访问后的行动和后续返回一起观察。",
+  "claims": [
+    {
+      "id": "E-0005-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "来源分别支持早期人工招募用户，以及在队列分析中区分纳入条件和返回条件。",
+      "referenceIds": [
+        "R-GRAHAM-2013",
+        "R-GA4-COHORT"
+      ]
+    },
+    {
+      "id": "E-0005-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "把触达、理解、行动和返回拆成连续路径，是基于来源的编辑编排。",
+      "referenceIds": [
+        "R-GRAHAM-2013",
+        "R-GA4-COHORT"
+      ]
+    },
+    {
+      "id": "E-0005-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中生活例子是显著标记的假设，用于解释操作方法，不是客户案例或市场统计。",
+      "referenceIds": []
+    },
+    {
+      "id": "E-0005-C4",
+      "text": "FTC广告基础指导说明其美国管辖情境下广告主张应真实、不误导、有证据；具体产品和地区规则须另查。",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "referenceIds": [
+        "R-FTC-AD-BASICS-2026"
+      ]
+    },
+    {
+      "id": "E-0005-C5",
+      "text": "比较推广路径，使用真实能力、明确假设与获准素材表达信誉，是编辑建议，不保证成交。",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "referenceIds": [
+        "R-FTC-AD-BASICS-2026"
+      ]
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：Paul Graham的经验文章支持早期主动获客，GA4文档只定义群组分析；两者都没有证明某条渠道或本文观察流程会提高留存与利润。 FTC指引支持限定真实性边界，未验证推广路径和信誉呈现的经营效果，仍为C。",
+  "references": [
+    {
+      "id": "R-GRAHAM-2013",
+      "title": "Do Things that Don't Scale",
+      "authors": [
+        "Paul Graham"
+      ],
+      "publisher": "Paul Graham",
+      "url": "https://paulgraham.com/ds.html",
+      "doi": null,
+      "publishedAt": "2013-07",
+      "materialType": "创业者方法文章",
+      "accessScope": "full",
+      "locator": "2013年7月文章，Manual 小节第 66–69 行及 Consult 小节第 59–65 行",
+      "limitations": [
+        "经验性文章，存在选择与幸存者偏差。",
+        "没有随机对照，不能证明方法普遍提高成功率或利润。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0005-C1",
+        "E-0005-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "文章以作者和 YC 经历主张早期主动招募、超常服务及人工完成部分流程，同时也指出咨询式服务和不可扩展投入的风险。"
+      },
+      "assessment": "文章直接描述早期人工完成计划以后自动化的流程；属于创业经验文章，不能证明需求、盈利或可扩展性。"
+    },
+    {
+      "id": "R-GA4-COHORT",
+      "title": "GA4 Cohort exploration",
+      "authors": [
+        "Google Analytics Help"
+      ],
+      "publisher": "Google",
+      "url": "https://support.google.com/analytics/answer/9670133?hl=en",
+      "doi": null,
+      "publishedAt": null,
+      "materialType": "产品官方说明",
+      "accessScope": "selected_sections",
+      "locator": "How cohort exploration works；Cohort inclusion；Return criteria；Cohort granularity；Cohort calculation（41–95行）；工具定义不等于续约或经营效果研究。",
+      "limitations": [
+        "产品说明定义指标，不证明留存变化的因果原因。",
+        "设备数据、阈值和产品配置会影响结果。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "accessResult": "success",
+      "supports": [
+        "E-0005-C1",
+        "E-0005-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "文档要求分别定义队列纳入与返回条件，并说明日、周、月粒度及标准、滚动、累计算法不同。"
+      },
+      "assessment": "该材料直接支持 E-0005-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    },
+    {
+      "id": "R-FTC-AD-BASICS-2026",
+      "title": "Advertising and Marketing",
+      "publisher": "Federal Trade Commission",
+      "authors": [
+        "Federal Trade Commission"
+      ],
+      "url": "https://www.ftc.gov/business-guidance/advertising-marketing",
+      "locator": "Advertising and Marketing Basics（正文第4行）；本次仅采用该节，不采用其他专题规则。",
+      "assessment": "美国FTC经营指导概括其管辖范围广告主张应真实、不误导并有证据；本文不提供个案执法结论，不将其当其他地区法律。",
+      "limitations": [
+        "首发/修订时间正文未显示，未知；2026-10-11访问现行机构网页，不据此推断所有关联法律版本。",
+        "支持真实性边界，不证明真实表达能提高成交。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "publishedAt": null,
+      "materialType": "官方指引",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "美国FTC经营指导概括其管辖范围广告主张应真实、不误导并有证据；本文不提供个案执法结论，不将其当其他地区法律。"
+      },
+      "supports": [
+        "E-0005-C4",
+        "E-0005-C5"
+      ]
+    }
+  ],
+  "limitations": [
+    "经验性文章，存在选择与幸存者偏差。",
+    "没有随机对照，不能证明方法普遍提高成功率或利润。",
+    "产品说明定义指标，不证明留存变化的因果原因。",
+    "设备数据、阈值和产品配置会影响结果。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "1.0.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "内容与电商创业者"
+    ],
+    "stage": [
+      "获客期"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "取决于行业、地区和验证方式，现有资料不足以给出统一金额。"
+    },
+    "riskCategories": [
+      "获客风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "1.0.0",
+      "note": "作者自查：分发路径与真实信誉分开，发布前看许可和受众规则，不能保证曝光效果。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0005。不是独立或专业审核。",
+      "fingerprint": "sha256:cdad74d89c34376b975a45ebcd46c1b8fb4fed1ad60391023422a2c76b7f2d48"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "通用推广方法；FTC段仅限美国、处于FTC广告管辖范围的经营宣传，不提供其他地区法律结论。",
+  "validAsOf": "2026-10-11",
+  "guideClaimIds": [
+    "E-0005-C1",
+    "E-0005-C2",
+    "E-0005-C3",
+    "E-0005-C4",
+    "E-0005-C5"
+  ]
+}

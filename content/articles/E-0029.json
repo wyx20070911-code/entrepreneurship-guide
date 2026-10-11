@@ -1,0 +1,169 @@
+{
+  "id": "E-0029",
+  "title": "提案先写清问题、交付和边界，再谈价格",
+  "volume": 8,
+  "chapter": 2,
+  "type": "框架",
+  "tags": [
+    "提案",
+    "费用口径",
+    "待确认事项",
+    "演讲口才",
+    "正当谈判"
+  ],
+  "summary": "适合已经确认服务匹配的项目沟通：用可检查的交付说明和明确费用口径讨论取舍，保留未确认事项；不保证成交。",
+  "claims": [
+    {
+      "id": "E-0029-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "英国学校采购指南列出需求描述、功能、数量、质量和时间，并要求与使用者及审批者沟通。",
+      "referenceIds": [
+        "R-DFE-SPEC"
+      ]
+    },
+    {
+      "id": "E-0029-C2",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "英国敏捷合同指南把质量、目标、职责、需求、表现及价格纳入事前说明。",
+      "referenceIds": [
+        "R-AGILE-PROPOSAL"
+      ]
+    },
+    {
+      "id": "E-0029-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "把提案写成问题、交付、验收、依赖、费用与待确认项，并记录修改，是编辑建议。",
+      "referenceIds": [
+        "R-DFE-SPEC",
+        "R-AGILE-PROPOSAL"
+      ]
+    },
+    {
+      "id": "E-0029-C4",
+      "text": "按问题、结果、边界与未知组织口头说明，用复述发现差异，是编辑沟通建议；不是演讲实验结果，不保证成交。",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "referenceIds": [
+        "R-DFE-SPEC",
+        "R-AGILE-PROPOSAL"
+      ]
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：两份英国公共采购指南支持澄清要求和商业要素，但不是小型服务成交效果研究，也不是适用其他法域的法律模板。 口头表达借用澄清结构，未验证话术的成交效果。",
+  "references": [
+    {
+      "id": "R-DFE-SPEC",
+      "title": "Buying for schools: how to buy what you need — Writing a specification",
+      "authors": [
+        "Department for Education"
+      ],
+      "publisher": "Department for Education",
+      "url": "https://www.gov.uk/guidance/buying-procedures-and-procurement-law-for-schools/writing-a-specification",
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "publishedAt": "2019-07-01",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始研究或机构方法说明",
+      "locator": "Writing a specification：Before you start、What to include（正文78–97行）；未采用Procurement Act章节。",
+      "assessment": "要求描述需要、功能、数量、质量和时间，并向使用者、审批者和供应商了解情况。 本次选读使用者/审批者澄清及需求描述；采购指南不能证明口头提案能提升成交。",
+      "limitations": [
+        "英国学校采购指南，本文仅借鉴需求沟通结构。"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "要求描述需要、功能、数量、质量和时间，并向使用者、审批者和供应商了解情况。"
+      },
+      "supports": [
+        "E-0029-C1",
+        "E-0029-C3",
+        "E-0029-C4"
+      ]
+    },
+    {
+      "id": "R-AGILE-PROPOSAL",
+      "title": "Contracting For Agile Guidance Note (HTML)",
+      "authors": [
+        "Cabinet Office"
+      ],
+      "publisher": "Cabinet Office",
+      "url": "https://www.gov.uk/government/publications/the-digital-data-and-technology-playbook/contracting-for-agile-guidance-note-html",
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "publishedAt": null,
+      "accessResult": "success",
+      "accessScope": "full",
+      "materialType": "原始研究或机构方法说明",
+      "locator": "第5.3–5.6节；第238–265行；全文网页可取得，本轮重点阅读这些节",
+      "assessment": "英国公共采购指南列出质量、目标、职责、需求、表现和价格，并承认要求会继续发展。",
+      "limitations": [
+        "公共部门敏捷软件合同参考，不提供中国法律条款或保证成交。"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "英国公共采购指南列出质量、目标、职责、需求、表现和价格，并承认要求会继续发展。"
+      },
+      "supports": [
+        "E-0029-C2",
+        "E-0029-C3",
+        "E-0029-C4"
+      ]
+    }
+  ],
+  "limitations": [
+    "公共采购和小型服务的治理要求不同；提案清晰不等于顾客愿买或商业效果可控。",
+    "不是可直接签署的合同；文书效力、税务和责任按地区与交易另行核对。",
+    "受监管或高风险交付需要相应专业审查，不能靠提案替代资格要求。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "1.0.0",
+  "author": "主智能体（作者自查）",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "项目负责人"
+    ],
+    "stage": [
+      "提案与成交"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "问题澄清、估算和提案修订时间。"
+    },
+    "riskCategories": [
+      "范围与报价风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "1.0.0",
+      "note": "作者自查：提案与口头表达明确结果、边界、依赖和未知，增加演练/复述及修订过程；不保证成交。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0029。不是独立或专业审核。",
+      "fingerprint": "sha256:caa3276bdffcf209407f917dd80cbd6d3c1a08f7e09330afefc9466844d24660"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "一般提案沟通建议；法律、税务与合同效力按实际地区另行核对",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0029-C1",
+    "E-0029-C2",
+    "E-0029-C3",
+    "E-0029-C4"
+  ]
+}

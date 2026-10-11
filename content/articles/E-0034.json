@@ -1,0 +1,251 @@
+{
+  "id": "E-0034",
+  "title": "缺钱时先弄清缺口，再比较资金来源",
+  "volume": 9,
+  "chapter": 4,
+  "type": "框架",
+  "tags": [
+    "融资选择",
+    "资金约束",
+    "偿还压力",
+    "国家政策",
+    "投资模式"
+  ],
+  "summary": "用用途、期限、负担和可承受损失比较资金方案，先辨别短期错配还是持续亏损。",
+  "claims": [
+    {
+      "id": "E-0034-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "澳大利亚融资指南区分借款与以部分所有权换取资金，列出偿还和所有权等不同权衡。",
+      "referenceIds": [
+        "R-AUS-FUNDING-CHOICE"
+      ]
+    },
+    {
+      "id": "E-0034-C2",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "SBA商业计划的融资部分要求交代资金用途、期望形式、期限及后续财务安排。",
+      "referenceIds": [
+        "R-SBA-PLAN-FINANCE"
+      ]
+    },
+    {
+      "id": "E-0034-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "先把缺口分为时间错配、一次投入或持续亏损，再比较自有、借入或权益资金的条件与失败负担；这是一般编辑决策框架，不推荐具体资金产品。",
+      "referenceIds": [
+        "R-AUS-FUNDING-CHOICE",
+        "R-SBA-PLAN-FINANCE"
+      ]
+    },
+    {
+      "id": "E-0034-C4",
+      "text": "澳大利亚补助准备指南要求核对具体资格、目标及申请报告准备，不保证获资；未核验任何开放中的具体项目。",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "referenceIds": [
+        "R-AU-GRANT-READY-2026"
+      ]
+    },
+    {
+      "id": "E-0034-C5",
+      "text": "政策资格/时点核查与投入方式比较分开，未批准或到账不当现金，是编辑框架，不推荐投资产品。",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "referenceIds": [
+        "R-AU-GRANT-READY-2026"
+      ]
+    },
+    {
+      "id": "E-0034-C6",
+      "text": "澳大利亚设备指南把购买与租用的付款、维护和退出负担列作比较事项；实际费用与责任仍需核对具体条件，不证明租用更便宜。",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "referenceIds": [
+        "R-AU-EQUIPMENT-CHOICE"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "1.0.0",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "债务与权益分类、用途和期限有官方指南支持；本篇缺口分类与比较清单是编辑建议，没有融资效果或成功率证据，维持C级。 政策材料是准备指导而非资格或收益证据；投入方式比较仍为C级探索建议。 本轮补入设备比较的官方方法来源，仅支持比较维度；政策资格、税务和实际投资收益仍未核定，不据此升级等级。",
+  "references": [
+    {
+      "id": "R-AUS-FUNDING-CHOICE",
+      "title": "Choose your funding",
+      "authors": [
+        "Australian Government, business.gov.au"
+      ],
+      "publisher": "Australian Government",
+      "url": "https://business.gov.au/finance/funding/choose-your-funding",
+      "publishedAt": null,
+      "locator": "Reasons to seek funding（Business survival、Inventory）；Debt and equity finance；Compare advantages and disadvantages；Family or friends",
+      "assessment": "区分借入资金与换取部分所有权的资金，提示偿还、所有权、风险及亲友关系的权衡；不引用税扣除等地区规则。",
+      "limitations": [
+        "澳大利亚融资指南；实际资格、权利、责任与费用由地区和协议确定，不保证融资成功。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构经营指南或标准概述",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "区分借入资金与换取部分所有权的资金，提示偿还、所有权、风险及亲友关系的权衡；不引用税扣除等地区规则。"
+      },
+      "supports": [
+        "E-0034-C1",
+        "E-0034-C3"
+      ]
+    },
+    {
+      "id": "R-SBA-PLAN-FINANCE",
+      "title": "Write your business plan",
+      "authors": [
+        "U.S. Small Business Administration"
+      ],
+      "publisher": "U.S. Small Business Administration",
+      "url": "https://legacy.sba.gov/business-guide/plan-your-business/write-your-business-plan",
+      "publishedAt": "2025-11-13",
+      "locator": "Lean startup：Customer segments、Cost structure、Revenue streams；Traditional：Funding request、Marketing and sales",
+      "assessment": "列明客户、主要成本与收入渠道，融资说明需交代用途、期限和形式；这是计划框架，不是获利效果研究。",
+      "limitations": [
+        "美国经营指南；不引用其法定组织形式、抵押或统一预测年限。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构经营指南或标准概述",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "列明客户、主要成本与收入渠道，融资说明需交代用途、期限和形式；这是计划框架，不是获利效果研究。"
+      },
+      "supports": [
+        "E-0034-C2",
+        "E-0034-C3"
+      ]
+    },
+    {
+      "id": "R-AU-GRANT-READY-2026",
+      "title": "Check if you're ready to apply for a grant",
+      "publisher": "business.gov.au",
+      "authors": [
+        "Australian Government / business.gov.au"
+      ],
+      "url": "https://business.gov.au/grants-and-programs/check-if-youre-ready-to-apply-for-a-grant",
+      "locator": "Check your readiness for a grant；Make sure you meet the grant objectives（正文174–222行）。",
+      "assessment": "澳大利亚官方指南提醒核对具体补助的资格、目标、准备与报告负担，并非所有申请会成功；未阅读某项在开放中的补助指南，不给资格或到账保证。",
+      "limitations": [
+        "澳大利亚方法说明，不能推断中国补助资格；具体项目、主体、地域、费用范围、轮次和有效期仍须读当期官方原文。",
+        "首发/修订日期未显示；政策机会不能登记为确定回款。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "publishedAt": null,
+      "materialType": "官方指引",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "澳大利亚官方指南提醒核对具体补助的资格、目标、准备与报告负担，并非所有申请会成功；未阅读某项在开放中的补助指南，不给资格或到账保证。"
+      },
+      "supports": [
+        "E-0034-C4",
+        "E-0034-C5"
+      ]
+    },
+    {
+      "id": "R-AU-EQUIPMENT-CHOICE",
+      "title": "Leasing or buying vehicles and equipment",
+      "authors": [
+        "Australian Government / business.gov.au"
+      ],
+      "publisher": "business.gov.au",
+      "url": "https://business.gov.au/finance/leasing-or-buying-vehicles-and-equipment",
+      "publishedAt": null,
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "官方经营指引",
+      "locator": "Leasing or buying equipment：比较表 Cost、Maintenance、When you no longer need it；正文239–289行，不采用车辆保险和GST部分。",
+      "assessment": "实际阅读设备比较和采购准备；只支持比较维度，不证明具体方案更便宜或投资回报。",
+      "limitations": [
+        "澳大利亚入门经营指引；未采用税务、融资产品或法定义务。",
+        "发布日期/修订日期未显示；实际报价、许可、责任与退出费用未知时需另查。"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "设备租赁与购买应比较付款、维护及不再需要时的负担，实际选择须研究需求和条件。"
+      },
+      "supports": [
+        "E-0034-C6"
+      ]
+    }
+  ],
+  "limitations": [
+    "仅一般决策框架；不推荐贷款、证券、投资产品，不承诺融资成功。",
+    "利率、担保、税务、法律责任与股权条款按实际地区和有效日期专业核对；本文不提供这些确定性规则。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小型业务经营者"
+    ],
+    "stage": [
+      "资金缺口决策"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "整理资金用途、收付预测与书面条件。"
+    },
+    "riskCategories": [
+      "资金与控制风险",
+      "专业判断边界"
+    ]
+  },
+  "numericClaims": [
+    {
+      "text": "假设人民币期初两万元减本月必要付款三万元为负一万元；客户下月可能付款四万元，尚未确认；自有、借入各比较一万元，实际费用未知。",
+      "kind": "hypothetical",
+      "referenceIds": []
+    }
+  ],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "1.0.0",
+      "note": "作者自查：先确认缺口再比较资金来源与设备投入；政策示例不是开放计划，不把未批补助当现金。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0034。不是独立或专业审核。",
+      "fingerprint": "sha256:99489426e1a33076debb5825d0e62dbd73aa7931094a0d2e50120fcafd8240a1"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "一般资金和经营投入比较；补助材料限澳大利亚准备指南，未确认任何地区具体项目、开放轮次或申请资格。",
+  "validAsOf": "2026-10-11",
+  "guideClaimIds": [
+    "E-0034-C1",
+    "E-0034-C2",
+    "E-0034-C3",
+    "E-0034-C4",
+    "E-0034-C5",
+    "E-0034-C6"
+  ]
+}

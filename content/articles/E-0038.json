@@ -1,0 +1,176 @@
+{
+  "id": "E-0038",
+  "title": "先确认目标顾客在哪里做决定，再选获客渠道",
+  "volume": 6,
+  "chapter": 1,
+  "type": "框架",
+  "tags": [
+    "渠道选择",
+    "受众匹配",
+    "购买情境",
+    "平台规则"
+  ],
+  "summary": "比较目标角色、任务情境、触达许可和沟通成本，用可观察行为选择初始渠道，不用平台总量代替目标顾客。",
+  "claims": [
+    {
+      "id": "E-0038-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "SBA营销指南分别要求描述目标受众、销售步骤、渠道和预算。",
+      "referenceIds": [
+        "R-SBA-MARKETING-LEGACY"
+      ]
+    },
+    {
+      "id": "E-0038-C2",
+      "type": "editorial_inference",
+      "importance": "core",
+      "evidenceRelation": "inference_from",
+      "text": "平台总体规模不能直接说明目标顾客是否在购买情境中、能否触达或会下单；需回到受众和销售步骤判断。",
+      "referenceIds": [
+        "R-SBA-MARKETING-LEGACY"
+      ]
+    },
+    {
+      "id": "E-0038-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "先收集目标角色决策地点和触达条件，再比较渠道成本及可观察行为，选择可验证范围；这是编辑建议而非渠道效果排名。",
+      "referenceIds": [
+        "R-SBA-MARKETING-LEGACY"
+      ]
+    },
+    {
+      "id": "E-0038-C4",
+      "text": "YouTube帮助页要求含有偿植入、赞助或代言关系的视频作有偿推广声明；其他平台规则和适用地区要求另行确认。",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "referenceIds": [
+        "R-YT-PAID-PROMOTION-2026"
+      ]
+    },
+    {
+      "id": "E-0038-C5",
+      "text": "按具体行为逐条核查平台规则，不用规模或单条声明代替权限、效果判断，是编辑建议。",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "referenceIds": [
+        "R-YT-PAID-PROMOTION-2026"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "0.5.0",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "受众、销售步骤与预算划分有官方指南；渠道比较为编辑推断，没有比较两种渠道获客效果的研究或真实业务数据，维持C级。 YouTube原文仅支持有限声明规则，不支持其他平台或渠道收益。",
+  "references": [
+    {
+      "id": "R-SBA-MARKETING-LEGACY",
+      "title": "Marketing and sales",
+      "publisher": "U.S. Small Business Administration",
+      "authors": [
+        "U.S. Small Business Administration"
+      ],
+      "url": "https://legacy.sba.gov/business-guide/manage-your-business/marketing-sales",
+      "publishedAt": null,
+      "locator": "Target market；Sales plan；Marketing action plan；Budget；Measure and update your plan（第54–101行）",
+      "assessment": "指南要求说明受众、销售步骤、渠道与预算，也提示部分推广难以衡量。",
+      "limitations": [
+        "美国营销计划指南；不引用美国广告法规，不提供平台用户量或现行平台权限判断。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构方法说明",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南要求说明受众、销售步骤、渠道与预算，也提示部分推广难以衡量。"
+      },
+      "supports": [
+        "E-0038-C1",
+        "E-0038-C2",
+        "E-0038-C3"
+      ]
+    },
+    {
+      "id": "R-YT-PAID-PROMOTION-2026",
+      "title": "Add paid product placements, sponsorships and endorsements",
+      "publisher": "YouTube Help / Google",
+      "authors": [
+        "YouTube Help"
+      ],
+      "url": "https://support.google.com/youtube/answer/154235?hl=en-uk",
+      "locator": "Add paid product placements, sponsorships and endorsements；FAQ Tell YouTube、paid product placement/sponsorship/endorsement（正文19–20、53–86行）。",
+      "assessment": "YouTube帮助页要求含有偿植入、赞助或代言关系的视频使用有偿推广声明，并遵守其他平台规则和适用地区披露要求；此登记仅核查本条，不是完整政策/法律审查。",
+      "limitations": [
+        "2026-10-11核验公开页面；修订时间未显示，界面和规则会变，发布前重查。",
+        "不代表小红书、社群、线下活动或其他平台许可；平台提示不替代地区法律。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "publishedAt": null,
+      "materialType": "官方指引",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "YouTube帮助页要求含有偿植入、赞助或代言关系的视频使用有偿推广声明，并遵守其他平台规则和适用地区披露要求；此登记仅核查本条，不是完整政策/法律审查。"
+      },
+      "supports": [
+        "E-0038-C4",
+        "E-0038-C5"
+      ]
+    }
+  ],
+  "limitations": [
+    "本篇未核验任何指定平台的现行规则，也不提供触达权限指令或渠道效果保证。",
+    "隐性决策、间接影响和长采购周期会限制短期观察；未知行为不等同无需求。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小型业务负责人"
+    ],
+    "stage": [
+      "渠道投入前"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "查决策路径、当期规则、许可与沟通材料。"
+    },
+    "riskCategories": [
+      "受众错配与触达风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.5.0",
+      "note": "作者自查：投放前看受众场景、可观察行为与当前渠道规则，平台总用户量不是目标市场。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0038。不是独立或专业审核。",
+      "fingerprint": "sha256:154d82c2d577b8824fef991429f6acc45f847b17cc153f1df7c4e28a4402a34f"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "YouTube平台有偿推广声明，主体为含有偿植入/赞助/代言关系视频的创作者；地区披露法律另查，未作其他平台许可或地区法律解释。",
+  "validAsOf": "2026-10-11",
+  "guideClaimIds": [
+    "E-0038-C1",
+    "E-0038-C2",
+    "E-0038-C3",
+    "E-0038-C4",
+    "E-0038-C5"
+  ]
+}

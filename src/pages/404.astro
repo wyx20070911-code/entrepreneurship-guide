@@ -1,0 +1,5 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { siteUrl } from '../lib/urls';
+---
+<BaseLayout title="页面不存在"><section class="empty-state"><p class="eyebrow">404</p><h1>这里没有可用的文章</h1><p>条目可能仍在草稿区、已经撤回，或尚未完成编写。</p><a href={siteUrl('/catalog/')} class="button primary">返回图书目录</a></section></BaseLayout>

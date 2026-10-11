@@ -1,0 +1,153 @@
+{
+  "id": "E-0017",
+  "title": "改价格前，先知道自己想验证什么",
+  "volume": 7,
+  "chapter": 3,
+  "type": "工具",
+  "tags": [
+    "定价",
+    "价格实验",
+    "成本"
+  ],
+  "summary": "价格测试前先写目标、成本边界和顾客场景；口头报价反应不能直接当作真实购买结果。",
+  "claims": [
+    {
+      "id": "E-0017-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "政府指南要求结合定价目标、成本、顾客和竞争条件；元分析显示假设性付费意愿存在情境差异。",
+      "referenceIds": [
+        "R-AUS-PRICING",
+        "R-SCHMIDT-WTP-2020"
+      ]
+    },
+    {
+      "id": "E-0017-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "把价格实验与明确目标、成本边界和保护条件绑定，是编辑建议。",
+      "referenceIds": [
+        "R-AUS-PRICING",
+        "R-SCHMIDT-WTP-2020"
+      ]
+    },
+    {
+      "id": "E-0017-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中生活例子是显著标记的假设，用于解释操作方法，不是客户案例或市场统计。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：澳大利亚政府指南列出定价策略，消费品元分析显示假设性付费意愿偏差；二者不能确定某个企业的最佳价格或测试收益。",
+  "references": [
+    {
+      "id": "R-AUS-PRICING",
+      "title": "Choose a pricing strategy",
+      "authors": [
+        "business.gov.au"
+      ],
+      "publisher": "Australian Government",
+      "url": "https://business.gov.au/products-and-services/choose-a-pricing-strategy",
+      "doi": null,
+      "publishedAt": null,
+      "materialType": "政府商业指南",
+      "accessScope": "selected_sections",
+      "locator": "Choose a pricing strategy；Set your prices；Plan for discounts；不采用该页澳大利亚价格法律、统一复查周期或折扣效果保证。",
+      "limitations": [
+        "澳大利亚通用指南；列举策略不代表任何策略适合特定企业。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "accessResult": "captcha",
+      "supports": [
+        "E-0017-C1",
+        "E-0017-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南要求先写定价目标，检查成本、客户和竞争条件，并根据市场变化复核价格。"
+      },
+      "assessment": "该材料直接支持 E-0017-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    },
+    {
+      "id": "R-SCHMIDT-WTP-2020",
+      "title": "Accurately measuring willingness to pay for consumer goods: a meta-analysis of the hypothetical bias",
+      "authors": [
+        "Jonas Schmidt",
+        "Tammo H. A. Bijmolt"
+      ],
+      "publisher": "Journal of the Academy of Marketing Science",
+      "url": "https://d-nb.info/1197597174/34",
+      "doi": "10.1007/s11747-019-00666-6",
+      "publishedAt": "2019-06-07",
+      "materialType": "开放获取元分析",
+      "accessScope": "selected_sections",
+      "locator": "PDF第1–2页摘要、假设与真实付费意愿的区别及情境异质性；本轮未逐页阅读方法和讨论，不采用统一修正比例。",
+      "limitations": [
+        "研究集中于消费品付费意愿，不能直接推断 B2B、订阅或新创产品。",
+        "总体结果异质，不能用单一修正比例替代实测。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "accessResult": "success",
+      "supports": [
+        "E-0017-C1",
+        "E-0017-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "元分析比较假设性与真实付费意愿测量，发现偏差随方法与产品情境而异。"
+      },
+      "assessment": "该材料直接支持 E-0017-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    }
+  ],
+  "limitations": [
+    "澳大利亚通用指南；列举策略不代表任何策略适合特定企业。",
+    "研究集中于消费品付费意愿，不能直接推断 B2B、订阅或新创产品。",
+    "总体结果异质，不能用单一修正比例替代实测。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "1.0.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "小微经营者"
+    ],
+    "stage": [
+      "经营期"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "取决于行业、地区和验证方式，现有资料不足以给出统一金额。"
+    },
+    "riskCategories": [
+      "盈利风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "1.0.0",
+      "note": "作者自查：先确定价格目标与未知成本，条件差异时不直接比较；折扣与贡献不是实际利润。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0017。不是独立或专业审核。",
+      "fingerprint": "sha256:2ba7579a2a49c736934762176f0b3044c15a3a0b78a886e1d4497af7b06ab900"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0017-C1",
+    "E-0017-C2",
+    "E-0017-C3"
+  ]
+}

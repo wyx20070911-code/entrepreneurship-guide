@@ -1,0 +1,70 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { chapters, grades, volumes } from '../data/content';
+import type { EvidenceRecord } from '../data/content';
+import { articleHref } from '../lib/site';
+import { adjacentArticles } from '../lib/reading-order';
+import { isPublishable } from '../lib/policy';
+import { siteUrl, repositoryLink } from '../lib/urls';
+interface Props { record: EvidenceRecord; draft?: boolean; siblings: EvidenceRecord[]; }
+const { record, draft = false, siblings } = Astro.props;
+const chapterId = `V${String(record.volume).padStart(2, '0')}-C${record.chapter}`;
+const chapter = chapters.find(item => item.id === chapterId);
+const { previous, next } = adjacentArticles(record, siblings);
+const recommendationMap: Record<string,string[]> = {
+  'E-0001':['E-0002','E-0012'], 'E-0002':['E-0010','E-0011'], 'E-0010':['E-0003'],
+  'E-0003':['E-0020'], 'E-0004':['E-0018'], 'E-0011':['E-0012'], 'E-0012':['E-0020'], 'E-0020':['E-0008'],
+  'E-0021':['E-0022'], 'E-0022':['E-0023'], 'E-0023':['E-0003'], 'E-0024':['E-0025'], 'E-0025':['E-0020'],
+  'E-0026':['E-0010','E-0012'], 'E-0027':['E-0011','E-0028'], 'E-0028':['E-0008','E-0020'], 'E-0029':['E-0024','E-0025'],
+  'E-0030':['E-0021','E-0029'], 'E-0031':['E-0018','E-0032'], 'E-0032':['E-0031'], 'E-0033':['E-0018'], 'E-0034':['E-0031'],
+  'E-0035':['E-0002','E-0020'], 'E-0036':['E-0025','E-0029'], 'E-0037':['E-0028'], 'E-0038':['E-0026','E-0024'],
+  'E-0039':['E-0029','E-0025'], 'E-0040':['E-0037'], 'E-0041':['E-0025'], 'E-0042':['E-0031','E-0037'],
+  'E-0043':['E-0037','E-0031'], 'E-0044':['E-0029','E-0025'], 'E-0045':['E-0035'], 'E-0046':['E-0037'],
+  'E-0047':['E-0007','E-0034'], 'E-0048':['E-0031','E-0042'], 'E-0049':['E-0033','E-0028']
+};
+const paginationIds = new Set([previous?.id,next?.id]);
+const recommendations = (recommendationMap[record.id] ?? []).map(id => siblings.find(item => item.id === id && isPublishable(item))).filter(item => item && !paginationIds.has(item.id)) as EvidenceRecord[];
+const recommendationIds = new Set(recommendations.map(item => item.id));
+const directReferences = record.references.filter(reference => record.claims?.some(claim => claim.type === 'source_fact' && claim.referenceIds.includes(reference.id)));
+const sections = record.guide
+  ? [['problem','你会在什么时候遇到'],['advice','一句话建议'],['actions','具体怎么做'],['why','为什么这么说'],['example','生活例子'],['cost','需要花多少钱'],['limits','什么情况下不适用'],['evidence','证据与来源'],['next-step','下一步']]
+  : [['advice','核心建议'],['actions','实施步骤'],['limits','适用边界'],['evidence','证据与来源']];
+const statusLabel = record.state === 'published' ? '已自动发布' : record.state === 'withdrawn' ? '已撤回' : '草稿';
+---
+<BaseLayout title={record.title} sidebar currentChapter={chapterId} draft={draft} active="library">
+  <div class="article-layout">
+    <article class="reading">
+      <a class="back-link" href={siteUrl(draft ? '/drafts/' : '/library/')}>返回{draft ? '草稿区' : '证据库'}</a>
+      <div class="article-kicker">第 {record.volume} 卷 · {volumes[record.volume - 1]} / 第 {record.chapter} 章</div>
+      <h1>{record.title}</h1>
+      <div class="article-meta"><span class="mono">{record.id}</span><span class:list={['badge', draft && 'draft-badge']}>{statusLabel}</span><span>{grades[record.grade].label}（AI 自动初评）</span><span>更新于 {record.updatedAt}</span></div>
+      <p class="muted">适用：{record.classification.audience.join('、')} · 阶段：{record.classification.stage.join('、')} · 行业：{record.classification.industry.join('、')}</p>
+      {draft && <div class="notice warning"><strong>草稿 · 尚未进入公开内容区</strong><p>正文和研究材料仍然保留，但至少有一项发布条件需要进一步核实。</p></div>}
+      {record.grade === 'U' && <div class="notice warning"><strong>证据不足，请谨慎参考</strong><p>{record.evidenceWarning}</p></div>}
+      <p class="article-summary">{record.summary}</p>
+      {!draft && repositoryLink() && <p class="muted"><a href={repositoryLink(`/blob/main/content/articles/${record.id}.md`)}>在 GitHub 阅读</a> · <a href={repositoryLink(`/edit/main/content/articles/${record.id}.md`)}>编辑本页</a> · <a href={repositoryLink('/issues/new?title=' + encodeURIComponent(record.id + ' 内容纠错'))}>反馈问题</a></p>}
+
+      {record.guide && <section id="problem"><h2>你会在什么时候遇到这个问题？</h2><p>{record.guide.problem}</p></section>}
+      <section id="advice"><h2>① 一句话建议</h2><div class="conclusion">{record.guide?.oneSentence ?? record.claim}</div></section>
+      {record.guide ? <>
+        <section id="actions"><h2>② 具体怎么做？</h2><ol>{record.guide.howTo.map(step => <li>{step}</li>)}</ol>{record.id === 'E-0003' && <p class="muted">可用纸笔或自建表格记录输入、输出、耗时、费用和客户实际行为。</p>}</section>
+        <section id="why"><h2>③ 为什么值得这样尝试？</h2>{record.guide.why.map(paragraph => <p>{paragraph}</p>)}{directReferences.length > 0 && <p class="inline-sources"><strong>就近依据：</strong>{directReferences.map((reference,index) => <>{index ? '；' : ''}<a href={`#ref-${reference.id}`}>{reference.title}</a>（{reference.locator}）</>)}</p>}</section>
+        <section id="example"><h2>④ 举个生活中的例子</h2><div class="notice"><strong>以下为假设性例子，不是真实案例或市场统计。</strong></div>{record.guide.example.paragraphs.map(paragraph => <p>{paragraph}</p>)}</section>
+        <section id="cost"><h2>⑤ 需要花多少钱？</h2><dl class="metadata-grid"><div><dt>启动成本</dt><dd>{record.guide.cost.startup}</dd></div><div><dt>持续成本</dt><dd>{record.guide.cost.ongoing}</dd></div><div><dt>时间成本</dt><dd>{record.guide.cost.time}</dd></div><div><dt>潜在损失</dt><dd>{record.guide.cost.potentialLoss}</dd></div></dl></section>
+        <section id="limits"><h2>⑥ 什么情况下不适用？</h2><ul>{record.guide.notFor.map(item => <li>{item}</li>)}</ul><p><strong>主要风险：</strong>{record.classification.riskCategories.join('、')}</p></section>
+      </> : <>
+        <section id="actions"><h2>④ 具体怎么做？</h2><ol>{record.steps.map(step => <li>{step}</li>)}</ol></section>
+        <section id="limits"><h2>⑥ 什么情况下不适用？</h2><ul>{record.applicability.map(item => <li>{item}</li>)}</ul></section>
+      </>}
+
+      <section id="evidence"><h2>⑦ 证据与来源</h2><p><span class="badge">{grades[record.grade].label}</span> AI 初评，不代表独立专家审查。</p><p><strong>评级理由：</strong>{record.gradeRationale}</p><div><strong>研究限制：</strong><ul>{record.limitations.map(item => <li>{item.replace(/[。；]+$/u,'')}</li>)}</ul></div><p><strong>复核情况：</strong>作者自查 {record.reviewStatus?.selfCheck.checkedAt ?? '未记录'}；独立 AI 复核 {record.reviewStatus?.independentAi?.decision === 'passed' ? '已完成' : record.reviewStatus?.independentAi ? '要求修改' : '未执行'}；人工复核 {record.reviewStatus?.human ? '已记录' : '未执行'}。</p>
+        <details class="source-note"><summary>查看详细来源、定位与主张对应</summary>{record.claims?.length ? <><h3>读者可见主张如何对应来源</h3><ul>{record.claims.map(claim => <li><strong>{claim.type === 'source_fact' ? '来源事实' : claim.type === 'recommendation' ? '编辑建议' : claim.type === 'hypothetical_calculation' ? '假设示范' : '编辑推断'}：</strong>{claim.text}{claim.referenceIds.length ? <span> 支持材料：{claim.referenceIds.map((id,index) => { const reference=record.references.find(item=>item.id===id); return reference ? <><a href={`#ref-${id}`}>{reference.title}</a>{index < claim.referenceIds.length - 1 ? '；' : ''}</> : null; })}</span> : <span> 不作为来源事实。</span>}</li>)}</ul></> : null}<h3>原始来源</h3><ol>{record.references.map(reference => <li id={`ref-${reference.id}`}><a href={reference.url} target="_blank" rel="noopener noreferrer">{reference.title}</a><p>{reference.locator} · 访问日期 {reference.accessedAt}</p><p>{reference.assessment}</p></li>)}</ol></details>
+      </section>
+
+      {recommendations.length > 0 && <section id="next-step" class="next-step"><h2>下一步可以做什么</h2>{recommendations.map(item => <a class="next-card" href={articleHref(item.id)}><strong>{item.title}</strong><span>{item.guide?.problem ?? item.summary}</span></a>)}</section>}
+
+      <nav class="article-pagination" aria-label="相邻文章">{previous && !recommendationIds.has(previous.id) ? <a href={articleHref(previous.id,draft)}>← {previous.title}</a> : <span></span>}{next && !recommendationIds.has(next.id) ? <a href={articleHref(next.id,draft)}>{next.title} →</a> : <span></span>}</nav>
+    </article>
+    <aside class="article-aside"><div class="article-toc"><p class="sidebar-label">本页内容</p><nav aria-label="文章小节目录">{sections.filter(([id]) => id !== 'next-step' || recommendations.length > 0).map(([id,title]) => <a href={`#${id}`}>{title}</a>)}</nav></div><div class="aside-note"><small>{chapter?.title}<br />AI 初评不是专家背书。</small></div></aside>
+  </div>
+</BaseLayout>

@@ -1,0 +1,176 @@
+{
+  "id": "E-0035",
+  "title": "把顾客原话、你的解释和下一步判断分开记录",
+  "volume": 2,
+  "chapter": 4,
+  "type": "框架",
+  "tags": [
+    "研究记录",
+    "可追溯性",
+    "个人信息"
+  ],
+  "summary": "让每条研究结论能回到具体观察及招募情境，并把不符合预期的反馈留在同一证据链中。",
+  "claims": [
+    {
+      "id": "E-0035-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "研究分析指南要求记录所见所闻而不是先写含义，再分别形成发现与行动。",
+      "referenceIds": [
+        "R-GDS-RESEARCH-ANALYSIS"
+      ]
+    },
+    {
+      "id": "E-0035-C2",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "英国研究资料指南建议仅收所需信息、说明用途，并让有需要的人员接触记录。",
+      "referenceIds": [
+        "R-GDS-RESEARCH-PRIVACY"
+      ]
+    },
+    {
+      "id": "E-0035-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "将场景、招募来源、原始片段、解释及反例关联到结论，复查选择偏差；这是编辑提出的可追溯记录方法。",
+      "referenceIds": [
+        "R-GDS-RECRUIT-BIAS"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.3",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "观察—解释—行动分离有原始方法说明，访问治理亦有官方建议；本篇可追溯流程为编辑建议，未经商业效果检验，维持C级。",
+  "references": [
+    {
+      "id": "R-GDS-RESEARCH-ANALYSIS",
+      "title": "Analyse a research session",
+      "publisher": "User research community, GOV.UK",
+      "authors": [
+        "User research community"
+      ],
+      "url": "https://www.gov.uk/service-manual/user-research/analyse-a-research-session",
+      "publishedAt": "2016-05-24",
+      "locator": "Extract observations（原话/所见而非含义）；Determine findings；Decide actions；Sort observations",
+      "assessment": "指南把原始观察、归纳发现和行动分开；本文保留孤立反例，不照搬可丢弃孤立笔记的建议。",
+      "limitations": [
+        "英国服务研究方法说明；不是代表性抽样或提高销量的实验。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构方法说明",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南把原始观察、归纳发现和行动分开；本文保留孤立反例，不照搬可丢弃孤立笔记的建议。"
+      },
+      "supports": [
+        "E-0035-C1"
+      ]
+    },
+    {
+      "id": "R-GDS-RESEARCH-PRIVACY",
+      "title": "Managing user research data and participant privacy",
+      "publisher": "User research community, GOV.UK",
+      "authors": [
+        "User research community"
+      ],
+      "url": "https://www.gov.uk/service-manual/user-research/managing-user-research-data-participant-privacy",
+      "publishedAt": null,
+      "locator": "Managing participants’ personal data during recruitment；Collect only the data you need（第89–125行）",
+      "assessment": "指南建议仅收研究所需资料、说明用途并限制接触人员；GDPR法律段落不作为中国规则。",
+      "limitations": [
+        "仅借鉴资料治理做法；地区法律、同意基础、保存期需按实际地区另核，本文不提供统一期限。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构方法说明",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南建议仅收研究所需资料、说明用途并限制接触人员；GDPR法律段落不作为中国规则。"
+      },
+      "supports": [
+        "E-0035-C2"
+      ]
+    },
+    {
+      "id": "R-GDS-RECRUIT-BIAS",
+      "title": "Finding participants for user research",
+      "publisher": "User research community, GOV.UK",
+      "authors": [
+        "User research community"
+      ],
+      "url": "https://www.gov.uk/service-manual/user-research/find-user-research-participants",
+      "publishedAt": "2016-03-01",
+      "locator": "Avoiding bias in recruitment（第218–228行）；页面更新2026-09-22",
+      "assessment": "指南提醒招募方式、时间及场所会使一些人进入样本而另一些被排除。",
+      "limitations": [
+        "用于说明选择偏差，不照搬受访人数或时间要求。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构方法说明",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南提醒招募方式、时间及场所会使一些人进入样本而另一些被排除。"
+      },
+      "supports": [
+        "E-0035-C3"
+      ]
+    }
+  ],
+  "limitations": [
+    "重复记录不是代表性抽样；结论不能直接外推到总体或付费效果。",
+    "涉及敏感资料、儿童或跨地区分享时，先核实当地要求及适当专业指导；这里没有法律操作指令。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小型业务负责人"
+    ],
+    "stage": [
+      "用户研究"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "澄清资料用途、整理原始片段和权限的时间。"
+    },
+    "riskCategories": [
+      "研究解释与资料访问风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.3",
+      "note": "作者自查：顾客原话、解释和推断链分别保存，限制不必要个人信息；重复出现不等于普遍成立。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0035。不是独立或专业审核。",
+      "fingerprint": "sha256:4561035592fbf0227fabdf790d3b7bae9a75f4921a93b0cf3065ece1b1431788"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "一般研究与经营方法；英国及美国资料不作为中国法律或平台使用授权",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0035-C1",
+    "E-0035-C2",
+    "E-0035-C3"
+  ]
+}

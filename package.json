@@ -1,0 +1,30 @@
+{
+  "name": "high-value-entrepreneurship-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/astro.mjs dev",
+    "preview": "node scripts/static-preview.mjs dist 4321",
+    "build": "node scripts/validate-content.mjs && node scripts/astro.mjs build && node scripts/audit-build.mjs",
+    "check": "node scripts/astro.mjs check",
+    "test": "node --test tests/public-source.test.mjs",
+    "validate": "node scripts/validate-content.mjs",
+    "audit:public": "node scripts/public-audit.mjs"
+  },
+  "dependencies": {
+    "astro": "7.3.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "typescript": "5.9.3",
+    "@types/node": "22.19.0",
+    "ajv": "8.17.1",
+    "ajv-formats": "3.0.1",
+    "playwright": "1.62.1"
+  },
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "packageManager": "pnpm@11.25.0"
+}

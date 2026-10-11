@@ -1,0 +1,155 @@
+{
+  "id": "E-0027",
+  "title": "别把感兴趣、预约和付款算成同一种承诺",
+  "volume": 4,
+  "chapter": 3,
+  "type": "框架",
+  "tags": [
+    "真实承诺",
+    "预约",
+    "付费证据"
+  ],
+  "summary": "适合还未确认购买行为的团队：按行动及附带条件分别记录承诺，而不是把留言、意向书和已收款相加当作销售。",
+  "claims": [
+    {
+      "id": "E-0027-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "消费品元分析区分没有支付后果的假设回答与真实支付情境，并报告偏差及情境差异。",
+      "referenceIds": [
+        "R-WTP-COMMITMENT"
+      ]
+    },
+    {
+      "id": "E-0027-C2",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "Kickstarter的公开说明把承诺与达到目标后的扣款区分，并说明平台不保证完成项目。",
+      "referenceIds": [
+        "R-KICK-PRESS"
+      ]
+    },
+    {
+      "id": "E-0027-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "按条件、行为和后续履约分开记录承诺，是编辑建议；不存在通用的承诺换算率。",
+      "referenceIds": [
+        "R-WTP-COMMITMENT",
+        "R-KICK-PRESS"
+      ]
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：元分析支持假设回答与支付不同，但未研究本文完整承诺分类；平台机制仅为条件承诺的例子，不支持把任何一层等同于需求或盈利已成立。",
+  "references": [
+    {
+      "id": "R-WTP-COMMITMENT",
+      "title": "Accurately measuring willingness to pay for consumer goods: a meta-analysis of the hypothetical bias",
+      "authors": [
+        "Jonas Schmidt",
+        "Tammo H. A. Bijmolt"
+      ],
+      "publisher": "Jonas Schmidt / Tammo H. A. Bijmolt",
+      "url": "https://d-nb.info/1197597174/34",
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "publishedAt": null,
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "开放获取元分析（本轮选读明确章节）",
+      "locator": "PDF第1–2页的概念与摘要，第17–18页的管理含义和局限；本轮仅阅读这些部分",
+      "assessment": "消费品付费意愿研究区分假设情境与真实支付，并发现偏差及异质性；不提供预约、意向书或定金的统一换算。",
+      "limitations": [
+        "纳入研究为B2C；不能直接外推B2B采购。",
+        "未阅读全文的方法、所有结果及附录。"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "消费品付费意愿研究区分假设情境与真实支付，并发现偏差及异质性；不提供预约、意向书或定金的统一换算。"
+      },
+      "supports": [
+        "E-0027-C1",
+        "E-0027-C3"
+      ]
+    },
+    {
+      "id": "R-KICK-PRESS",
+      "title": "Pressroom",
+      "authors": [
+        "Kickstarter"
+      ],
+      "publisher": "Kickstarter",
+      "url": "https://www.kickstarter.com/press",
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "publishedAt": null,
+      "accessResult": "success",
+      "accessScope": "full",
+      "materialType": "原始研究或机构方法说明",
+      "locator": "The basics / How does Kickstarter work?；Who is responsible for completing a project as promised?；第16–18、44–47行",
+      "assessment": "平台说明达到目标才扣款的机制，并明确不保证项目完成；本文只用来说明承诺条件需要核对。",
+      "limitations": [
+        "仅为该平台公开说明，不是一般预售法律或地区收退款规则。"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "平台说明达到目标才扣款的机制，并明确不保证项目完成；本文只用来说明承诺条件需要核对。"
+      },
+      "supports": [
+        "E-0027-C2",
+        "E-0027-C3"
+      ]
+    }
+  ],
+  "limitations": [
+    "条件承诺可能取消，实际购买也可能退款；研究中的B2C结果不能确定B2B意向书或预售的预测价值。",
+    "本文讨论行为证据，不提供收退款法律操作指令或合同模板。",
+    "消费品研究不能直接决定复杂B2B审批与其他平台的机制。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.1",
+  "author": "主智能体（作者自查）",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "项目负责人"
+    ],
+    "stage": [
+      "市场验证"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "记录证据和核对地区交易要求的时间；本篇不要求收款。"
+    },
+    "riskCategories": [
+      "履约与收款风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.1",
+      "note": "作者自查：兴趣、预约、意向和购买不是同一种承诺；平台规则只在该平台说明范围内使用。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0027。不是独立或专业审核。",
+      "fingerprint": "sha256:f0c04946e39ab40bfa9e05c3a1571cef8e5caf32fefc31d247d2cb97e67f870a"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "行为记录方法；具体收款、退款与文书效力按实际地区和交易类型另行核对",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0027-C1",
+    "E-0027-C2",
+    "E-0027-C3"
+  ]
+}

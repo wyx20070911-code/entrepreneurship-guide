@@ -1,0 +1,158 @@
+{
+  "id": "E-0030",
+  "title": "先分清谁使用、谁付钱、为什么持续付钱",
+  "volume": 7,
+  "chapter": 1,
+  "type": "框架",
+  "tags": [
+    "收入结构",
+    "付费者",
+    "订阅"
+  ],
+  "summary": "用使用场景、付费决策和交付责任比较收费方式，不把订阅账单当成确定回款。",
+  "claims": [
+    {
+      "id": "E-0030-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "SBA的商业计划指南将客户群、主要成本和收入渠道分别列出；收入渠道可有直接销售、会员收费等形式。",
+      "referenceIds": [
+        "R-SBA-PLAN-FINANCE"
+      ]
+    },
+    {
+      "id": "E-0030-C2",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "IFRS公开概述以承诺的商品或服务转移说明收入确认；合同、履约和收到现金不宜混为同一事件。",
+      "referenceIds": [
+        "R-IFRS15-OVERVIEW"
+      ]
+    },
+    {
+      "id": "E-0030-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "把使用者、付费者、付款条件及续费理由分别验证，再比较按次和持续收费；这是编辑提出的探索步骤。",
+      "referenceIds": [
+        "R-SBA-PLAN-FINANCE",
+        "R-IFRS15-OVERVIEW"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.2",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "收入渠道和履约概念有原始机构说明，但收费方式比较与角色拆分是编辑推断，暂无比较盈利或稳定性的直接效果证据，维持C级。",
+  "references": [
+    {
+      "id": "R-SBA-PLAN-FINANCE",
+      "title": "Write your business plan",
+      "authors": [
+        "U.S. Small Business Administration"
+      ],
+      "publisher": "U.S. Small Business Administration",
+      "url": "https://legacy.sba.gov/business-guide/plan-your-business/write-your-business-plan",
+      "publishedAt": "2025-11-13",
+      "locator": "Lean startup：Customer segments、Cost structure、Revenue streams；Traditional：Funding request、Marketing and sales",
+      "assessment": "列明客户、主要成本与收入渠道，融资说明需交代用途、期限和形式；这是计划框架，不是获利效果研究。",
+      "limitations": [
+        "美国经营指南；不引用其法定组织形式、抵押或统一预测年限。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构经营指南或标准概述",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "列明客户、主要成本与收入渠道，融资说明需交代用途、期限和形式；这是计划框架，不是获利效果研究。"
+      },
+      "supports": [
+        "E-0030-C1",
+        "E-0030-C3"
+      ]
+    },
+    {
+      "id": "R-IFRS15-OVERVIEW",
+      "title": "IFRS 15 Revenue from Contracts with Customers",
+      "authors": [
+        "IFRS Foundation"
+      ],
+      "publisher": "IFRS Foundation",
+      "url": "https://www.ifrs.org/issued-standards/list-of-standards/ifrs-15-revenue-from-contracts-with-customers/",
+      "publishedAt": null,
+      "locator": "About：原则及确认收入的步骤；仅阅读公开概述，不是标准全文",
+      "assessment": "公开概述将收入确认与承诺的货物或服务转移联系起来，不能把签约金额或到账直接视为同一期间收入。",
+      "limitations": [
+        "IFRS适用情境；不能代替中国会计准则、税务认定或具体合同判断。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始机构经营指南或标准概述",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "公开概述将收入确认与承诺的货物或服务转移联系起来，不能把签约金额或到账直接视为同一期间收入。"
+      },
+      "supports": [
+        "E-0030-C2",
+        "E-0030-C3"
+      ]
+    }
+  ],
+  "limitations": [
+    "没有提供两种收费模式优劣的因果研究；成本和续费必须由实际业务记录检验。",
+    "涉多方平台、长期履约或复杂收入确认时，先请当地会计与法律专业人员确认规则。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小型业务经营者"
+    ],
+    "stage": [
+      "收费方式设计"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "澄清角色、报价与履约边界的时间。"
+    },
+    "riskCategories": [
+      "经营与现金风险"
+    ]
+  },
+  "numericClaims": [
+    {
+      "text": "假设按次一千二百元减四百元为八百元；每月六百元减三百元为三百元，三个月一千八百元减九百元为九百元。全部为人民币假设、不含税费和固定及获客成本。",
+      "kind": "hypothetical",
+      "referenceIds": []
+    }
+  ],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.2",
+      "note": "作者自查：使用者与付费者、收入确认与回款分别解释，订阅不能自动保证持续收入。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0030。不是独立或专业审核。",
+      "fingerprint": "sha256:17c84b02a1fb019e3c325a122aea47a0319e6897fe725c09149de083556a9a6f"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "一般经营决策建议；国外资料不作为中国会计、税务或法律规则",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0030-C1",
+    "E-0030-C2",
+    "E-0030-C3"
+  ]
+}

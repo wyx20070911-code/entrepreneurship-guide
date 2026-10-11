@@ -1,0 +1,133 @@
+{
+  "id": "E-0004",
+  "title": "别只看利润，先看下个月的钱够不够用",
+  "volume": 9,
+  "chapter": 1,
+  "type": "工具",
+  "tags": [
+    "现金流",
+    "小店经营",
+    "资金安排"
+  ],
+  "summary": "利润不等于现金在账；按实际到账和付款日期查看短期缺口，适合经营预警而不是利润保证。",
+  "claims": [
+    {
+      "id": "E-0004-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "澳大利亚政府指南要求区分实际与估计数字，并按流入、流出、期初和期末余额编制现金流表。",
+      "referenceIds": [
+        "R-AUS-CASHFLOW"
+      ]
+    },
+    {
+      "id": "E-0004-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "每周更新一次是本项目给小微经营者的编辑建议，不是来源要求；来源按月示例且不能解释为中国财税规定。",
+      "referenceIds": [
+        "R-AUS-CASHFLOW"
+      ]
+    },
+    {
+      "id": "E-0004-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中金额、周期或人物均标记为假设，仅用于说明方法。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "B",
+  "gradeRationale": "AI初评为B：澳大利亚政府指南直接说明现金流表的实际值、估计值、流入流出和余额口径；它可靠支持记账方法，但不证明采用后盈利，也不提供通用安全线。",
+  "references": [
+    {
+      "id": "R-AUS-CASHFLOW",
+      "title": "Set up a cash flow statement",
+      "authors": [
+        "business.gov.au"
+      ],
+      "publisher": "Australian Government",
+      "url": "https://business.gov.au/finance/cash-flow/set-up-a-cash-flow-statement",
+      "doi": null,
+      "publishedAt": null,
+      "materialType": "政府商业指南",
+      "accessScope": "full",
+      "locator": "“Cash flow forecasting”与“Completing your cash flow statement”，网页正文第 168–233 行",
+      "limitations": [
+        "澳大利亚语境，税务和会计要求不能直接外推到其他地区。",
+        "流程建议没有证明某一现金安全线或经营效果。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "captcha",
+      "supports": [
+        "E-0004-C1",
+        "E-0004-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "指南区分实际与估计数字，要求标明估计值及税项口径，并按流入、流出和余额编制现金流表。"
+      },
+      "assessment": "页面直接支持区分实际与估计值、记录流入流出及余额；不要求每周更新，也不是中国财税规范。"
+    }
+  ],
+  "limitations": [
+    "澳大利亚语境，税务和会计要求不能直接外推到其他地区。",
+    "流程建议没有证明某一现金安全线或经营效果。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "1.0.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "摆摊者",
+      "小店经营者",
+      "个体创业者"
+    ],
+    "stage": [
+      "开业准备",
+      "早期经营"
+    ],
+    "industry": [
+      "餐饮零售",
+      "网店",
+      "本地服务"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "做表本身几乎不需要额外资金；实际备用金取决于租金、账期和固定支出。"
+    },
+    "riskCategories": [
+      "现金流风险",
+      "账期风险",
+      "盲目扩张"
+    ]
+  },
+  "numericClaims": [
+    {
+      "text": "假设两人各投入一万元，随后出现五千元账面利润、六千元房租和四千元原料款。",
+      "kind": "hypothetical",
+      "referenceIds": []
+    }
+  ],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "1.0.0",
+      "note": "作者自查：初始投入与现有现金分开，按收付日期确认缺口；利润不直接证明能付款。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0004。不是独立或专业审核。",
+      "fingerprint": "sha256:f90f9849fab95b5b8b100b4986a675afde8685cb69b09944e940f896e555ac2c"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0004-C1",
+    "E-0004-C2",
+    "E-0004-C3"
+  ]
+}

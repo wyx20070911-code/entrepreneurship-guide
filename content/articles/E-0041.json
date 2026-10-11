@@ -1,0 +1,125 @@
+{
+  "id": "E-0041",
+  "title": "目标、交接和反馈没说清，奖金也未必能解决问题",
+  "volume": 10,
+  "chapter": 3,
+  "type": "框架",
+  "tags": [
+    "协作机制",
+    "激励设计",
+    "行为偏差"
+  ],
+  "summary": "先检查任务和交接哪里卡住，再观察奖励是否鼓励了不想要的行为；不把单一指标变成全部目标。",
+  "claims": [
+    {
+      "id": "E-0041-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "Gneezy与Rustichini的以色列托育中心实验中，引入迟接罚款后迟接次数增加，撤销后未回到原来水平。",
+      "referenceIds": [
+        "R-GNEEZY-FINE-PRICE"
+      ]
+    },
+    {
+      "id": "E-0041-C2",
+      "type": "editorial_inference",
+      "importance": "core",
+      "evidenceRelation": "inference_from",
+      "text": "该研究提供了激励可能改变行为解释的反例，不证明罚款或奖金普遍无效，也不直接证明单指标奖励必然导致返工。",
+      "referenceIds": [
+        "R-GNEEZY-FINE-PRICE"
+      ]
+    },
+    {
+      "id": "E-0041-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "先核对工作规则，再同时观察完成、质量及交接负担；激励调整为本文建议，不是经验证的奖金方案。",
+      "referenceIds": [
+        "R-GNEEZY-FINE-PRICE"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.4",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "原始现场实验支持特定情境下激励出现反预期变化；企业奖金、单指标偏差与操作步骤属跨情境推断，机制不唯一，整体定C级，不将现场研究等同本篇方法的高等级效果证据。",
+  "references": [
+    {
+      "id": "R-GNEEZY-FINE-PRICE",
+      "title": "A Fine is a Price",
+      "publisher": "The Journal of Legal Studies",
+      "authors": [
+        "Uri Gneezy",
+        "Aldo Rustichini"
+      ],
+      "url": "https://s3.amazonaws.com/fieldexperiments-papers2/papers/00258.pdf",
+      "publishedAt": "2000-01",
+      "locator": "II.The Experiment，III.Results，IV.Interpretation，V.Conclusions（印刷第3–5、7–15页）；按期刊年月登记日期",
+      "assessment": "实验报告罚款后迟接增多与撤销后的持续现象；解释机制不唯一，不能泛化为所有奖金无效。",
+      "limitations": [
+        "以色列托育中心；非企业绩效奖金实验；部分中心记录不全未报告。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "原始现场实验论文",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "实验报告罚款后迟接增多与撤销后的持续现象；解释机制不唯一，不能泛化为所有奖金无效。"
+      },
+      "supports": [
+        "E-0041-C1",
+        "E-0041-C2",
+        "E-0041-C3"
+      ]
+    }
+  ],
+  "limitations": [
+    "研究为以色列托育中心的特定罚款干预；样本、背景和激励不同于企业奖金，不提供普遍因果保证。",
+    "单指标与团队例子是编辑分析和假设，不是该实验直接结果；排除材料不完整的中心限制外推，观察改善也可能来自任务或客户变化。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小团队负责人"
+    ],
+    "stage": [
+      "协作复盘"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "回查任务、交接与奖励口径，征询执行者理解。"
+    },
+    "riskCategories": [
+      "激励偏差与协作风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.4",
+      "note": "作者自查：激励指标可能带来非预期行为，研究情境有限；权责与正当激励不等于操控。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0041。不是独立或专业审核。",
+      "fingerprint": "sha256:ef2d9d1f770a3b1b908e0386f8dae0222bf639493da7db02c85e5dd6265f4b96"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "一般组织方法；英国、美国或以色列资料不作为中国股权、劳动或其他法律依据",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0041-C1",
+    "E-0041-C2",
+    "E-0041-C3"
+  ]
+}

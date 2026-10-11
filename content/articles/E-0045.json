@@ -1,0 +1,127 @@
+{
+  "id": "E-0045",
+  "title": "收集客户资料前，先说明用途、必要性和谁能访问",
+  "volume": 11,
+  "chapter": 3,
+  "type": "框架",
+  "tags": [
+    "数据保护",
+    "业务合规",
+    "资料用途"
+  ],
+  "summary": "按资料流转核对必要字段、存储和接收者，先查适用范围和处理依据，不把公开可见或一次同意当无限授权。",
+  "claims": [
+    {
+      "id": "E-0045-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "欧盟GDPR在其适用的个人数据处理中规定目的限制、最小必要、保存限制和安全原则；同意只是处理合法性依据之一，控制者须核对具体条件。",
+      "referenceIds": [
+        "R-EU-GDPR-PRINCIPLES"
+      ]
+    },
+    {
+      "id": "E-0045-C2",
+      "type": "editorial_inference",
+      "importance": "core",
+      "evidenceRelation": "inference_from",
+      "text": "经营文件可能同时包含商业资料和可识别个人的信息；本文建议分层核查用途、访问与外部接收者，不把公开可见直接当成任意使用许可。",
+      "referenceIds": [
+        "R-EU-GDPR-PRINCIPLES"
+      ]
+    },
+    {
+      "id": "E-0045-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "先列数据路径、必要性和待确认条件，再核查第三方处理和删除请求；一般管理建议不等于完整法域合规方案。",
+      "referenceIds": [
+        "R-EU-GDPR-PRINCIPLES"
+      ]
+    }
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.5",
+  "author": "主智能体（作者自查）",
+  "grade": "C",
+  "gradeRationale": "有限GDPR原则与依据例子已对照官方条款及当前状态；具体业务法域、角色及其他要求未经个案法律判断，本文数据流程为编辑建议，定C级，不将法律文本有效等同业务已合规。",
+  "references": [
+    {
+      "id": "R-EU-GDPR-PRINCIPLES",
+      "title": "Regulation (EU) 2016/679 (General Data Protection Regulation)",
+      "publisher": "EUR-Lex / Official Journal of the European Union",
+      "authors": [
+        "European Parliament",
+        "Council of the European Union"
+      ],
+      "url": "https://eur-lex.europa.eu/eli/reg/2016/679/oj/eng",
+      "publishedAt": "2016-05-04",
+      "locator": "官方公布文本及网站当前整合版：Articles 2–6、17、99；整合版02016R0679-20160504，第309–373、481–541、934–985、3473–3485行",
+      "assessment": "2026-10-10核对EUR-Lex显示法规In force并进入其当前整合版；事项/地域范围适用的个人数据控制者受原则及合法性条件约束。支持有限法律示例，不验证个案适用或覆盖全部要求。",
+      "limitations": [
+        "2016-04-27制定、2016-05-04公布；按Article99公布后第二十日生效，从2018-05-25适用；整合页列2018-05-23勘误，核验2026-10-10。",
+        "法律例子仅限GDPR事项/地域范围；成员国细则、行业/特殊信息、实际处理依据与适用性未个案核查；第17条有条件和例外，不给通用删除指令。",
+        "当前整合文本仅为查阅工具而非独立法律效力；未声称阅读所有条款或排除其他同时适用规则。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "欧盟现行法律文本（官方公布版为权威，整合版便于查阅）",
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "2026-10-10核对EUR-Lex显示法规In force并进入其当前整合版；事项/地域范围适用的个人数据控制者受原则及合法性条件约束。支持有限法律示例，不验证个案适用或覆盖全部要求。"
+      },
+      "supports": [
+        "E-0045-C1",
+        "E-0045-C2",
+        "E-0045-C3"
+      ]
+    }
+  ],
+  "limitations": [
+    "法律示例是欧盟GDPR，不是中国或英国规则；是否适用须结合事项范围、地域和主体角色判断，本文不判断你的业务已合规。",
+    "特殊类别信息、未成年人、跨境、行业保留及删除例外须另行核查；本文没有给保存天数、报告时限或跨境操作指令。"
+  ],
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "小型服务负责人"
+    ],
+    "stage": [
+      "处理客户资料前"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "梳理字段、用途、访问和供应方说明的时间。"
+    },
+    "riskCategories": [
+      "资料与适用性风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.5",
+      "note": "作者自查：数据流程与处理依据分开，GDPR有明确适用范围；同意不是万能条件，不能外推为所有地区义务。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0045。不是独立或专业审核。",
+      "fingerprint": "sha256:8e57fbffa6211673548ed18b4fe2b8eb1c95a746a2030b08dfaed456a6b54d06"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "通用数据流程整理；唯一具体法律示例为落入GDPR事项/地域范围的欧盟个人数据处理，控制者按条件核查，不外推其他法域。",
+  "validAsOf": "2026-10-10",
+  "guideClaimIds": [
+    "E-0045-C1",
+    "E-0045-C2",
+    "E-0045-C3"
+  ]
+}

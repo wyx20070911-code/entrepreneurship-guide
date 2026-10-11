@@ -1,0 +1,159 @@
+{
+  "id": "E-0008",
+  "title": "开始试验前，先写清什么时候该停",
+  "volume": 1,
+  "chapter": 4,
+  "type": "工具",
+  "tags": [
+    "停止条件",
+    "实验",
+    "止损"
+  ],
+  "summary": "停止条件要在看见结果前写下；它帮助约束事后改标准，但不能替代对异常和新证据的判断。",
+  "claims": [
+    {
+      "id": "E-0008-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "随机试验与复制研究记录了科学决策培训下的退出和转向结果，但干预不止包含停止条件。",
+      "referenceIds": [
+        "R-CAMUFFO-2020",
+        "R-CAMUFFO-2024"
+      ]
+    },
+    {
+      "id": "E-0008-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "把继续、调整和停止条件写在结果出现前，是编辑建议。",
+      "referenceIds": [
+        "R-CAMUFFO-2020",
+        "R-CAMUFFO-2024"
+      ]
+    },
+    {
+      "id": "E-0008-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中生活例子是显著标记的假设，用于解释操作方法，不是客户案例或市场统计。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：随机试验与后续复制评估的是复合科学决策培训，没有单独操纵预先停止规则；因此只能支持条件性探索建议。",
+  "references": [
+    {
+      "id": "R-CAMUFFO-2020",
+      "title": "A Scientific Approach to Entrepreneurial Decision Making: Evidence from a Randomized Control Trial",
+      "authors": [
+        "Arnaldo Camuffo",
+        "Alessandro Cordova",
+        "Alfonso Gambardella",
+        "Chiara Spina"
+      ],
+      "publisher": "Management Science / INFORMS",
+      "url": "https://gwern.net/doc/economics/2019-camuffo.pdf",
+      "doi": "10.1287/mnsc.2018.3249",
+      "publishedAt": "2020",
+      "materialType": "随机对照试验论文",
+      "accessScope": "selected_sections",
+      "locator": "PDF第13–17页退出和转向结果及Tables 4–5，原研究退出估计精度依规格变化；没有单独操纵停止规则。",
+      "limitations": [
+        "单一国家培训情境，样本以早期数字及传统行业团队为主。",
+        "干预包含培训与辅导，不能把结果归因于某一张模板。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "accessResult": "success",
+      "supports": [
+        "E-0008-C1",
+        "E-0008-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "研究在意大利早期创业项目中比较了两种培训方式，并跟踪退出、转向及经营信号。"
+      },
+      "assessment": "该材料直接支持 E-0008-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    },
+    {
+      "id": "R-CAMUFFO-2024",
+      "title": "A scientific approach to entrepreneurial decision-making: Large-scale replication and extension",
+      "authors": [
+        "Arnaldo Camuffo et al."
+      ],
+      "publisher": "Strategic Management Journal",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/smj.3580",
+      "doi": "10.1002/smj.3580",
+      "publishedAt": "2024-03-25",
+      "materialType": "多项随机试验复现论文",
+      "accessResult": "redirect",
+      "accessScope": "selected_sections",
+      "locator": "官方HTML研究摘要、Sections 2–3和6.1 Termination、Table 2；经sms.onlinelibrary.wiley.com正确重定向。复制结果含转向异质性，不证明本篇停止清单的因果效果。",
+      "limitations": [
+        "四项试验包含原始 RCT1，作者团队重叠，不能当作完全独立证据。",
+        "样本覆盖意大利与英国培训项目；原试验的转向次数线性结果未在后续试验复现。",
+        "自动访问不稳定；当前链接检查结果不能代替保存的语义复核记录。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "supports": [
+        "E-0008-C1",
+        "E-0008-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "四项随机试验共涉及 759 家企业；合并结果显示更高的项目终止概率，并呈现少量、较聚焦而非普遍更多的转向。"
+      },
+      "assessment": "该材料直接支持 E-0008-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    }
+  ],
+  "limitations": [
+    "单一国家培训情境，样本以早期数字及传统行业团队为主。",
+    "干预包含培训与辅导，不能把结果归因于某一张模板。",
+    "四项试验包含原始 RCT1，作者团队重叠，不能当作完全独立证据。",
+    "样本覆盖意大利与英国培训项目；原试验的转向次数线性结果未在后续试验复现。",
+    "自动访问不稳定；当前链接检查结果不能代替保存的语义复核记录。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "1.0.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "准备创业者"
+    ],
+    "stage": [
+      "想法期"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "取决于行业、地区和验证方式，现有资料不足以给出统一金额。"
+    },
+    "riskCategories": [
+      "决策风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "1.0.0",
+      "note": "作者自查：预先写安全与资源边界，执行失败先诊断；删除没有依据的减少拖延效果陈述。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0008。不是独立或专业审核。",
+      "fingerprint": "sha256:cab0c8258283b57e6e1a4fa675d7aa72506ce81c60c4b5246699f4c6e7f9dbc7"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0008-C1",
+    "E-0008-C2",
+    "E-0008-C3"
+  ]
+}

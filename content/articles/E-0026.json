@@ -1,0 +1,126 @@
+{
+  "id": "E-0026",
+  "title": "先说清你能服务谁，再估算市场有多大",
+  "volume": 4,
+  "chapter": 1,
+  "type": "框架",
+  "tags": [
+    "市场范围",
+    "触达边界",
+    "估算口径"
+  ],
+  "summary": "把整体人群、业务可服务范围和当前能触达的人分开，用可追溯的输入给出估算边界；潜在交易额不是收入预测。",
+  "claims": [
+    {
+      "id": "E-0026-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "SBA市场研究指南分别询问需求、市场规模、顾客位置、业务能触达哪里和替代价格。",
+      "referenceIds": [
+        "R-SBA-SCOPE"
+      ]
+    },
+    {
+      "id": "E-0026-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "整体范围、可服务范围与可触达名单应分别估算，并标出购买频率未知；这是编辑提出的工作方法。",
+      "referenceIds": [
+        "R-SBA-SCOPE"
+      ]
+    },
+    {
+      "id": "E-0026-C3",
+      "type": "hypothetical_calculation",
+      "importance": "core",
+      "evidenceRelation": "none",
+      "text": "假设例子只计算给定人群与购买频率下的交易额上界，不代表实际订单或收入。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：SBA方法指南支持明确人群、位置和触达范围，但没有验证本文分层估算法的准确率；本地数量、频率与购买选择须自行核实。",
+  "references": [
+    {
+      "id": "R-SBA-SCOPE",
+      "title": "Market research and competitive analysis",
+      "authors": [
+        "U.S. Small Business Administration"
+      ],
+      "publisher": "U.S. Small Business Administration",
+      "url": "https://legacy.sba.gov/business-guide/plan-your-business/market-research-competitive-analysis",
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "publishedAt": "2026-03-24",
+      "accessResult": "success",
+      "accessScope": "full",
+      "materialType": "原始研究或机构方法说明",
+      "locator": "Use market research to find customers；第50–63行；更新信息第130行",
+      "assessment": "直接列出需求、市场规模、位置、触达和替代价格；现有统计与直接调查回答的问题不同。",
+      "limitations": [
+        "美国小企业方法指南，不提供中国本地规模或成交率。"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "直接列出需求、市场规模、位置、触达和替代价格；现有统计与直接调查回答的问题不同。"
+      },
+      "supports": [
+        "E-0026-C1",
+        "E-0026-C2"
+      ]
+    }
+  ],
+  "limitations": [
+    "现有统计未必贴合特定人群；可触达并不意味着购买，购买频率和产能会限制结果。",
+    "行业总额可作背景，不能替代本地人群与触达数据。",
+    "许可、物流或服务能力不明确时，可服务范围仍是待确认条件。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.1",
+  "author": "主智能体（作者自查）",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "早期创业者",
+      "项目负责人"
+    ],
+    "stage": [
+      "市场验证"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "查找统计、核对名册和访谈所需时间。"
+    },
+    "riskCategories": [
+      "判断与投入风险"
+    ]
+  },
+  "numericClaims": [
+    {
+      "text": "假设：120、80、40家；每年2次；每次1500元；每年360000元、240000元、120000元；最多12单、18000元。所有人数、频率、价格与产能均为假设，120×2×1500=360000，80×2×1500=240000，40×2×1500=120000，12×1500=18000。",
+      "kind": "hypothetical",
+      "referenceIds": []
+    }
+  ],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.1",
+      "note": "作者自查：可服务市场按目标、地域、频率和可触达范围定义；假设总量不等于可获得收入。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0026。不是独立或专业审核。",
+      "fingerprint": "sha256:71b49f2c8bf8ff1d190db1cff64e1a733b9f2237d038daceffd7176916af5d97"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0026-C1",
+    "E-0026-C2",
+    "E-0026-C3"
+  ]
+}

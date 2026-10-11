@@ -1,0 +1,130 @@
+{
+  "id": "E-0024",
+  "title": "咨询不等于订单，先判断是否值得继续沟通",
+  "volume": 8,
+  "chapter": 1,
+  "type": "框架",
+  "tags": [
+    "销售资格",
+    "客户线索",
+    "需求匹配"
+  ],
+  "summary": "适合咨询量增加但成交不明的服务团队；先确认问题匹配、购买角色、预算过程和时间背景，再决定推进、培育或停止。",
+  "claims": [
+    {
+      "id": "E-0024-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "Salesforce将BANT描述为按预算、决策权、需求和时间判断线索是否适合继续的资格框架。",
+      "referenceIds": [
+        "R-SF-BANT"
+      ]
+    },
+    {
+      "id": "E-0024-C2",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "同一材料指出BANT可能过度交易化、忽略深层需求，也不适合多方参与和周期不确定的复杂销售。",
+      "referenceIds": [
+        "R-SF-BANT"
+      ]
+    },
+    {
+      "id": "E-0024-C3",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "将线索分为推进、补信息、培育和停止，并记录理由而非自动打成功分，是本文建议。",
+      "referenceIds": [
+        "R-SF-BANT"
+      ]
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：现有支持来自一份厂商方法文章，能够说明BANT的分类和已知局限，但不是独立研究，也没有验证本文分流规则对成交或效率的因果效果。",
+  "references": [
+    {
+      "id": "R-SF-BANT",
+      "title": "What is BANT? The Way to Qualify Better Leads and Close More Deals",
+      "authors": [
+        "Gabie Caballero"
+      ],
+      "publisher": "Salesforce",
+      "url": "https://www.salesforce.com/blog/sales/what-is-bant-lead-generation/",
+      "doi": null,
+      "publishedAt": "2024-09-03",
+      "materialType": "销售方法原始说明",
+      "accessScope": "full",
+      "locator": "定义第34–44行；局限第81–107行",
+      "limitations": [
+        "由销售软件厂商发布，存在商业立场。",
+        "文章陈述的收益不是独立对照研究结果。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "supports": [
+        "E-0024-C1",
+        "E-0024-C2",
+        "E-0024-C3"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "文章以预算、决策权、需求和时间组织资格判断，同时说明该框架可能过度交易化且不适合复杂销售。"
+      },
+      "assessment": "支持资格维度与局限；不支持成交概率或收益数字。"
+    }
+  ],
+  "limitations": [
+    "单一厂商经验材料不能证明框架的普遍效果。",
+    "预算、角色和时间会变化，资格判断只能作为当前沟通状态。",
+    "复杂采购通常涉及多名参与者，不能只询问单一联系人。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-10",
+  "version": "0.4.0",
+  "author": "主智能体（作者自查）",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "自由职业者",
+      "服务团队",
+      "销售人员"
+    ],
+    "stage": [
+      "获客期",
+      "成交前"
+    ],
+    "industry": [
+      "服务业",
+      "B2B"
+    ],
+    "startupCapital": {
+      "band": "low",
+      "note": "可用普通沟通记录执行，成本主要是售前时间。"
+    },
+    "riskCategories": [
+      "销售误判",
+      "客户适配",
+      "公平风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.4.0",
+      "note": "作者自查：咨询只是线索，问题、决策角色、能力和依赖条件待确认，不能统计成订单。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0024。不是独立或专业审核。",
+      "fingerprint": "sha256:e98c2b9d0b1919f418dbead80dfaa302564a7336ccbd2eedc6c14d0ca8d9c538"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0024-C1",
+    "E-0024-C2",
+    "E-0024-C3"
+  ]
+}

@@ -1,0 +1,67 @@
+---
+import '../styles/global.css';
+import Sidebar from '../components/Sidebar.astro';
+import { SITE_VERSION } from '../lib/version';
+import { siteUrl, repositoryLink } from '../lib/urls';
+interface Props { title: string; description?: string; active?: string; sidebar?: boolean; currentChapter?: string; draft?: boolean; }
+const { title, description = '以证据、适用条件与可追踪复核为基础的创业知识库。', active = '', sidebar = false, currentChapter, draft = false } = Astro.props;
+---
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content={description} /><meta name="color-scheme" content="light dark" />
+    {draft && <meta name="robots" content="noindex, nofollow" />}
+    <title>{title} · 高性价比创业指南</title>
+    <link rel="icon" type="image/svg+xml" href={siteUrl('/favicon.svg')} />
+    <script is:inline>
+      try {
+        const cleanupMarker = 'guide.cleanup.tools.v0.3.1';
+        if (localStorage.getItem(cleanupMarker) !== 'done') {
+          localStorage.removeItem('guide.manual-delivery.v1');
+          localStorage.setItem(cleanupMarker, 'done');
+        }
+      } catch { /* Storage cleanup must never prevent the site from loading. */ }
+      try { const saved = localStorage.getItem('guide-theme'); document.documentElement.dataset.theme = saved || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); } catch { document.documentElement.dataset.theme = 'light'; }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">跳到正文</a>
+    <header class="site-header">
+      <a href={siteUrl('/')} class="brand"><span class="brand-mark" aria-hidden="true">知</span><span>高性价比创业指南<small>循证创业知识库</small></span></a>
+      <nav class="top-nav" aria-label="主导航">
+        {[['/', '首页', 'home'], ['/catalog/', '图书目录', 'catalog'], ['/library/', '证据库', 'library']].map(([href, label, key]) => <a href={siteUrl(href!)} aria-current={active === key ? 'page' : undefined}>{label}</a>)}
+        <a href={siteUrl('/about/')} aria-current={active === 'about' ? 'page' : undefined}>项目介绍</a>
+      </nav>
+      <div class="header-actions"><a href={siteUrl('/library/#search')} class="icon-button" aria-label="打开全站搜索">搜索</a><button id="theme-toggle" class="icon-button" aria-label="切换深色模式" aria-pressed="false" type="button"><span aria-hidden="true">◐</span></button></div>
+    </header>
+    <div class:list={['site-shell', sidebar && 'with-sidebar']}>
+      {sidebar && <Sidebar currentChapter={currentChapter} />}
+      <main id="main-content" class="main-content"><slot /></main>
+    </div>
+    <footer class="site-footer"><span>高性价比创业指南 <span class="mono">V{SITE_VERSION}</span></span><span>来源可追溯 · 结论有边界 · 复核有记录</span><a href={siteUrl('/about/#contribute')}>参与完善</a>{repositoryLink() && <a href={repositoryLink()}>GitHub 文档</a>}{repositoryLink('/issues/new') && <a href={repositoryLink('/issues/new')}>反馈问题</a>}</footer>
+    <script>
+      const button = document.querySelector<HTMLButtonElement>('#theme-toggle');
+      function syncTheme() {
+        const dark = document.documentElement.dataset.theme === 'dark';
+        button?.setAttribute('aria-pressed', String(dark));
+        button?.setAttribute('aria-label', dark ? '切换浅色模式' : '切换深色模式');
+      }
+      button?.addEventListener('click', () => {
+        const theme = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+        document.documentElement.dataset.theme = theme;
+        try { localStorage.setItem('guide-theme', theme); } catch { /* Theme still works without storage. */ }
+        syncTheme();
+      });
+      syncTheme();
+      const headings = document.querySelectorAll<HTMLElement>('article.reading h2[id]');
+      const links = document.querySelectorAll<HTMLAnchorElement>('.article-toc a');
+      const observer = new IntersectionObserver(entries => {
+        const visible = entries.find(entry => entry.isIntersecting);
+        if (!visible) return;
+        links.forEach(link => { if (link.hash === `#${visible.target.id}`) link.setAttribute('aria-current', 'location'); else link.removeAttribute('aria-current'); });
+      }, { rootMargin: '-15% 0px -65% 0px' });
+      headings.forEach(heading => observer.observe(heading));
+    </script>
+  </body>
+</html>

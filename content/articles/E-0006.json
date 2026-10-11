@@ -1,0 +1,120 @@
+{
+  "id": "E-0006",
+  "title": "辞职创业前，把你放弃的东西写在纸上",
+  "volume": 1,
+  "chapter": 1,
+  "type": "工具",
+  "tags": [
+    "机会成本",
+    "创业选择",
+    "个人风险"
+  ],
+  "summary": "辞职或重投入前，把工资、学习机会、休息和家庭时间等现实替代选项纳入比较。",
+  "claims": [
+    {
+      "id": "E-0006-C1",
+      "type": "source_fact",
+      "importance": "core",
+      "evidenceRelation": "direct",
+      "text": "OpenStax 将机会成本解释为选择某项方案时放弃的次优替代项价值。",
+      "referenceIds": [
+        "R-OPENSTAX-OPPCOST"
+      ]
+    },
+    {
+      "id": "E-0006-C2",
+      "type": "recommendation",
+      "importance": "core",
+      "evidenceRelation": "informed_by",
+      "text": "把现金之外的时间、学习和家庭影响纳入比较，是面向创业场景的编辑扩展。",
+      "referenceIds": [
+        "R-OPENSTAX-OPPCOST"
+      ]
+    },
+    {
+      "id": "E-0006-C3",
+      "type": "hypothetical_calculation",
+      "importance": "supporting",
+      "evidenceRelation": "none",
+      "text": "文中生活例子是显著标记的假设，用于解释操作方法，不是客户案例或市场统计。",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评为C：现有依据是经济学教材对机会成本和预算约束的概念说明，没有研究直接评估本文创业取舍清单能否改善个人决策。",
+  "references": [
+    {
+      "id": "R-OPENSTAX-OPPCOST",
+      "title": "How Individuals Make Choices Based on Their Budget Constraint",
+      "authors": [
+        "Steven A. Greenlaw",
+        "David Shapiro",
+        "Daniel MacDonald"
+      ],
+      "publisher": "OpenStax",
+      "url": "https://openstax.org/books/principles-economics-3e/pages/2-1-how-individuals-make-choices-based-on-their-budget-constraint",
+      "doi": null,
+      "publishedAt": "2022-12-14",
+      "materialType": "开放教材",
+      "accessScope": "selected_sections",
+      "locator": "2.1 The Concept of Opportunity Cost；Identifying Opportunity Cost（正文40–46、91–95行）；只核对定义和时间机会成本，不采用教材的金额例子。",
+      "limitations": [
+        "教材解释概念，不评估创业决策表的效果。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-11",
+      "accessResult": "success",
+      "supports": [
+        "E-0006-C1",
+        "E-0006-C2"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "教材将机会成本定义为为某一选择放弃的次优替代项价值，并以预算约束说明资源取舍。"
+      },
+      "assessment": "该材料直接支持 E-0006-C1；对其余推断和操作建议仅提供背景，不代表逐字或完整验证。"
+    }
+  ],
+  "limitations": [
+    "教材解释概念，不评估创业决策表的效果。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "1.0.0",
+  "author": "V0.2 内容生产代理",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "准备创业者"
+    ],
+    "stage": [
+      "想法期"
+    ],
+    "industry": [
+      "通用"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "取决于行业、地区和验证方式，现有资料不足以给出统一金额。"
+    },
+    "riskCategories": [
+      "决策风险"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "1.0.0",
+      "note": "作者自查：把辞职与保留工作的机会成本分开，补齐信息、记录结果和时间冲突时的暂停判断。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0006。不是独立或专业审核。",
+      "fingerprint": "sha256:90288e7bbd5f3fbedf2d1ce4bd369db78a6b22bfdb0b71b7d596cb59766f3479"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "guideClaimIds": [
+    "E-0006-C1",
+    "E-0006-C2",
+    "E-0006-C3"
+  ]
+}

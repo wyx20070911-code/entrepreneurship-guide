@@ -1,0 +1,34 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { grades } from '../data/content';
+import { SITE_VERSION, SITE_UPDATED_AT } from '../lib/version';
+import { topics, supportedReading } from '../lib/topics';
+import { publishedRecords, articleHref } from '../lib/site';
+const sections: Record<string, string> = { actions: '行动步骤', example: '假设例子', why: '依据与边界' };
+const readableTopics = topics.map(topic => ({ ...topic, links: topic.readings.flatMap(reading => {
+  const record = publishedRecords.find(record => supportedReading(record, reading));
+  return record ? [{ title: record.title, href: articleHref(record.id) + '#' + reading.section, section: sections[reading.section] }] : [];
+}) }));
+---
+<BaseLayout title="项目介绍" active="about">
+  <article class="reading about-reading"><p class="eyebrow">ABOUT THE PROJECT</p><h1>一部有依据，也有边界的<br />创业百科全书。</h1><p class="lead">《高性价比创业指南》将创业决策拆成可阅读、可实践、可核验的知识条目，覆盖 12 卷 48 章。</p>
+  <section><h2>内容怎么产生</h2><p>每篇先回答一个现实问题，再给出生活例子、操作步骤、成本和不适用情况。来源用于说明建议从哪里来，无法确认的事情会标明不确定。</p><p>道、法、术、器用于补查选题，而不是证据等级：资源约束、文化伦理、真实信誉与正当激励都回到具体决策。V0.5.0完成全书首轮内容覆盖，48章有阅读入口不等于每章充分展开或获得独立专业验证。</p><p>自动程序检查结构、编号、卷章、来源关联、假设数字和撤回状态。它能发现缺项，不能保证创业成功，也不能代替法律、财务等专业意见。</p></section>
+  <section id="topics"><h2>24主题阅读索引</h2><p>按你要做的决定找文章，也可在证据库搜索主题原名或下列别名。“充分覆盖”只指这里列出的具体问题已有步骤、假设例子和边界，不表示整个领域讲完或经过独立审核。“通用方法覆盖”已有核查步骤和判断示范，但地区专业规则或效果研究仍未补齐；“仅提及”只有局部入口，无有效文章时标为待补充。</p>
+    {['道', '法', '术', '器'].map(axis => <div class="topic-group"><h3>{axis}</h3><ul class="topic-list">{readableTopics.filter(topic => topic.axis === axis).map(topic => <li id={'topic-' + topic.name} class="topic-reading"><h4>{topic.name} <span class="topic-status">{topic.links.length ? topic.coverage : '待补充'}</span></h4><p>{topic.decision}</p><p class="topic-aliases">可检索：{topic.aliases.join('、')}</p><ul>{topic.links.map(link => <li><a href={link.href}>{link.title} · {link.section}</a></li>)}</ul><p class="topic-boundary">{topic.boundary}</p></li>)}</ul></div>)}
+  </section>
+  <section id="grades"><h2>证据评级规则</h2><p>以下是本项目的工作评级，表示当前主张的证据支持情况，不是成功概率，也不是医疗领域的标准评级。等级必须伴随评价依据、原始来源和适用边界。</p><dl class="grade-list">{Object.values(grades).map((value) => <div><dt>{value.label}</dt><dd>{value.meaning}</dd></div>)}</dl><p>评审者应检查研究设计、样本与选择偏差、混杂因素、结果一致性、直接性和可重复性，并保留反对证据。</p></section>
+  <section><h2>自动评级与发布</h2><ol><li>完成文章与来源登记，实际自查关键结论的支持范围。</li><li>AI 按 A/B/C/U 给出证据初评和理由，并归入既有卷章。</li><li>所有版本均需绑定当前内容的作者自查指纹并通过基础检查；正文或依据变化会使旧自查失效。关键事实无法核实或建议存在明显风险时保留草稿。</li><li>草稿和撤回内容不进入正式路由或搜索索引。</li></ol><p>指纹只检测内容变化，不证明结论正确。“已发布”和“AI 初评”都不是独立专家批准。本轮独立及专业审核未执行；U级即使发布也必须明确证据不足。</p></section>
+  <section><h2>项目边界</h2><p>本项目不保证创业结果，也不代替法律、财务、税务等专业服务。缺少可靠资料时显示“暂无可靠数据”，不补造成本、成功率或参考资料。</p><p>第一轮旧会话附件在当前环境不可读取。基准来自已有工程的 12 卷结构与阶段 0 文件，本轮细化章名，并保留旧版备份供核对。</p></section>
+  <section id="contribute"><h2>版本与贡献方式</h2><p>当前版本：V{SITE_VERSION} · 更新日期：{SITE_UPDATED_AT}。首版阅读版保留48章与24主题，集中修订步骤、判断示范和六项通用核查方法；不是全书独立审核或专业批准。</p><p>发布状态、证据初评和复核情况是三件不同的事：已发布不等于人工审核通过，也不等于效果已经验证。新增内容应提供问题场景、可核验来源、生活化例子、成本、风险和适用边界。</p><p>V0.4.5 补齐风险与合规四章；项目不默认统一法域，具体法律示例逐项注明范围，作者自查不等于专业批准。V0.4.4 补齐组织与招聘四章，并清理质量迭代例子中的开发指令；新增内容仅作者自查。V0.4.3 补齐前6卷剩余四章并修正E-0031订单、产能及收付口径；V0.4.2 补齐收入结构、商业模式持续性、预算、经营记录和融资选择五章，并将上下篇限制在同卷章节顺序；V0.4.1 的四章成果保留；来源核验与本轮复核均如实记录。历史记录：V0.3.0 曾加入人工交付验证记录表；V0.3.1 已移除该栏目，V0.4.0 未恢复。</p></section>
+  </article>
+</BaseLayout>
+<style>
+  .topic-list { list-style: none; padding: 0; }
+  .topic-reading { margin: 0 0 1.2rem; padding: 1rem 0; border-bottom: 1px solid var(--line); scroll-margin-top: 6rem; }
+  .topic-reading h4 { margin: 0; font-size: 1.05rem; }
+  .topic-reading p { margin: .45rem 0; }
+  .topic-status, .topic-aliases, .topic-boundary { font-size: .88rem; }
+  .topic-status { font-weight: normal; margin-left: .5rem; }
+  .topic-reading a { overflow-wrap: anywhere; }
+  .topic-reading li { padding-block: .25rem; }
+</style>

@@ -1,0 +1,538 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "urn:entrepreneurship-guide:evidence-v1.0.0",
+  "title": "Entrepreneurship Guide Record v1.0.0",
+  "type": "object",
+  "additionalProperties": true,
+  "required": [
+    "id",
+    "title",
+    "volume",
+    "chapter",
+    "type",
+    "tags",
+    "summary",
+    "claim",
+    "state",
+    "updatedAt",
+    "version",
+    "author",
+    "steps",
+    "applicability",
+    "risks",
+    "body",
+    "grade",
+    "gradeRationale",
+    "ratingMethod",
+    "classification",
+    "references",
+    "limitations"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^E-[0-9]{4}$"
+    },
+    "title": {
+      "$ref": "#/definitions/nonEmpty"
+    },
+    "volume": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 12
+    },
+    "chapter": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 4
+    },
+    "type": {
+      "enum": [
+        "案例",
+        "框架",
+        "工具",
+        "访谈"
+      ]
+    },
+    "tags": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/definitions/nonEmpty"
+      }
+    },
+    "summary": {
+      "$ref": "#/definitions/nonEmpty"
+    },
+    "claim": {
+      "$ref": "#/definitions/nonEmpty"
+    },
+    "state": {
+      "enum": [
+        "draft",
+        "published",
+        "withdrawn"
+      ]
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "author": {
+      "$ref": "#/definitions/nonEmpty"
+    },
+    "steps": {
+      "$ref": "#/definitions/nonEmptyArray"
+    },
+    "applicability": {
+      "$ref": "#/definitions/nonEmptyArray"
+    },
+    "risks": {
+      "$ref": "#/definitions/nonEmptyArray"
+    },
+    "limitations": {
+      "$ref": "#/definitions/nonEmptyArray"
+    },
+    "body": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "heading",
+          "paragraphs",
+          "referenceIds"
+        ],
+        "properties": {
+          "heading": {
+            "$ref": "#/definitions/nonEmpty"
+          },
+          "paragraphs": {
+            "$ref": "#/definitions/nonEmptyArray"
+          },
+          "referenceIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "$ref": "#/definitions/referenceId"
+            }
+          }
+        }
+      }
+    },
+    "grade": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "U"
+      ]
+    },
+    "gradeRationale": {
+      "$ref": "#/definitions/nonEmpty"
+    },
+    "ratingMethod": {
+      "const": "ai_auto"
+    },
+    "classification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "audience",
+        "stage",
+        "industry",
+        "startupCapital",
+        "riskCategories"
+      ],
+      "properties": {
+        "audience": {
+          "$ref": "#/definitions/nonEmptyArray"
+        },
+        "stage": {
+          "$ref": "#/definitions/nonEmptyArray"
+        },
+        "industry": {
+          "$ref": "#/definitions/nonEmptyArray"
+        },
+        "riskCategories": {
+          "$ref": "#/definitions/nonEmptyArray"
+        },
+        "startupCapital": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "band",
+            "note"
+          ],
+          "properties": {
+            "band": {
+              "enum": [
+                "low",
+                "medium",
+                "high",
+                "uncertain"
+              ]
+            },
+            "note": {
+              "$ref": "#/definitions/nonEmpty"
+            }
+          }
+        }
+      }
+    },
+    "references": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "title",
+          "url",
+          "locator",
+          "assessment"
+        ],
+        "properties": {
+          "id": {
+            "$ref": "#/definitions/referenceId"
+          },
+          "title": {
+            "$ref": "#/definitions/nonEmpty"
+          },
+          "url": {
+            "type": "string",
+            "format": "uri",
+            "pattern": "^https://"
+          },
+          "locator": {
+            "$ref": "#/definitions/nonEmpty"
+          },
+          "assessment": {
+            "$ref": "#/definitions/nonEmpty"
+          }
+        }
+      }
+    },
+    "guide": {
+      "$ref": "#/definitions/guide"
+    },
+    "reviewStatus": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "selfCheck",
+        "independentAi",
+        "human"
+      ],
+      "properties": {
+        "selfCheck": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "checkedAt",
+            "version",
+            "note"
+          ],
+          "properties": {
+            "checkedAt": {
+              "type": "string",
+              "format": "date"
+            },
+            "version": {
+              "type": "string",
+              "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+            },
+            "note": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "fingerprint": {
+              "type": "string",
+              "pattern": "^sha256:[a-f0-9]{64}$"
+            }
+          }
+        },
+        "independentAi": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "reviewerId",
+                "reviewedAt",
+                "version",
+                "fingerprint",
+                "decision",
+                "recordPath",
+                "note"
+              ],
+              "properties": {
+                "reviewerId": {
+                  "$ref": "#/definitions/nonEmpty"
+                },
+                "reviewedAt": {
+                  "type": "string",
+                  "format": "date"
+                },
+                "version": {
+                  "type": "string",
+                  "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+                },
+                "fingerprint": {
+                  "type": "string",
+                  "pattern": "^sha256:[a-f0-9]{64}$"
+                },
+                "decision": {
+                  "enum": [
+                    "passed",
+                    "changes_requested"
+                  ]
+                },
+                "recordPath": {
+                  "type": "string",
+                  "pattern": "^docs/reviews/ai/v0\\.(?:2\\.2|3\\.0|4\\.0)-.+\\.md$"
+                },
+                "note": {
+                  "$ref": "#/definitions/nonEmpty"
+                }
+              }
+            }
+          ]
+        },
+        "human": {
+          "anyOf": [
+            {
+              "type": "null"
+            },
+            {
+              "type": "object"
+            }
+          ]
+        }
+      }
+    },
+    "jurisdiction": {
+      "$ref": "#/definitions/nonEmpty"
+    },
+    "validAsOf": {
+      "type": "string",
+      "format": "date"
+    },
+    "numericClaims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "text",
+          "kind",
+          "referenceIds"
+        ],
+        "properties": {
+          "text": {
+            "$ref": "#/definitions/nonEmpty"
+          },
+          "kind": {
+            "enum": [
+              "sourced",
+              "hypothetical"
+            ]
+          },
+          "referenceIds": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "$ref": "#/definitions/referenceId"
+            }
+          }
+        }
+      }
+    },
+    "evidenceWarning": {
+      "$ref": "#/definitions/nonEmpty"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "state": {
+            "const": "published"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "guide": {},
+          "numericClaims": {},
+          "reviewStatus": {
+            "type": "object",
+            "properties": {
+              "selfCheck": {
+                "type": "object",
+                "required": [
+                  "fingerprint"
+                ],
+                "properties": {
+                  "fingerprint": {
+                    "type": "string",
+                    "pattern": "^sha256:[a-f0-9]{64}$"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "required": [
+          "guide",
+          "numericClaims",
+          "reviewStatus"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "grade": {
+            "const": "U"
+          },
+          "state": {
+            "const": "published"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "evidenceWarning": {}
+        },
+        "required": [
+          "evidenceWarning"
+        ]
+      }
+    }
+  ],
+  "definitions": {
+    "nonEmpty": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "\\S"
+    },
+    "nonEmptyArray": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/definitions/nonEmpty"
+      }
+    },
+    "referenceId": {
+      "type": "string",
+      "pattern": "^R-[A-Z0-9-]{3,40}$"
+    },
+    "guide": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "problem",
+        "oneSentence",
+        "claimIds",
+        "why",
+        "example",
+        "howTo",
+        "cost",
+        "notFor"
+      ],
+      "properties": {
+        "problem": {
+          "$ref": "#/definitions/nonEmpty"
+        },
+        "oneSentence": {
+          "$ref": "#/definitions/nonEmpty"
+        },
+        "claimIds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^E-[0-9]{4}-C[0-9]+$"
+          }
+        },
+        "why": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 4,
+          "items": {
+            "$ref": "#/definitions/nonEmpty"
+          }
+        },
+        "example": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "hypothetical",
+            "paragraphs"
+          ],
+          "properties": {
+            "hypothetical": {
+              "const": true
+            },
+            "paragraphs": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "$ref": "#/definitions/nonEmpty"
+              }
+            }
+          }
+        },
+        "howTo": {
+          "type": "array",
+          "minItems": 3,
+          "maxItems": 5,
+          "items": {
+            "$ref": "#/definitions/nonEmpty"
+          }
+        },
+        "cost": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "startup",
+            "ongoing",
+            "time",
+            "potentialLoss"
+          ],
+          "properties": {
+            "startup": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "ongoing": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "time": {
+              "$ref": "#/definitions/nonEmpty"
+            },
+            "potentialLoss": {
+              "$ref": "#/definitions/nonEmpty"
+            }
+          }
+        },
+        "notFor": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/definitions/nonEmpty"
+          }
+        }
+      }
+    }
+  }
+}

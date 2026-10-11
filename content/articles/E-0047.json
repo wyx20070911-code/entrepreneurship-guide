@@ -1,0 +1,136 @@
+{
+  "id": "E-0047",
+  "title": "机会越来越多时，先决定哪些暂时不做",
+  "volume": 12,
+  "chapter": 2,
+  "type": "框架",
+  "tags": [
+    "战略取舍",
+    "业务聚焦",
+    "机会成本"
+  ],
+  "summary": "将现有订单、可用能力与新机会放在同一资源窗口比较，明确哪些保留、试验或暂缓，不用评分代替理由。",
+  "claims": [
+    {
+      "id": "E-0047-C1",
+      "type": "source_fact",
+      "evidenceRelation": "direct",
+      "text": "澳大利亚business.gov.au目标指南让经营者核对目标与整体方向、时间、技能和资源，并为行动明确责任与复查方式；这是方法说明，不是战略效果试验。",
+      "importance": "core",
+      "referenceIds": [
+        "R-AU-GOALS-2026"
+      ]
+    },
+    {
+      "id": "E-0047-C2",
+      "type": "editorial_inference",
+      "evidenceRelation": "inference_from",
+      "text": "已有交付与新机会共享资源时，比较应包括被放弃的现实替代项和不可撤回责任；这是编辑推断，不是来源验证的评分公式。",
+      "importance": "core",
+      "referenceIds": [
+        "R-AU-GOALS-2026"
+      ]
+    },
+    {
+      "id": "E-0047-C3",
+      "type": "recommendation",
+      "evidenceRelation": "informed_by",
+      "text": "将机会逐项标为保留、受限试验、暂缓或退出，附理由、未知项和重新评估条件；这是经营中的操作建议，不保证选对。",
+      "importance": "core",
+      "referenceIds": [
+        "R-AU-GOALS-2026"
+      ]
+    },
+    {
+      "id": "E-0047-C4",
+      "type": "hypothetical_calculation",
+      "evidenceRelation": "none",
+      "text": "例子为明确标记的教学假设，不是客户、经营数据或普遍扩张门槛。",
+      "importance": "supporting",
+      "referenceIds": []
+    }
+  ],
+  "grade": "C",
+  "gradeRationale": "AI初评C：Set goals for your business提供官方方法而非经营效果研究。支持把资源、目标相关性、行动及复查写清；没有验证不同战略的效果，也没有提出保留/暂缓四分法。 机会取舍没有已验证的权重或利润最大化公式。 尚无独立复核。",
+  "references": [
+    {
+      "id": "R-AU-GOALS-2026",
+      "title": "Set goals for your business",
+      "publisher": "business.gov.au",
+      "authors": [
+        "Australian Government / business.gov.au"
+      ],
+      "url": "https://business.gov.au/planning/business-plans/set-goals-for-your-business",
+      "publishedAt": null,
+      "locator": "Achievable（第208–218行）、Relevant（219–227行）、Achieving your goals（252–259行）",
+      "assessment": "支持把资源、目标相关性、行动及复查写清；没有验证不同战略的效果，也没有提出保留/暂缓四分法。",
+      "limitations": [
+        "页面正文未显示首发或修订日期，记录未知；实际选读登记章节，未采用园艺例子数字。",
+        "澳大利亚官方经营方法；不外推为中国或其他地区法律规则，也不把指南的成功措辞当研究结果。"
+      ],
+      "primary": true,
+      "accessedAt": "2026-10-10",
+      "accessResult": "success",
+      "accessScope": "selected_sections",
+      "materialType": "官方经营指南",
+      "supports": [
+        "E-0047-C1",
+        "E-0047-C2",
+        "E-0047-C3"
+      ],
+      "excerpt": {
+        "kind": "paraphrase",
+        "text": "澳大利亚business.gov.au目标指南让经营者核对目标与整体方向、时间、技能和资源，并为行动明确责任与复查方式；这是方法说明，不是战略效果试验。"
+      }
+    }
+  ],
+  "limitations": [
+    "目标取舍是编辑方法，不是研究验证的利润最大化算法；权重和分数如自行使用只能表达偏好，不能表达科学确定性。",
+    "不可逆投资、重大权益或无法履行已有义务时，先核查具体责任并寻求适当专业帮助；本篇不解释合同效力。",
+    "页面正文未显示首发或修订日期，记录未知；实际选读登记章节，未采用园艺例子数字。",
+    "澳大利亚官方经营方法；不外推为中国或其他地区法律规则，也不把指南的成功措辞当研究结果。"
+  ],
+  "state": "published",
+  "updatedAt": "2026-10-11",
+  "version": "0.5.0",
+  "author": "主智能体（作者自查）",
+  "ratingMethod": "ai_auto",
+  "classification": {
+    "audience": [
+      "小型业务经营者"
+    ],
+    "stage": [
+      "经营期"
+    ],
+    "industry": [
+      "通用",
+      "服务业"
+    ],
+    "startupCapital": {
+      "band": "uncertain",
+      "note": "按现有承诺与实际可承受投入判断，不设置统一金额。"
+    },
+    "riskCategories": [
+      "新方向挤占旧承诺、错把预测作资源、退出成本或分散服务质量。"
+    ]
+  },
+  "numericClaims": [],
+  "reviewStatus": {
+    "selfCheck": {
+      "checkedAt": "2026-10-11",
+      "version": "0.5.0",
+      "note": "作者自查：经营中选择资源和目标，保留未知与重新评估条件，任意评分不是科学战略公式。 已按核心主张逐项对照原文或有效旧记录；阅读定位、支持范围和疑点见 关键结论来源自查记录（本地保留） 的 E-0047。不是独立或专业审核。",
+      "fingerprint": "sha256:cdc88ebc23d638f01fff9ac641fec7447ff8252078431fe3cf919a28450c329a"
+    },
+    "independentAi": null,
+    "human": null
+  },
+  "jurisdiction": "通用经营方法；来源为澳大利亚官方经营指引，未采用其法律、税务或政策资格规则。",
+  "validAsOf": "2026-10-11",
+  "guideClaimIds": [
+    "E-0047-C1",
+    "E-0047-C2",
+    "E-0047-C3",
+    "E-0047-C4"
+  ]
+}
